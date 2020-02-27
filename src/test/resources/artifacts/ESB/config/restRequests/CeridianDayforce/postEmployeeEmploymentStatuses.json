@@ -1,0 +1,113 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr57.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "xRefCode": "42199",
+  "isValidateOnly": "true",
+  "contextDateRangeFrom": "2017-01-01T13:24:56",
+  "fieldAndValue": {
+    "EmployeeNumber": "42199",
+    "EffectiveStart": "2014-02-04T00:00:00",
+    "EmploymentStatus": {
+      "IsBenefitArrearsEnabled": false,
+      "XRefCode": "INACTIVE",
+      "ShortName": "Inactive",
+      "LongName": "Inactive"
+    },
+    "EmploymentStatusGroup": {
+      "XRefCode": "INACTIVE",
+      "ShortName": "Inactive",
+      "LongName": "Inactive"
+    },
+    "PayType": {
+      "XRefCode": "HourlyNon",
+      "ShortName": "Hourly(Non-Exempt)",
+      "LongName": "Hourly(Non-Exempt)"
+    },
+    "PayGroup": {
+      "PayFrequency": {
+        "PayFrequencyType": "w",
+        "ShortName": "Weekly",
+        "LongName": "Weekly"
+      },
+      "XRefCode": "USA",
+      "ShortName": "USA - Weekly",
+      "LongName": "USA - Weekly"
+    },
+    "PayTypeGroup": {
+      "XRefCode": "Hourly",
+      "ShortName": "Hourly",
+      "LongName": "Hourly"
+    },
+    "PayClass": {
+      "XRefCode": "FT",
+      "ShortName": "FT",
+      "LongName": "Full Time"
+    },
+    "PunchPolicy": {
+      "XRefCode": "Default",
+      "ShortName": "Default",
+      "LongName": "Default"
+    },
+    "PayPolicy": {
+      "XRefCode": "MHourly",
+      "ShortName": "MHourly ",
+      "LongName": "MHourly "
+    },
+    "PayHolidayGroup": {
+      "XRefCode": "USA",
+      "ShortName": "USA",
+      "LongName": "USA"
+    },
+    "EntitlementPolicy": {
+      "XRefCode": "Default",
+      "ShortName": "Default",
+      "LongName": "Default"
+    },
+    "ShiftRotation": {
+      "XRefCode": "Morning",
+      "ShortName": "Morning",
+      "LongName": "Morning"
+    },
+    "ShiftRotationDayOffset": 0,
+    "ShiftRotationStartDate": "2007-12-31T00:00:00",
+    "CreateShiftRotationShift": true,
+    "TimeOffPolicy": {
+      "XRefCode": "Default",
+      "ShortName": "Default",
+      "LongName": "Default"
+    },
+    "ShiftTradePolicy": {
+      "XRefCode": "default",
+      "ShortName": "Corporate",
+      "LongName": "Corporate"
+    },
+    "AttendancePolicy": {
+      "XRefCode": "DEFAULT",
+      "ShortName": "Default",
+      "LongName": "Default"
+    },
+    "SchedulePolicy": {
+      "XRefCode": "Manufacturing",
+      "ShortName": "Manufacturing",
+      "LongName": "Manufacturing"
+    },
+    "OvertimeGroup": {
+      "XRefCode": "OTG1",
+      "ShortName": "OT Group 1",
+      "LongName": "OT Group 1"
+    },
+    "PayrollPolicy": {
+      "XRefCode": "USA",
+      "ShortName": "USA",
+      "LongName": "USA"
+    },
+    "AlternateRate": 3.00000,
+    "AverageDailyHours": 8.0000,
+    "BaseRate": 21.50000,
+    "BaseSalary": 44720.00000,
+    "NormalWeeklyHours": 40.0000,
+    "VacationRate": 10.00000
+  }
+}

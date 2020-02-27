@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2019, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied. See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+<component name="userSecurityAuthorityManagement" type="synapse/template">
+    <subComponents>
+        <component name="getEmployeeManagers">
+            <file>managers/getEmployeeManagers.xml</file>
+            <description>Get employee Managers REST API</description>
+        </component>
+        <component name="getEmployeeWorkAssignmentManagers">
+            <file>workAssignmentManagers/getEmployeeWorkAssignmentManagers.xml</file>
+            <description>Get employee Managers REST API</description>
+        </component>
+        <component name="postEmployeeWorkAssignmentManagers">
+            <file>workAssignmentManagers/postEmployeeWorkAssignmentManagers.xml</file>
+            <description>Post employee Managers REST API</description>
+        </component>
+        <component name="patchEmployeeWorkAssignmentManagers">
+            <file>workAssignmentManagers/patchEmployeeWorkAssignmentManagers.xml</file>
+            <description>Patch employee Managers REST API</description>
+        </component>
+        <component name="getDocumentManagementSecurityGroups">
+            <file>documentManagementSecurityGroups/getDocumentManagementSecurityGroups.xml</file>
+            <description>Retrieve Document Management Security Groups assigned to an employee that control access to documents REST API</description>
+        </component>
+        <component name="getEmployeeLocations">
+            <file>locations/getEmployeeLocations.xml</file>
+            <description>Retrieve locations, and their respective authority types, that an employee manages REST API</description>
+        </component>
+        <component name="postEmployeeLocations">
+            <file>locations/postEmployeeLocations.xml</file>
+            <description>Assign locations and authority types for an employee to manage REST API</description>
+        </component>
+        <component name="patchEmployeeLocations">
+            <file>locations/patchEmployeeLocations.xml</file>
+            <description>Update assigned locations and authority types for an employee to manage REST API</description>
+        </component>
+        <component name="getEmployeeRoles">
+            <file>roles/getEmployeeRoles.xml</file>
+            <description>Retrieve user roles assigned to an employee REST API</description>
+        </component>
+        <component name="postEmployeeRoles">
+            <file>roles/postEmployeeRoles.xml</file>
+            <description>Assign roles to an employee REST API</description>
+        </component>
+        <component name="patchEmployeeRoles">
+            <file>roles/patchEmployeeRoles.xml</file>
+            <description>Update the assigned roles to an employee REST API</description>
+        </component>
+        <component name="getEmployeeSSOAccounts">
+            <file>ssoAccounts/getEmployeeSSOAccounts.xml</file>
+            <description>Retrieve Single Sign-On (SSO) accounts of an employee REST API</description>
+        </component>
+        <component name="postEmployeeSSOAccounts">
+            <file>ssoAccounts/postEmployeeSSOAccounts.xml</file>
+            <description>Create Single Sign-On (SSO) accounts of an employee REST API</description>
+        </component>
+        <component name="patchEmployeeSSOAccounts">
+            <file>ssoAccounts/patchEmployeeSSOAccounts.xml</file>
+            <description>Update Single Sign-On (SSO) accounts of an employee REST API</description>
+        </component>
+        <component name="getUserPayAdjustCodeGroups">
+            <file>userPayAdjustmentGroups/getUserPayAdjustCodeGroups.xml</file>
+            <description>Retrieve User Pay Adjustment Groups assigned to an employee.  These control which pay adjustment codes the employee can assign to timesheets REST API</description>
+        </component>
+    </subComponents>
+</component>

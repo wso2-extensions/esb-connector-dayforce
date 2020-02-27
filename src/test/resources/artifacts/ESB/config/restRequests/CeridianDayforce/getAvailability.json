@@ -1,0 +1,9 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr57.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "xRefCode": "42199",
+  "filterAvailabilityStartDate": "2018-02-04T00:00:00",
+  "filterAvailabilityEndDate": "2018-02-18T00:00:00"
+}

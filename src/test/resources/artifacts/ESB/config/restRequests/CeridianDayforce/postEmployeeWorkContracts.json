@@ -1,0 +1,18 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr57.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "xRefCode": "42199",
+  "isValidateOnly": "true",
+  "contextDateRangeFrom": "2017-01-01T13:24:56",
+  "fieldAndValue": {
+    "BaseComplementaryHours": 0,
+    "CreateShiftOnHolidays": false,
+    "StartDate": "2019-09-01T00:00:00",
+    "WorkContract": {
+      "XRefCode": "FT Monthly 100%",
+      "ShortName": "FT Monthly 100%"
+    }
+  }
+}

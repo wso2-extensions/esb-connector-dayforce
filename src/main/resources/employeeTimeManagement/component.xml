@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2019, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied. See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+<component name="employeeTimeManagement" type="synapse/template">
+    <subComponents>
+        <component name="getAvailability">
+            <file>getAvailability.xml</file>
+            <description>Availabilty represents the periods an employee is available to be scheduled for work. This request allows you to retrieve a single employee's daily availability between two dates. In order to use it, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API</description>
+        </component>
+        <component name="getSchedules">
+            <file>getSchedules.xml</file>
+            <description>Retrieve the configured schedules for a single employee for every day within a defined period. In order to use this request, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API</description>
+        </component>
+        <component name="getTimeAwayFromWork">
+            <file>getTimeAwayFromWork.xml</file>
+            <description>Retrieve the scheduled time away from work (TAFW) periods of a single employee. In order to use this request, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API</description>
+        </component>
+        <component name="getEmployeePunches">
+            <file>getEmployeePunches.xml</file>
+            <description>Extract the worked shift data for several employees at a time. Required parameters for the call include FilterTransactionStartTimeUTC and FilterTransactionEndTimeUTC. The system will search for all employee punch records that were modified between these two dates. The two dates must be 7 days apart or less. REST API</description>
+        </component>
+        <component name="getEmployeeRawPunches">
+            <file>getEmployeeRawPunches.xml</file>
+            <description>Retrieve raw punches as they are entered at the clock REST API</description>
+        </component>
+        <component name="postEmployeeRawPunches">
+            <file>postEmployeeRawPunches.xml</file>
+            <description>Insert a raw punch. This raw punch record will be treated as a punch coming from the clock and be validated against configured punch policies REST API</description>
+        </component>
+    </subComponents>
+</component>

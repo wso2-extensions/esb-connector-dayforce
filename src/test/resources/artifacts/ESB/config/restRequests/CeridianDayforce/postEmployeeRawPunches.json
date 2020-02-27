@@ -1,0 +1,14 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr57.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "xRefCode": "42199",
+  "isValidateOnly": "true",
+  "fieldAndValue": {
+    "EmployeeBadge": "33333",
+    "RawPunchTime": "2019-06-04T11:28:28-04:00",
+    "PunchType": "Punch_In",
+    "PunchDevice": "API"
+  }
+}

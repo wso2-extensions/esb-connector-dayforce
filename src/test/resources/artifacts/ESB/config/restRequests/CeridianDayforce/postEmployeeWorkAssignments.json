@@ -1,0 +1,82 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr57.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "xRefCode": "100421",
+  "isValidateOnly": "true",
+  "contextDateRangeFrom": "2017-01-01T13:24:56",
+  "fieldAndValue": {
+    "Position": {
+      "Department": {
+        "XRefCode": "9",
+        "ShortName": "Packaging",
+        "LongName": "Packaging"
+      },
+      "Job": {
+        "EmployeeEEO": {
+          "XRefCode": "8",
+          "ShortName": "8 - Laborers and Helpers",
+          "LongName": "8 - Laborers and Helpers"
+        },
+        "IsUnionJob": false,
+        "JobRank": 13,
+        "JobClassification": {
+          "XRefCode": "ProductionStaff",
+          "ShortName": "Production Staff",
+          "LongName": "Production Staff"
+        },
+        "FLSAStatus": {
+          "XRefCode": "NON-EXEMPT",
+          "ShortName": "Non-exempt"
+        },
+        "XRefCode": "13",
+        "ShortName": "Packager"
+      },
+      "XRefCode": "Packaging Packager",
+      "ShortName": "Package Handler"
+    },
+    "Location": {
+      "ClockTransferCode": "540",
+      "LegalEntity": {
+        "Country": {
+          "Name": "United States of America",
+          "XRefCode": "USA",
+          "ShortName": "United States of America",
+          "LongName": "United States of America"
+        },
+        "LegalEntityAddress": {
+          "Address1": "1 Wilkinson Street",
+          "City": "Jersey City",
+          "PostalCode": "10017",
+          "Country": {
+            "Name": "United States of America",
+            "XRefCode": "USA",
+            "ShortName": "United States of America",
+            "LongName": "United States of America"
+          },
+          "State": {
+            "Name": "New Jersey",
+            "XRefCode": "NJ",
+            "ShortName": "New Jersey"
+          }
+        },
+        "LegalIdNumber": "654565981",
+        "XRefCode": "Manufacturing Co. USA ",
+        "ShortName": " Manufacturing Co. USA ",
+        "LongName": "Manufacturing Co. USA "
+      },
+      "XRefCode": "500Packaging",
+      "ShortName": "Plant 1 - Packaging",
+      "LongName": "Plant 1 - Packaging"
+    },
+    "EffectiveStart": "2000-01-01T00:00:00",
+    "IsPAPrimaryWorkSite": false,
+    "IsPrimary": true,
+    "IsStatutory": false,
+    "IsVirtual": false,
+    "BusinessTitle": "Senior Package Handler",
+    "LastModifiedTimeStamp": "2016-04-26T09:53:27.947",
+    "Rank": 15
+  }
+}

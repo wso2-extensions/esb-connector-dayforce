@@ -1,0 +1,125 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr57.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "employeeNumber": "42199",
+  "isValidateOnly": "true",
+  "fieldAndValue": {
+    "FirstName": "FSample",
+    "LastName": "LSample",
+    "XRefCode":"POST0090",
+    "BioExempt": false,
+    "BirthDate": "1990-05-12T00:00:00",
+    "Culture": {
+      "XRefCode": "en-US"
+    },
+    "Gender": "M",
+    "HireDate": "2017-01-15T00:00:00",
+    "PhotoExempt": false,
+    "RequiresExitInterview": false,
+    "SocialSecurityNumber": "252012728",
+    "SendFirstTimeAccessEmail": false,
+    "FirstTimeAccessEmailSentCount": 0,
+    "FirstTimeAccessVerificationAttempts": 0,
+    "Addresses": {
+      "Items": [
+        {
+          "Address1": "4110 Yonge St.",
+          "City": "North York",
+          "PostalCode": "M2P 2B7",
+          "Country": {
+            "XRefCode": "CAN"
+          },
+          "State": {
+            "XRefCode": "ON"
+          },
+          "ContactInformationType": {
+            "XRefCode": "PrimaryResidence"
+          },
+          "EffectiveStart": "2017-01-15T00:00:00"
+        }
+      ]
+    } ,
+    "Contacts": {
+      "Items": [
+        {
+          "ContactInformationType": {
+            "XRefCode": "HomePhone"
+          },
+          "ContactNumber":"4169872987",
+          "Country": {
+            "XRefCode": "CAN"
+          },
+          "EffectiveStart": "2017-01-15T00:00:00",
+          "ShowRejectedWarning": true,
+          "IsForSystemCommunications": false,
+          "IsPreferredContactMethod": false,
+          "NumberOfVerificationRequests": 0
+        }
+      ]
+    },
+    "EmploymentStatuses": {
+      "Items": [
+        {
+
+          "EffectiveStart": "2017-01-15T00:00:00",
+          "EmploymentStatus": {
+            "XRefCode": "ACTIVE"
+          },
+          "PayType": {
+            "XRefCode": "HourlyNon"
+          },
+          "PayClass": {
+            "XRefCode": "FT"
+          },
+          "PayGroup": {
+            "XRefCode": "CAN"
+          },
+          "CreateShiftRotationShift": true,
+          "BaseRate": 10.25,
+          "EmploymentStatusReason": {
+            "XrefCode":"NEWHIRE"
+          }
+        }
+      ]
+    },
+    "Roles": {
+      "Items": [
+        {
+
+          "Role": {
+            "XRefCode": "CAssociate"
+          },
+          "EffectiveStart": "2017-01-15T00:00:00",
+          "isDefault": true
+        }
+      ]
+    },
+    "WorkAssignments": {
+      "Items": [
+        {
+          "Position": {
+            "Department": {
+              "XRefCode": "6"
+            },
+            "Job": {
+              "XRefCode": "7"
+            }
+          },
+          "Location": {
+            "XRefCode": "500Operations"
+          },
+          "EffectiveStart": "2017-01-15T00:00:00",
+          "IsPAPrimaryWorkSite": false,
+          "IsPrimary": true,
+          "IsVirtual": false,
+          "EmploymentStatusReason": {
+            "XrefCode":"NEW ASSIGNMENT"
+          }
+
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr57.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "xRefCode": "42199",
+  "isValidateOnly": "true",
+  "fieldAndValue": {
+    "LoginName": "aaron.glover"
+  }
+}

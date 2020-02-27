@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse"
+       name="getEmployeePunches"
+       startOnLoad="true"
+       statistics="disable"
+       trace="disable"
+       transports="http,https">
+    <target>
+        <inSequence>
+            <log level="full" separator=","/>
+            <property expression="json-eval($.username)" name="username"/>
+            <property expression="json-eval($.password)" name="password"/>
+            <property expression="json-eval($.clientNamespace)" name="clientNamespace"/>
+            <property expression="json-eval($.apiVersion)" name="apiVersion"/>
+            <property expression="json-eval($.xRefCode)" name="xRefCode"/>
+            <property expression="json-eval($.filterTransactionStartTimeUTC)" name="filterTransactionStartTimeUTC"/>
+            <property expression="json-eval($.filterTransactionEndTimeUTC)" name="filterTransactionEndTimeUTC"/>
+            <ceridiandayforce.init>
+                <username>{$ctx:username}</username>
+                <password>{$ctx:password}</password>
+                <clientNamespace>{$ctx:clientNamespace}</clientNamespace>
+                <apiVersion>{$ctx:apiVersion}</apiVersion>
+            </ceridiandayforce.init>
+            <ceridiandayforce.getEmployeePunches>
+                <xRefCode>{$ctx:xRefCode}</xRefCode>
+                <filterTransactionStartTimeUTC>{$ctx:filterTransactionStartTimeUTC}</filterTransactionStartTimeUTC>
+                <filterTransactionEndTimeUTC>{$ctx:filterTransactionEndTimeUTC}</filterTransactionEndTimeUTC>
+            </ceridiandayforce.getEmployeePunches>
+            <send/>
+        </inSequence>
+    </target>
+    <description/>
+</proxy>

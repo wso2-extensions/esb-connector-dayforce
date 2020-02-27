@@ -1,0 +1,18 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr57.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "xRefCode": "42199",
+  "isValidateOnly": "true",
+  "contextDateRangeFrom": "2017-01-01T13:24:56",
+  "fieldAndValue": {
+    "OnboardingPolicy": {
+      "XRefCode": "db3de97e-f173-442d-86db-0e8bcb259ed0",
+      "ShortName": "Default"
+    },
+    "EffectiveStart": "2019-01-01T00:00:00",
+    "EffectiveEnd": "2019-10-12T23:59:00",
+    "IsInternalHire": false
+  }
+}

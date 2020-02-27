@@ -1,0 +1,91 @@
+<!--
+  ~ Copyright (c) 2019, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied. See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+<template xmlns="http://ws.apache.org/ns/synapse" name="postEmployeeProperties">
+    <parameter name="isValidateOnly"/>
+    <parameter name="fieldAndValue"/>
+    <parameter name="xRefCode"/>
+    <sequence>
+        <property value="application/json" name="accept" scope="transport"/>
+        <property expression="fn:concat('Basic ',$ctx:ceridianDayForceAuthHeader)" name="Authorization"
+                  scope="transport"/>
+        <property name="uri.var.isValidateOnly" expression="$func:isValidateOnly"/>
+        <property name="uri.var.xRefCode" expression="$func:xRefCode"/>
+        <property name="Accept-Encoding" scope="transport" action="remove"/>
+        <property name="uri.var.fieldAndValue" expression="$func:fieldAndValue"/>
+        <payloadFactory media-type="json">
+            <format>
+                $1
+            </format>
+            <args>
+                <arg expression="$ctx:uri.var.fieldAndValue"/>
+            </args>
+        </payloadFactory>
+        <filter source="boolean($func:isValidateOnly)" regex="false">
+            <then>
+                <log category="ERROR" level="custom">
+                    <property name="CERIDIAN Dayforce"
+                              value="isValidateOnly parameter is mandatory for accessing post Org Unit resource."/>
+                </log>
+            </then>
+        </filter>
+        <filter source="$ctx:dayforceRestBlocking" regex="true">
+            <then>
+                <call blocking="true">
+                    <endpoint>
+                        <http method="post"
+                              uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/Employees/{+uri.var.xRefCode}/EmployeeProperties?isValidateOnly={+uri.var.isValidateOnly}">
+                            <timeout>
+                                <duration>{$ctx:timeout}</duration>
+                                <responseAction>fault</responseAction>
+                            </timeout>
+                            <suspendOnFailure>
+                                <initialDuration>-1</initialDuration>
+                                <progressionFactor>-1</progressionFactor>
+                                <maximumDuration>0</maximumDuration>
+                            </suspendOnFailure>
+                            <markForSuspension>
+                                <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                            </markForSuspension>
+                        </http>
+                    </endpoint>
+                </call>
+            </then>
+            <else>
+                <call>
+                    <endpoint>
+                        <http method="post"
+                              uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/Employees/{+uri.var.xRefCode}/EmployeeProperties?isValidateOnly={+uri.var.isValidateOnly}">
+                            <timeout>
+                                <duration>{$ctx:timeout}</duration>
+                                <responseAction>fault</responseAction>
+                            </timeout>
+                            <suspendOnFailure>
+                                <initialDuration>-1</initialDuration>
+                                <progressionFactor>-1</progressionFactor>
+                                <maximumDuration>0</maximumDuration>
+                            </suspendOnFailure>
+                            <markForSuspension>
+                                <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                            </markForSuspension>
+                        </http>
+                    </endpoint>
+                </call>
+            </else>
+        </filter>
+    </sequence>
+</template>

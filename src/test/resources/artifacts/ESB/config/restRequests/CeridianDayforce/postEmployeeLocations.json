@@ -1,0 +1,30 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr57.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "xRefCode": "42199",
+  "isValidateOnly": "true",
+  "fieldAndValue": {
+    "IsPrimary": true,
+    "Location": {
+      "XRefCode": "Bank 1Admin",
+      "ShortName": "Bank 1 - Admin",
+      "LongName": "Bank 1 - Admin"
+    },
+    "EffectiveStart": "2019-01-01T00:00:00",
+    "IsDefault": true,
+    "EmployeeLocationAuthorities": {
+      "Items": [
+        {
+          "EffectiveStart": "2019-01-01T00:00:00",
+          "AuthorityType": {
+            "XRefCode": "MANAGER",
+            "ShortName": "Manager",
+            "LongName": "Management"
+          }
+        }
+      ]
+    }
+  }
+}
