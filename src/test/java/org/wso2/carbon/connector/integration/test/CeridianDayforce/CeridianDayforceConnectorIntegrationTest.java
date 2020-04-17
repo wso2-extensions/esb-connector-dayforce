@@ -140,7 +140,7 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
     public void getEmployeeCANFederalTaxesTest() throws Exception {
         RestResponse<JSONObject> eiRestResponse =
                 sendJsonRestRequest(getProxyServiceURLHttp("getEmployeeCANFederalTaxes"), "POST",
-                        eiRequestHeadersMap, "getEmployeeCANFederalTaxes.json");
+                        eiRequestHeadersMap, "getEmployeeCANStateTaxes.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
                 .getProperty("apiVersion") + "/Employees/100421/CANFederalTaxes";
@@ -156,7 +156,7 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
     public void getEmployeeCANStateTaxesTest() throws Exception {
         RestResponse<JSONObject> eiRestResponse =
                 sendJsonRestRequest(getProxyServiceURLHttp("getEmployeeCANStateTaxes"), "POST",
-                        eiRequestHeadersMap, "getEmployeeCANFederalTaxes.json");
+                        eiRequestHeadersMap, "getEmployeeCANStateTaxes.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
                 .getProperty("apiVersion") + "/Employees/100421/CANStateTaxes";
@@ -172,7 +172,7 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
     public void getEmployeeCANTaxStatusesTest() throws Exception {
         RestResponse<JSONObject> eiRestResponse =
                 sendJsonRestRequest(getProxyServiceURLHttp("getEmployeeCANTaxStatuses"), "POST",
-                        eiRequestHeadersMap, "getEmployeeCANFederalTaxes.json");
+                        eiRequestHeadersMap, "getEmployeeCANStateTaxes.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
                 .getProperty("apiVersion") + "/Employees/100421/CANTaxStatuses";
