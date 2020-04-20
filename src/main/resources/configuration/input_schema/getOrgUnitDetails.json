@@ -1,0 +1,27 @@
+{
+  "$schema":"http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "id":"http:\/\/wso2jsonschema.org",
+  "title":"root",
+  "type":"object",
+  "properties":{
+    "xRefCode":{
+      "id":"http:\/\/wso2jsonschema.org\/xRefCode",
+      "type":"string"
+    },
+    "contextDate":{
+      "id":"http:\/\/wso2jsonschema.org\/contextDate",
+      "type":"string",
+      "nullable":"true"
+    },
+    "expand":{
+      "id":"http:\/\/wso2jsonschema.org\/expand",
+      "type":"string",
+      "nullable":"true"
+    },
+    "includeChildOrgUnits":{
+      "id":"http:\/\/wso2jsonschema.org\/includeChildOrgUnits",
+      "type":"boolean",
+      "nullable":"true"
+    }
+  }
+}

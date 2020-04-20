@@ -1,0 +1,141 @@
+{
+  "$schema": "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "id": "http://wso2jsonschema.org",
+  "type": "object",
+  "title": "root",
+  "properties": {
+    "xRefCode": {
+      "id": "http://wso2jsonschema.org/xRefCode",
+      "type": "string"
+    },
+    "isValidateOnly": {
+      "id": "http://wso2jsonschema.org/isValidateOnly",
+      "type": "boolean"
+    },
+    "fieldAndValue": {
+      "id": "http://wso2jsonschema.org/fieldAndValue",
+      "type": "object",
+      "properties": {
+        "EffectiveEnd": {
+          "id": "http://wso2jsonschema.org/EffectiveEnd",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EffectiveStart": {
+          "id": "http://wso2jsonschema.org/EffectiveStart",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EmployeeProperty": {
+          "id": "http://wso2jsonschema.org/EmployeeProperty",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "DataType": {
+              "id": "http://wso2jsonschema.org/EmployeeProperty/DataType",
+              "nullable": "true",
+              "type": "number"
+            },
+            "EmployeeCardinality": {
+              "id": "http://wso2jsonschema.org/EmployeeProperty/EmployeeCardinality",
+              "nullable": "true",
+              "type": "number"
+            },
+            "IsEditable": {
+              "id": "http://wso2jsonschema.org/EmployeeProperty/IsEditable",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "DataTypeParam": {
+              "id": "http://wso2jsonschema.org/EmployeeProperty/DataTypeParam",
+              "nullable": "true",
+              "type": "string"
+            },
+            "GenerateHREvent": {
+              "id": "http://wso2jsonschema.org/EmployeeProperty/GenerateHREvent",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "Sequence": {
+              "id": "http://wso2jsonschema.org/EmployeeProperty/Sequence",
+              "nullable": "true",
+              "type": "number"
+            },
+            "XRefCode": {
+              "id": "http://wso2jsonschema.org/EmployeeProperty/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http://wso2jsonschema.org/EmployeeProperty/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http://wso2jsonschema.org/EmployeeProperty/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http://wso2jsonschema.org/EmployeeProperty/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "BitValue": {
+          "id": "http://wso2jsonschema.org/BitValue",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "NumberValue": {
+          "id": "http://wso2jsonschema.org/NumberValue",
+          "nullable": "true",
+          "type": "number"
+        },
+        "OptionValue": {
+          "id": "http://wso2jsonschema.org/OptionValue",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http://wso2jsonschema.org/OptionValue/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http://wso2jsonschema.org/OptionValue/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http://wso2jsonschema.org/OptionValue/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http://wso2jsonschema.org/OptionValue/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "StringValue": {
+          "id": "http://wso2jsonschema.org/StringValue",
+          "nullable": "true",
+          "type": "string"
+        },
+        "DateTimeValue": {
+          "id": "http://wso2jsonschema.org/DateTimeValue",
+          "nullable": "true",
+          "type": "string"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http://wso2jsonschema.org/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

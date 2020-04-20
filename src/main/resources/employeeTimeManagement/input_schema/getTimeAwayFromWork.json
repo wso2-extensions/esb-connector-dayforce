@@ -1,0 +1,24 @@
+{
+  "$schema":"http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "id":"http:\/\/wso2jsonschema.org",
+  "title":"root",
+  "type":"object",
+  "properties":{
+    "xRefCode":{
+      "id":"http:\/\/wso2jsonschema.org\/xRefCode",
+      "type":"string"
+    },
+    "filterTAFWStartDate":{
+      "id":"http:\/\/wso2jsonschema.org\/filterTAFWStartDate",
+      "type":"string"
+    },
+    "filterTAFWEndDate":{
+      "id":"http:\/\/wso2jsonschema.org\/filterTAFWEndDate",
+      "type":"string"
+    },
+    "status":{
+      "id":"http:\/\/wso2jsonschema.org\/status",
+      "type":"string"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "$schema": "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "id": "http://wso2jsonschema.org",
+  "type": "object",
+  "title": "root",
+  "properties": {
+    "xRefCode": {
+      "id": "http://wso2jsonschema.org/xRefCode",
+      "type": "string"
+    },
+    "isValidateOnly": {
+      "id": "http://wso2jsonschema.org/isValidateOnly",
+      "type": "boolean"
+    },
+    "fieldAndValue": {
+      "id": "http://wso2jsonschema.org/fieldAndValue",
+      "type": "object",
+      "properties": {
+        "IsDefault": {
+          "id": "http://wso2jsonschema.org/IsDefault",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "Role": {
+          "id": "http://wso2jsonschema.org/Role",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http://wso2jsonschema.org/Role/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http://wso2jsonschema.org/Role/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http://wso2jsonschema.org/Role/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http://wso2jsonschema.org/Role/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "EffectiveStart": {
+          "id": "http://wso2jsonschema.org/EffectiveStart",
+          "nullable": "true",
+          "type": "string"
+        },
+        "IsPrestartRole": {
+          "id": "http://wso2jsonschema.org/IsPrestartRole",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "EffectiveEnd": {
+          "id": "http://wso2jsonschema.org/EffectiveEnd",
+          "nullable": "true",
+          "type": "string"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http://wso2jsonschema.org/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

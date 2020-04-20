@@ -1,0 +1,20 @@
+{
+  "$schema":"http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "id":"http:\/\/wso2jsonschema.org",
+  "title":"root",
+  "type":"object",
+  "properties":{
+    "xRefCode":{
+      "id":"http:\/\/wso2jsonschema.org\/xRefCode",
+      "type":"string"
+    },
+    "filterAvailabilityStartDate":{
+      "id":"http:\/\/wso2jsonschema.org\/filterAvailabilityStartDate",
+      "type":"string"
+    },
+    "filterAvailabilityEndDate":{
+      "id":"http:\/\/wso2jsonschema.org\/filterAvailabilityEndDate",
+      "type":"string"
+    }
+  }
+}
