@@ -1,0 +1,81 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "EffectiveStart": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveStart",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EffectiveEnd": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveEnd",
+          "nullable": "true",
+          "type": "string"
+        },
+        "TotalClaimAmount": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/TotalClaimAmount",
+          "nullable": "true",
+          "type": "number"
+        },
+        "IsNonResident": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/IsNonResident",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "MultipleEmployer": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/MultipleEmployer",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "IncomeLessThanClaim": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/IncomeLessThanClaim",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "DistrictTaxDeduction": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/DistrictTaxDeduction",
+          "nullable": "true",
+          "type": "number"
+        },
+        "AuthorizedTaxCredits": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AuthorizedTaxCredits",
+          "nullable": "true",
+          "type": "number"
+        },
+        "EstimatedExpense": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EstimatedExpense",
+          "nullable": "true",
+          "type": "number"
+        },
+        "EstimatedRemuneration": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EstimatedRemuneration",
+          "nullable": "true",
+          "type": "number"
+        },
+        "AdditionalAmount": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AdditionalAmount",
+          "nullable": "true",
+          "type": "number"
+        },
+        "PrescribedAreaDeduction": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PrescribedAreaDeduction",
+          "nullable": "true",
+          "type": "number"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}

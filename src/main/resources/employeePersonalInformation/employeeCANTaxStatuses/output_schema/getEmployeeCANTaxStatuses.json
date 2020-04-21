@@ -1,0 +1,72 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "ProvinceCode": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ProvinceCode",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EffectiveStart": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveStart",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EffectiveEnd": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveEnd",
+          "nullable": "true",
+          "type": "string"
+        },
+        "TaxPropertyCollection": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/TaxPropertyCollection",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "Items": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/TaxPropertyCollection\/Items",
+              "nullable": "true",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/TaxPropertyCollection\/Items\/0",
+                  "nullable": "true",
+                  "type": "object",
+                  "properties": {
+                    "PropertyCodeName": {
+                      "id": "http:\/\/wso2jsonschema.org\/0\/TaxPropertyCollection\/Items\/0\/PropertyCodeName",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "PropertyValue": {
+                      "id": "http:\/\/wso2jsonschema.org\/0\/TaxPropertyCollection\/Items\/0\/PropertyValue",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "LastModifiedTimestamp": {
+                      "id": "http:\/\/wso2jsonschema.org\/0\/TaxPropertyCollection\/Items\/0\/LastModifiedTimestamp",
+                      "nullable": "true",
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}

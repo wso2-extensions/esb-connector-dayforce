@@ -1,0 +1,78 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "EffectiveStart": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveStart",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EffectiveEnd": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveEnd",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EmploymentType": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentType",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentType\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentType\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentType\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentType\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "TaxPayerId": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/TaxPayerId",
+          "nullable": "true",
+          "type": "string"
+        },
+        "DBAName": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/DBAName",
+          "nullable": "true",
+          "type": "string"
+        },
+        "GamingProfitsDistributions": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/GamingProfitsDistributions",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "IR35": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/IR35",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "EffectiveStart": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveStart",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EffectiveEnd": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveEnd",
+          "nullable": "true",
+          "type": "string"
+        },
+        "State": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/State",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "Name": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/State\/Name",
+              "nullable": "true",
+              "type": "string"
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/State\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/State\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/State\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/State\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "FilingStatus": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "CountryCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/CountryCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "StateCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/StateCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "StateFilingStatusCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/StateFilingStatusCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "CalculationCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/CalculationCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "PayrollOutput": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/PayrollOutput",
+              "nullable": "true",
+              "type": "string"
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "Allowances": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/Allowances",
+          "nullable": "true",
+          "type": "number"
+        },
+        "AdditionalAmount": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AdditionalAmount",
+          "nullable": "true",
+          "type": "number"
+        },
+        "DependentAllowances": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/DependentAllowances",
+          "nullable": "true",
+          "type": "number"
+        },
+        "PersonalAllowances": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PersonalAllowances",
+          "nullable": "true",
+          "type": "number"
+        },
+        "AdditionalAllowances": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AdditionalAllowances",
+          "nullable": "true",
+          "type": "number"
+        },
+        "IsTaxExempt": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/IsTaxExempt",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "AlternateCalculationCode": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AlternateCalculationCode",
+          "nullable": "true",
+          "type": "string"
+        },
+        "ExemptionAmount": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ExemptionAmount",
+          "nullable": "true",
+          "type": "number"
+        },
+        "AdditionalTaxPercent": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AdditionalTaxPercent",
+          "nullable": "true",
+          "type": "number"
+        },
+        "AdditionalExemptionAmount": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AdditionalExemptionAmount",
+          "nullable": "true",
+          "type": "number"
+        },
+        "IsLocked": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/IsLocked",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}

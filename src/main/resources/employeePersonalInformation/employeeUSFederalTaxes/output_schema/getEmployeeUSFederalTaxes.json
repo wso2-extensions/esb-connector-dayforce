@@ -1,0 +1,118 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "EffectiveStart": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveStart",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EffectiveEnd": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveEnd",
+          "nullable": "true",
+          "type": "string"
+        },
+        "FilingStatus": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "CountryCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/CountryCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "FederalFilingStatusCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/FederalFilingStatusCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "CalculationCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/CalculationCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "PayrollOutput": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/PayrollOutput",
+              "nullable": "true",
+              "type": "string"
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FilingStatus\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "Allowances": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/Allowances",
+          "nullable": "true",
+          "type": "number"
+        },
+        "AdditionalAmount": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AdditionalAmount",
+          "nullable": "true",
+          "type": "number"
+        },
+        "IsTaxExempt": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/IsTaxExempt",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "IsLocked": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/IsLocked",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "TwoJobs": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/TwoJobs",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "DependentTaxCredit": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/DependentTaxCredit",
+          "nullable": "true",
+          "type": "number"
+        },
+        "OtherIncome": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/OtherIncome",
+          "nullable": "true",
+          "type": "number"
+        },
+        "Deductions": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/Deductions",
+          "nullable": "true",
+          "type": "number"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}

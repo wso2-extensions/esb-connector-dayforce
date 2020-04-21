@@ -6,7 +6,7 @@
   "properties": {
     "xRefCode": {
       "id": "http:\/\/wso2jsonschema.org\/xRefCode",
-      "type": "string",
+      "type": "string"
     },
     "isValidateOnly": {
       "id": "http:\/\/wso2jsonschema.org\/isValidateOnly",

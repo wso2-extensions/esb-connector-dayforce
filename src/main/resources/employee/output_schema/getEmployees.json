@@ -3,22 +3,20 @@
   "id":"http:\/\/wso2jsonschema.org",
   "title":"result",
   "type":"object",
-  "properties":{
-    "Data":{
-      "id":"http:\/\/wso2jsonschema.org\/Data",
-      "type":"array",
-      "items": [
-        {
-          "id": "http:\/\/wso2jsonschema.org\/Data\/0",
-          "type": "object",
-          "properties": {
-            "XRefCode": {
-              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/XRefCode",
-              "type": "string"
-            }
+  "properties" : {
+    "Data" : {
+      "id" : "http:\/\/wso2jsonschema.org\/Data",
+      "type" : "array",
+      "items" : [ {
+        "id" : "http:\/\/wso2jsonschema.org\/Data\/0",
+        "type" : "object",
+        "properties" : {
+          "XRefCode" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/XRefCode",
+            "type" : "string"
           }
         }
-      ]
+      } ]
     }
   }
 }
