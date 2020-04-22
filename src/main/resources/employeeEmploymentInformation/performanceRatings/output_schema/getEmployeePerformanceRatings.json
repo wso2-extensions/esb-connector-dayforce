@@ -1,0 +1,229 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "Comments": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/Comments",
+          "nullable": "true",
+          "type": "string"
+        },
+        "NextReviewDate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/NextReviewDate",
+          "nullable": "true",
+          "type": "string"
+        },
+        "PerformanceCycle": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceCycle",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "CycleStartDate": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceCycle\/CycleStartDate",
+              "nullable": "true",
+              "type": "string"
+            },
+            "CycleEndDate": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceCycle\/CycleEndDate",
+              "nullable": "true",
+              "type": "string"
+            },
+            "EffectiveStart": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceCycle\/EffectiveStart",
+              "nullable": "true",
+              "type": "string"
+            },
+            "EffectiveEnd": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceCycle\/EffectiveEnd",
+              "nullable": "true",
+              "type": "string"
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceCycle\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceCycle\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceCycle\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceCycle\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "PerformanceRatingScale": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceRatingScale",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceRatingScale\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceRatingScale\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceRatingScale\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceRatingScale\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "PerformanceRating": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceRating",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceRating\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceRating\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceRating\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PerformanceRating\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "RatingScore": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/RatingScore",
+          "nullable": "true",
+          "type": "number"
+        },
+        "ReviewDate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ReviewDate",
+          "nullable": "true",
+          "type": "string"
+        },
+        "Reviewer": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "NewXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer\/NewXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "CommonName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer\/CommonName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "DisplayName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer\/DisplayName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "FirstName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer\/FirstName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer\/LastName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Initials": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer\/Initials",
+              "nullable": "true",
+              "type": "string"
+            },
+            "MaidenName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer\/MaidenName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "MiddleName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer\/MiddleName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "PreferredLastName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer\/PreferredLastName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "SecondLastName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer\/SecondLastName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Suffix": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer\/Suffix",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Title": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer\/Title",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Reviewer\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "ReviewPeriodStartDate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ReviewPeriodStartDate",
+          "nullable": "true",
+          "type": "string"
+        },
+        "ReviewPeriodEndDate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ReviewPeriodEndDate",
+          "nullable": "true",
+          "type": "string"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}

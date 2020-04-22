@@ -1,0 +1,56 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "EffectiveStart": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveStart",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EffectiveEnd": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveEnd",
+          "nullable": "true",
+          "type": "string"
+        },
+        "ManagerXRefCode": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ManagerXRefCode",
+          "nullable": "true",
+          "type": "string"
+        },
+        "ManagerFirstName": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ManagerFirstName",
+          "nullable": "true",
+          "type": "string"
+        },
+        "ManagerMiddleName": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ManagerMiddleName",
+          "nullable": "true",
+          "type": "string"
+        },
+        "ManagerLastName": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ManagerLastName",
+          "nullable": "true",
+          "type": "string"
+        },
+        "DerivationMethod": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/DerivationMethod",
+          "nullable": "true",
+          "type": "number"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}

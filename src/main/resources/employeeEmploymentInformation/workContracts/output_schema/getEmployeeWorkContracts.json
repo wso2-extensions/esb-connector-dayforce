@@ -1,959 +1,950 @@
 {
   "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
   "id": "http:\/\/wso2jsonschema.org",
-  "type": "object",
   "title": "root",
-  "properties": {
-    "xRefCode": {
-      "id": "http:\/\/wso2jsonschema.org\/xRefCode",
-      "type": "string"
-    },
-    "isValidateOnly": {
-      "id": "http:\/\/wso2jsonschema.org\/isValidateOnly",
-      "type": "boolean"
-    },
-    "fieldAndValue": {
-      "id": "http:\/\/wso2jsonschema.org\/fieldAndValue",
-      "type": "object",
+  "type": "array",
+  "items": [
+    {
       "properties": {
         "AverageNumOfDays": {
-          "id": "http:\/\/wso2jsonschema.org\/AverageNumOfDays",
+          "id": "http:\/\/wso2jsonschema.org\/0\/AverageNumOfDays",
           "nullable": "true",
           "type": "number"
         },
         "BaseHours": {
-          "id": "http:\/\/wso2jsonschema.org\/BaseHours",
+          "id": "http:\/\/wso2jsonschema.org\/0\/BaseHours",
           "nullable": "true",
           "type": "number"
         },
         "BaseComplementaryHours": {
-          "id": "http:\/\/wso2jsonschema.org\/BaseComplementaryHours",
+          "id": "http:\/\/wso2jsonschema.org\/0\/BaseComplementaryHours",
           "nullable": "true",
           "type": "number"
         },
         "ContractWorkPercent": {
-          "id": "http:\/\/wso2jsonschema.org\/ContractWorkPercent",
+          "id": "http:\/\/wso2jsonschema.org\/0\/ContractWorkPercent",
           "nullable": "true",
           "type": "number"
         },
         "CreateShiftOnHolidays": {
-          "id": "http:\/\/wso2jsonschema.org\/CreateShiftOnHolidays",
+          "id": "http:\/\/wso2jsonschema.org\/0\/CreateShiftOnHolidays",
           "nullable": "true",
           "type": "boolean"
         },
         "EndDate": {
-          "id": "http:\/\/wso2jsonschema.org\/EndDate",
+          "id": "http:\/\/wso2jsonschema.org\/0\/EndDate",
           "nullable": "true",
           "type": "string"
         },
         "FullTimeHours": {
-          "id": "http:\/\/wso2jsonschema.org\/FullTimeHours",
+          "id": "http:\/\/wso2jsonschema.org\/0\/FullTimeHours",
           "nullable": "true",
           "type": "number"
         },
         "StartDate": {
-          "id": "http:\/\/wso2jsonschema.org\/StartDate",
+          "id": "http:\/\/wso2jsonschema.org\/0\/StartDate",
           "nullable": "true",
           "type": "string"
         },
         "WorkContract": {
-          "id": "http:\/\/wso2jsonschema.org\/WorkContract",
+          "id": "http:\/\/wso2jsonschema.org\/0\/WorkContract",
           "nullable": "true",
           "type": "object",
           "properties": {
             "XRefCode": {
-              "id": "http:\/\/wso2jsonschema.org\/WorkContract\/XRefCode",
+              "id": "http:\/\/wso2jsonschema.org\/0\/WorkContract\/XRefCode",
               "nullable": "true",
               "type": "string"
             },
             "ShortName": {
-              "id": "http:\/\/wso2jsonschema.org\/WorkContract\/ShortName",
+              "id": "http:\/\/wso2jsonschema.org\/0\/WorkContract\/ShortName",
               "nullable": "true",
               "type": "string"
             },
             "LongName": {
-              "id": "http:\/\/wso2jsonschema.org\/WorkContract\/LongName",
+              "id": "http:\/\/wso2jsonschema.org\/0\/WorkContract\/LongName",
               "nullable": "true",
               "type": "string"
             },
             "LastModifiedTimestamp": {
-              "id": "http:\/\/wso2jsonschema.org\/WorkContract\/LastModifiedTimestamp",
+              "id": "http:\/\/wso2jsonschema.org\/0\/WorkContract\/LastModifiedTimestamp",
               "nullable": "true",
               "type": "string"
             }
           }
         },
         "WorkPatternLengthDays": {
-          "id": "http:\/\/wso2jsonschema.org\/WorkPatternLengthDays",
+          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatternLengthDays",
           "nullable": "true",
           "type": "number"
         },
         "WorkPatterns": {
-          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns",
+          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns",
           "nullable": "true",
           "type": "object",
           "properties": {
             "Items": {
-              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items",
+              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items",
               "nullable": "true",
               "type": "array",
               "items": [
                 {
-                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0",
+                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0",
                   "nullable": "true",
                   "type": "object",
                   "properties": {
                     "NetHours": {
-                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/NetHours",
+                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/NetHours",
                       "nullable": "true",
                       "type": "number"
                     },
                     "ShiftTimeBegin": {
-                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/ShiftTimeBegin",
+                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/ShiftTimeBegin",
                       "nullable": "true",
                       "type": "string"
                     },
                     "ShiftTimeEnd": {
-                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/ShiftTimeEnd",
+                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/ShiftTimeEnd",
                       "nullable": "true",
                       "type": "string"
                     },
                     "WorkPatternDayIndex": {
-                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/WorkPatternDayIndex",
+                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/WorkPatternDayIndex",
                       "nullable": "true",
                       "type": "number"
                     },
                     "Deparment": {
-                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Deparment",
+                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Deparment",
                       "nullable": "true",
                       "type": "object",
                       "properties": {
                         "XRefCode": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Deparment\/XRefCode",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Deparment\/XRefCode",
                           "nullable": "true",
                           "type": "string"
                         },
                         "ShortName": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Deparment\/ShortName",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Deparment\/ShortName",
                           "nullable": "true",
                           "type": "string"
                         },
                         "LongName": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Deparment\/LongName",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Deparment\/LongName",
                           "nullable": "true",
                           "type": "string"
                         },
                         "LastModifiedTimestamp": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Deparment\/LastModifiedTimestamp",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Deparment\/LastModifiedTimestamp",
                           "nullable": "true",
                           "type": "string"
                         }
                       }
                     },
                     "Job": {
-                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job",
+                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job",
                       "nullable": "true",
                       "type": "object",
                       "properties": {
                         "EmployeeEEO": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/EmployeeEEO",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/EmployeeEEO",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "XRefCode": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/EmployeeEEO\/XRefCode",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/EmployeeEEO\/XRefCode",
                               "nullable": "true",
                               "type": "string"
                             },
                             "ShortName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/EmployeeEEO\/ShortName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/EmployeeEEO\/ShortName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LongName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/EmployeeEEO\/LongName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/EmployeeEEO\/LongName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LastModifiedTimestamp": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/EmployeeEEO\/LastModifiedTimestamp",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/EmployeeEEO\/LastModifiedTimestamp",
                               "nullable": "true",
                               "type": "string"
                             }
                           }
                         },
                         "IsUnionJob": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/IsUnionJob",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/IsUnionJob",
                           "nullable": "true",
                           "type": "boolean"
                         },
                         "JobQualifications": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobQualifications",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobQualifications",
                           "nullable": "true",
                           "type": "string"
                         },
                         "JobRank": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobRank",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobRank",
                           "nullable": "true",
                           "type": "number"
                         },
                         "JobUDFString1": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobUDFString1",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobUDFString1",
                           "nullable": "true",
                           "type": "string"
                         },
                         "JobUDFString2": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobUDFString2",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobUDFString2",
                           "nullable": "true",
                           "type": "string"
                         },
                         "JobUDFString3": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobUDFString3",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobUDFString3",
                           "nullable": "true",
                           "type": "string"
                         },
                         "LedgerCode": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/LedgerCode",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/LedgerCode",
                           "nullable": "true",
                           "type": "string"
                         },
                         "NOC": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/NOC",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/NOC",
                           "nullable": "true",
                           "type": "string"
                         },
                         "JobClassification": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobClassification",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobClassification",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "XRefCode": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobClassification\/XRefCode",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobClassification\/XRefCode",
                               "nullable": "true",
                               "type": "string"
                             },
                             "ShortName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobClassification\/ShortName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobClassification\/ShortName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LongName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobClassification\/LongName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobClassification\/LongName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LastModifiedTimestamp": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobClassification\/LastModifiedTimestamp",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobClassification\/LastModifiedTimestamp",
                               "nullable": "true",
                               "type": "string"
                             }
                           }
                         },
                         "JobFunction": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobFunction",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobFunction",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "Level": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobFunction\/Level",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobFunction\/Level",
                               "nullable": "true",
                               "type": "number"
                             },
                             "UsableForExternalPosting": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobFunction\/UsableForExternalPosting",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobFunction\/UsableForExternalPosting",
                               "nullable": "true",
                               "type": "boolean"
                             },
                             "XRefCode": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobFunction\/XRefCode",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobFunction\/XRefCode",
                               "nullable": "true",
                               "type": "string"
                             },
                             "ShortName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobFunction\/ShortName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobFunction\/ShortName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LongName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobFunction\/LongName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobFunction\/LongName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LastModifiedTimestamp": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobFunction\/LastModifiedTimestamp",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobFunction\/LastModifiedTimestamp",
                               "nullable": "true",
                               "type": "string"
                             }
                           }
                         },
                         "PayGrade": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/PayGrade",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/PayGrade",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "XRefCode": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/PayGrade\/XRefCode",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/PayGrade\/XRefCode",
                               "nullable": "true",
                               "type": "string"
                             },
                             "ShortName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/PayGrade\/ShortName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/PayGrade\/ShortName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LongName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/PayGrade\/LongName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/PayGrade\/LongName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LastModifiedTimestamp": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/PayGrade\/LastModifiedTimestamp",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/PayGrade\/LastModifiedTimestamp",
                               "nullable": "true",
                               "type": "string"
                             }
                           }
                         },
                         "Union": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/Union",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/Union",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "XRefCode": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/Union\/XRefCode",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/Union\/XRefCode",
                               "nullable": "true",
                               "type": "string"
                             },
                             "ShortName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/Union\/ShortName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/Union\/ShortName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LongName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/Union\/LongName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/Union\/LongName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LastModifiedTimestamp": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/Union\/LastModifiedTimestamp",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/Union\/LastModifiedTimestamp",
                               "nullable": "true",
                               "type": "string"
                             }
                           }
                         },
                         "EffectiveEnd": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/EffectiveEnd",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/EffectiveEnd",
                           "nullable": "true",
                           "type": "string"
                         },
                         "EffectiveStart": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/EffectiveStart",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/EffectiveStart",
                           "nullable": "true",
                           "type": "string"
                         },
                         "FLSAStatus": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/FLSAStatus",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/FLSAStatus",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "XRefCode": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/FLSAStatus\/XRefCode",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/FLSAStatus\/XRefCode",
                               "nullable": "true",
                               "type": "string"
                             },
                             "ShortName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/FLSAStatus\/ShortName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/FLSAStatus\/ShortName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LongName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/FLSAStatus\/LongName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/FLSAStatus\/LongName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LastModifiedTimestamp": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/FLSAStatus\/LastModifiedTimestamp",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/FLSAStatus\/LastModifiedTimestamp",
                               "nullable": "true",
                               "type": "string"
                             }
                           }
                         },
                         "JobFamily": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobFamily",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobFamily",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "XRefCode": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobFamily\/XRefCode",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobFamily\/XRefCode",
                               "nullable": "true",
                               "type": "string"
                             },
                             "ShortName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobFamily\/ShortName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobFamily\/ShortName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LongName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobFamily\/LongName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobFamily\/LongName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LastModifiedTimestamp": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/JobFamily\/LastModifiedTimestamp",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/JobFamily\/LastModifiedTimestamp",
                               "nullable": "true",
                               "type": "string"
                             }
                           }
                         },
                         "XRefCode": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/XRefCode",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/XRefCode",
                           "nullable": "true",
                           "type": "string"
                         },
                         "ShortName": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/ShortName",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/ShortName",
                           "nullable": "true",
                           "type": "string"
                         },
                         "LongName": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/LongName",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/LongName",
                           "nullable": "true",
                           "type": "string"
                         },
                         "LastModifiedTimestamp": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Job\/LastModifiedTimestamp",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Job\/LastModifiedTimestamp",
                           "nullable": "true",
                           "type": "string"
                         }
                       }
                     },
                     "ShiftType": {
-                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/ShiftType",
+                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/ShiftType",
                       "nullable": "true",
                       "type": "object",
                       "properties": {
                         "XRefCode": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/ShiftType\/XRefCode",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/ShiftType\/XRefCode",
                           "nullable": "true",
                           "type": "string"
                         },
                         "ShortName": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/ShiftType\/ShortName",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/ShiftType\/ShortName",
                           "nullable": "true",
                           "type": "string"
                         },
                         "LongName": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/ShiftType\/LongName",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/ShiftType\/LongName",
                           "nullable": "true",
                           "type": "string"
                         },
                         "LastModifiedTimestamp": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/ShiftType\/LastModifiedTimestamp",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/ShiftType\/LastModifiedTimestamp",
                           "nullable": "true",
                           "type": "string"
                         }
                       }
                     },
                     "Location": {
-                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location",
+                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location",
                       "nullable": "true",
                       "type": "object",
                       "properties": {
                         "OrgLevel": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgLevel",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgLevel",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "XRefCode": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgLevel\/XRefCode",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgLevel\/XRefCode",
                               "nullable": "true",
                               "type": "string"
                             },
                             "ShortName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgLevel\/ShortName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgLevel\/ShortName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LongName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgLevel\/LongName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgLevel\/LongName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LastModifiedTimestamp": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgLevel\/LastModifiedTimestamp",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgLevel\/LastModifiedTimestamp",
                               "nullable": "true",
                               "type": "string"
                             }
                           }
                         },
                         "PhysicalLocation": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/PhysicalLocation",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/PhysicalLocation",
                           "nullable": "true",
                           "type": "boolean"
                         },
                         "BusinessPhone": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/BusinessPhone",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/BusinessPhone",
                           "nullable": "true",
                           "type": "string"
                         },
                         "ContactBusinessPhone": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ContactBusinessPhone",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ContactBusinessPhone",
                           "nullable": "true",
                           "type": "string"
                         },
                         "ContactCellPhone": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ContactCellPhone",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ContactCellPhone",
                           "nullable": "true",
                           "type": "string"
                         },
                         "PostalCode": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/PostalCode",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/PostalCode",
                           "nullable": "true",
                           "type": "string"
                         },
                         "CountryCode": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/CountryCode",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/CountryCode",
                           "nullable": "true",
                           "type": "string"
                         },
                         "OpeningDate": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OpeningDate",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OpeningDate",
                           "nullable": "true",
                           "type": "string"
                         },
                         "ClosingDate": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ClosingDate",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ClosingDate",
                           "nullable": "true",
                           "type": "string"
                         },
                         "ComparableLocation": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ComparableLocation",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ComparableLocation",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "XRefCode": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ComparableLocation\/XRefCode",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ComparableLocation\/XRefCode",
                               "nullable": "true",
                               "type": "string"
                             },
                             "ShortName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ComparableLocation\/ShortName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ComparableLocation\/ShortName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LongName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ComparableLocation\/LongName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ComparableLocation\/LongName",
                               "nullable": "true",
                               "type": "string"
                             }
                           }
                         },
                         "Department": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Department",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Department",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "XRefCode": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Department\/XRefCode",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Department\/XRefCode",
                               "nullable": "true",
                               "type": "string"
                             },
                             "ShortName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Department\/ShortName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Department\/ShortName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LongName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Department\/LongName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Department\/LongName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LastModifiedTimestamp": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Department\/LastModifiedTimestamp",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Department\/LastModifiedTimestamp",
                               "nullable": "true",
                               "type": "string"
                             }
                           }
                         },
                         "Zone": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Zone",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Zone",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "XRefCode": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Zone\/XRefCode",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Zone\/XRefCode",
                               "nullable": "true",
                               "type": "string"
                             },
                             "ShortName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Zone\/ShortName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Zone\/ShortName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LongName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Zone\/LongName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Zone\/LongName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LastModifiedTimestamp": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Zone\/LastModifiedTimestamp",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Zone\/LastModifiedTimestamp",
                               "nullable": "true",
                               "type": "string"
                             }
                           }
                         },
                         "StartDayOfWeek": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/StartDayOfWeek",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/StartDayOfWeek",
                           "nullable": "true",
                           "type": "number"
                         },
                         "GeoCity": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/GeoCity",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/GeoCity",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "ShortName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/GeoCity\/ShortName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/GeoCity\/ShortName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LongName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/GeoCity\/LongName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/GeoCity\/LongName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LastModifiedTimestamp": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/GeoCity\/LastModifiedTimestamp",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/GeoCity\/LastModifiedTimestamp",
                               "nullable": "true",
                               "type": "string"
                             }
                           }
                         },
                         "Timezone": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Timezone",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Timezone",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "XRefCode": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Timezone\/XRefCode",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Timezone\/XRefCode",
                               "nullable": "true",
                               "type": "string"
                             },
                             "ShortName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Timezone\/ShortName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Timezone\/ShortName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LongName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Timezone\/LongName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Timezone\/LongName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LastModifiedTimestamp": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Timezone\/LastModifiedTimestamp",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Timezone\/LastModifiedTimestamp",
                               "nullable": "true",
                               "type": "string"
                             }
                           }
                         },
                         "County": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/County",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/County",
                           "nullable": "true",
                           "type": "string"
                         },
                         "IsOrgManaged": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/IsOrgManaged",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/IsOrgManaged",
                           "nullable": "true",
                           "type": "boolean"
                         },
                         "IsMobileOrg": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/IsMobileOrg",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/IsMobileOrg",
                           "nullable": "true",
                           "type": "boolean"
                         },
                         "PublicName": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/PublicName",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/PublicName",
                           "nullable": "true",
                           "type": "string"
                         },
                         "ClockTransferCode": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ClockTransferCode",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ClockTransferCode",
                           "nullable": "true",
                           "type": "string"
                         },
                         "ContactEmail": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ContactEmail",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ContactEmail",
                           "nullable": "true",
                           "type": "string"
                         },
                         "ContactName": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ContactName",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ContactName",
                           "nullable": "true",
                           "type": "string"
                         },
                         "LedgerCode": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LedgerCode",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LedgerCode",
                           "nullable": "true",
                           "type": "string"
                         },
                         "StateCode": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/StateCode",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/StateCode",
                           "nullable": "true",
                           "type": "string"
                         },
                         "Address": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Address",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Address",
                           "nullable": "true",
                           "type": "string"
                         },
                         "Address2": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/Address2",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/Address2",
                           "nullable": "true",
                           "type": "string"
                         },
                         "LegalEntity": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "Country": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/Country",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/Country",
                               "nullable": "true",
                               "type": "object",
                               "properties": {
                                 "Name": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/Country\/Name",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/Country\/Name",
                                   "nullable": "true",
                                   "type": "string"
                                 },
                                 "XRefCode": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/Country\/XRefCode",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/Country\/XRefCode",
                                   "nullable": "true",
                                   "type": "string"
                                 },
                                 "ShortName": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/Country\/ShortName",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/Country\/ShortName",
                                   "nullable": "true",
                                   "type": "string"
                                 },
                                 "LongName": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/Country\/LongName",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/Country\/LongName",
                                   "nullable": "true",
                                   "type": "string"
                                 },
                                 "LastModifiedTimestamp": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/Country\/LastModifiedTimestamp",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/Country\/LastModifiedTimestamp",
                                   "nullable": "true",
                                   "type": "string"
                                 }
                               }
                             },
                             "LegalEntityAddress": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress",
                               "nullable": "true",
                               "type": "object",
                               "properties": {
                                 "Address1": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Address1",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Address1",
                                   "nullable": "true",
                                   "type": "string"
                                 },
                                 "Address2": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Address2",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Address2",
                                   "nullable": "true",
                                   "type": "string"
                                 },
                                 "Address3": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Address3",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Address3",
                                   "nullable": "true",
                                   "type": "string"
                                 },
                                 "Address4": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Address4",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Address4",
                                   "nullable": "true",
                                   "type": "string"
                                 },
                                 "Address5": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Address5",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Address5",
                                   "nullable": "true",
                                   "type": "string"
                                 },
                                 "Address6": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Address6",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Address6",
                                   "nullable": "true",
                                   "type": "string"
                                 },
                                 "City": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/City",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/City",
                                   "nullable": "true",
                                   "type": "string"
                                 },
                                 "PostalCode": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/PostalCode",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/PostalCode",
                                   "nullable": "true",
                                   "type": "string"
                                 },
                                 "Country": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Country",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Country",
                                   "nullable": "true",
                                   "type": "object",
                                   "properties": {
                                     "Name": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Country\/Name",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Country\/Name",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "XRefCode": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Country\/XRefCode",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Country\/XRefCode",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "ShortName": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Country\/ShortName",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Country\/ShortName",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "LongName": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Country\/LongName",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Country\/LongName",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "LastModifiedTimestamp": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Country\/LastModifiedTimestamp",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/Country\/LastModifiedTimestamp",
                                       "nullable": "true",
                                       "type": "string"
                                     }
                                   }
                                 },
                                 "State": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/State",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/State",
                                   "nullable": "true",
                                   "type": "object",
                                   "properties": {
                                     "Name": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/State\/Name",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/State\/Name",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "XRefCode": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/State\/XRefCode",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/State\/XRefCode",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "ShortName": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/State\/ShortName",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/State\/ShortName",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "LongName": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/State\/LongName",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/State\/LongName",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "LastModifiedTimestamp": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/State\/LastModifiedTimestamp",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/State\/LastModifiedTimestamp",
                                       "nullable": "true",
                                       "type": "string"
                                     }
                                   }
                                 },
                                 "LastModifiedTimestamp": {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/LastModifiedTimestamp",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalEntityAddress\/LastModifiedTimestamp",
                                   "nullable": "true",
                                   "type": "string"
                                 }
                               }
                             },
                             "LegalIdNumber": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalIdNumber",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LegalIdNumber",
                               "nullable": "true",
                               "type": "string"
                             },
                             "XRefCode": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/XRefCode",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/XRefCode",
                               "nullable": "true",
                               "type": "string"
                             },
                             "ShortName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/ShortName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/ShortName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LongName": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LongName",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LongName",
                               "nullable": "true",
                               "type": "string"
                             },
                             "LastModifiedTimestamp": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LastModifiedTimestamp",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LegalEntity\/LastModifiedTimestamp",
                               "nullable": "true",
                               "type": "string"
                             }
                           }
                         },
                         "OrgUnitLegalEntities": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "Items": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items",
                               "nullable": "true",
                               "type": "array",
                               "items": [
                                 {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0",
                                   "nullable": "true",
                                   "type": "object",
                                   "properties": {
                                     "LegalEntity": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/LegalEntity",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/LegalEntity",
                                       "nullable": "true",
                                       "type": "object",
                                       "properties": {
                                         "XRefCode": {
-                                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/LegalEntity\/XRefCode",
+                                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/LegalEntity\/XRefCode",
                                           "nullable": "true",
                                           "type": "string"
                                         },
                                         "ShortName": {
-                                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/LegalEntity\/ShortName",
+                                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/LegalEntity\/ShortName",
                                           "nullable": "true",
                                           "type": "string"
                                         },
                                         "LongName": {
-                                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/LegalEntity\/LongName",
+                                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/LegalEntity\/LongName",
                                           "nullable": "true",
                                           "type": "string"
                                         }
                                       }
                                     },
                                     "EffectiveStart": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/EffectiveStart",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/EffectiveStart",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "EffectiveEnd": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/EffectiveEnd",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/EffectiveEnd",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "XRefCode": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/XRefCode",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/XRefCode",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "ShortName": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/ShortName",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/ShortName",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "LongName": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/LongName",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/LongName",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "LastModifiedTimestamp": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/LastModifiedTimestamp",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitLegalEntities\/Items\/0\/LastModifiedTimestamp",
                                       "nullable": "true",
                                       "type": "string"
                                     }
@@ -964,69 +955,69 @@
                           }
                         },
                         "OrgUnitParents": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "Items": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items",
                               "nullable": "true",
                               "type": "array",
                               "items": [
                                 {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0",
                                   "nullable": "true",
                                   "type": "object",
                                   "properties": {
                                     "ParentOrgUnit": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/ParentOrgUnit",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/ParentOrgUnit",
                                       "nullable": "true",
                                       "type": "object",
                                       "properties": {
                                         "XRefCode": {
-                                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/ParentOrgUnit\/XRefCode",
+                                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/ParentOrgUnit\/XRefCode",
                                           "nullable": "true",
                                           "type": "string"
                                         },
                                         "ShortName": {
-                                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/ParentOrgUnit\/ShortName",
+                                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/ParentOrgUnit\/ShortName",
                                           "nullable": "true",
                                           "type": "string"
                                         },
                                         "LongName": {
-                                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/ParentOrgUnit\/LongName",
+                                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/ParentOrgUnit\/LongName",
                                           "nullable": "true",
                                           "type": "string"
                                         }
                                       }
                                     },
                                     "EffectiveStart": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/EffectiveStart",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/EffectiveStart",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "EffectiveEnd": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/EffectiveEnd",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/EffectiveEnd",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "XRefCode": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/XRefCode",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/XRefCode",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "ShortName": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/ShortName",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/ShortName",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "LongName": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/LongName",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/LongName",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "LastModifiedTimestamp": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/LastModifiedTimestamp",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/OrgUnitParents\/Items\/0\/LastModifiedTimestamp",
                                       "nullable": "true",
                                       "type": "string"
                                     }
@@ -1037,111 +1028,111 @@
                           }
                         },
                         "ChildOrgUnits": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits",
                           "nullable": "true",
                           "type": "object",
                           "properties": {
                             "Items": {
-                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items",
+                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items",
                               "nullable": "true",
                               "type": "array",
                               "items": [
                                 {
-                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0",
+                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0",
                                   "nullable": "true",
                                   "type": "object",
                                   "properties": {
                                     "OrgLevel": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgLevel",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgLevel",
                                       "nullable": "true",
                                       "type": "object",
                                       "properties": {
                                         "XRefCode": {
-                                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgLevel\/XRefCode",
+                                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgLevel\/XRefCode",
                                           "nullable": "true",
                                           "type": "string"
                                         },
                                         "ShortName": {
-                                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgLevel\/ShortName",
+                                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgLevel\/ShortName",
                                           "nullable": "true",
                                           "type": "string"
                                         },
                                         "LongName": {
-                                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgLevel\/LongName",
+                                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgLevel\/LongName",
                                           "nullable": "true",
                                           "type": "string"
                                         },
                                         "LastModifiedTimestamp": {
-                                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgLevel\/LastModifiedTimestamp",
+                                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgLevel\/LastModifiedTimestamp",
                                           "nullable": "true",
                                           "type": "string"
                                         }
                                       }
                                     },
                                     "OrgUnitLegalEntities": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities",
                                       "nullable": "true",
                                       "type": "object",
                                       "properties": {
                                         "Items": {
-                                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items",
+                                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items",
                                           "nullable": "true",
                                           "type": "array",
                                           "items": [
                                             {
-                                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0",
+                                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0",
                                               "nullable": "true",
                                               "type": "object",
                                               "properties": {
                                                 "LegalEntity": {
-                                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/LegalEntity",
+                                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/LegalEntity",
                                                   "nullable": "true",
                                                   "type": "object",
                                                   "properties": {
                                                     "XRefCode": {
-                                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/LegalEntity\/XRefCode",
+                                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/LegalEntity\/XRefCode",
                                                       "nullable": "true",
                                                       "type": "string"
                                                     },
                                                     "ShortName": {
-                                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/LegalEntity\/ShortName",
+                                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/LegalEntity\/ShortName",
                                                       "nullable": "true",
                                                       "type": "string"
                                                     },
                                                     "LongName": {
-                                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/LegalEntity\/LongName",
+                                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/LegalEntity\/LongName",
                                                       "nullable": "true",
                                                       "type": "string"
                                                     }
                                                   }
                                                 },
                                                 "EffectiveStart": {
-                                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/EffectiveStart",
+                                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/EffectiveStart",
                                                   "nullable": "true",
                                                   "type": "string"
                                                 },
                                                 "EffectiveEnd": {
-                                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/EffectiveEnd",
+                                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/EffectiveEnd",
                                                   "nullable": "true",
                                                   "type": "string"
                                                 },
                                                 "XRefCode": {
-                                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/XRefCode",
+                                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/XRefCode",
                                                   "nullable": "true",
                                                   "type": "string"
                                                 },
                                                 "ShortName": {
-                                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/ShortName",
+                                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/ShortName",
                                                   "nullable": "true",
                                                   "type": "string"
                                                 },
                                                 "LongName": {
-                                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/LongName",
+                                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/LongName",
                                                   "nullable": "true",
                                                   "type": "string"
                                                 },
                                                 "LastModifiedTimestamp": {
-                                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/LastModifiedTimestamp",
+                                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitLegalEntities\/Items\/0\/LastModifiedTimestamp",
                                                   "nullable": "true",
                                                   "type": "string"
                                                 }
@@ -1152,69 +1143,69 @@
                                       }
                                     },
                                     "OrgUnitParents": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents",
                                       "nullable": "true",
                                       "type": "object",
                                       "properties": {
                                         "Items": {
-                                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items",
+                                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items",
                                           "nullable": "true",
                                           "type": "array",
                                           "items": [
                                             {
-                                              "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0",
+                                              "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0",
                                               "nullable": "true",
                                               "type": "object",
                                               "properties": {
                                                 "ParentOrgUnit": {
-                                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/ParentOrgUnit",
+                                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/ParentOrgUnit",
                                                   "nullable": "true",
                                                   "type": "object",
                                                   "properties": {
                                                     "XRefCode": {
-                                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/ParentOrgUnit\/XRefCode",
+                                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/ParentOrgUnit\/XRefCode",
                                                       "nullable": "true",
                                                       "type": "string"
                                                     },
                                                     "ShortName": {
-                                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/ParentOrgUnit\/ShortName",
+                                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/ParentOrgUnit\/ShortName",
                                                       "nullable": "true",
                                                       "type": "string"
                                                     },
                                                     "LongName": {
-                                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/ParentOrgUnit\/LongName",
+                                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/ParentOrgUnit\/LongName",
                                                       "nullable": "true",
                                                       "type": "string"
                                                     }
                                                   }
                                                 },
                                                 "EffectiveStart": {
-                                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/EffectiveStart",
+                                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/EffectiveStart",
                                                   "nullable": "true",
                                                   "type": "string"
                                                 },
                                                 "EffectiveEnd": {
-                                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/EffectiveEnd",
+                                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/EffectiveEnd",
                                                   "nullable": "true",
                                                   "type": "string"
                                                 },
                                                 "XRefCode": {
-                                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/XRefCode",
+                                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/XRefCode",
                                                   "nullable": "true",
                                                   "type": "string"
                                                 },
                                                 "ShortName": {
-                                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/ShortName",
+                                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/ShortName",
                                                   "nullable": "true",
                                                   "type": "string"
                                                 },
                                                 "LongName": {
-                                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/LongName",
+                                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/LongName",
                                                   "nullable": "true",
                                                   "type": "string"
                                                 },
                                                 "LastModifiedTimestamp": {
-                                                  "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/LastModifiedTimestamp",
+                                                  "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/OrgUnitParents\/Items\/0\/LastModifiedTimestamp",
                                                   "nullable": "true",
                                                   "type": "string"
                                                 }
@@ -1225,22 +1216,22 @@
                                       }
                                     },
                                     "XRefCode": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/XRefCode",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/XRefCode",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "ShortName": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/ShortName",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/ShortName",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "LongName": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/LongName",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/LongName",
                                       "nullable": "true",
                                       "type": "string"
                                     },
                                     "LastModifiedTimestamp": {
-                                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/LastModifiedTimestamp",
+                                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ChildOrgUnits\/Items\/0\/LastModifiedTimestamp",
                                       "nullable": "true",
                                       "type": "string"
                                     }
@@ -1251,56 +1242,56 @@
                           }
                         },
                         "XRefCode": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/XRefCode",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/XRefCode",
                           "nullable": "true",
                           "type": "string"
                         },
                         "ShortName": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/ShortName",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/ShortName",
                           "nullable": "true",
                           "type": "string"
                         },
                         "LongName": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LongName",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LongName",
                           "nullable": "true",
                           "type": "string"
                         },
                         "LastModifiedTimestamp": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/Location\/LastModifiedTimestamp",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/Location\/LastModifiedTimestamp",
                           "nullable": "true",
                           "type": "string"
                         }
                       }
                     },
                     "OrgLocationType": {
-                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/OrgLocationType",
+                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/OrgLocationType",
                       "nullable": "true",
                       "type": "object",
                       "properties": {
                         "XRefCode": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/OrgLocationType\/XRefCode",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/OrgLocationType\/XRefCode",
                           "nullable": "true",
                           "type": "string"
                         },
                         "ShortName": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/OrgLocationType\/ShortName",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/OrgLocationType\/ShortName",
                           "nullable": "true",
                           "type": "string"
                         },
                         "LongName": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/OrgLocationType\/LongName",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/OrgLocationType\/LongName",
                           "nullable": "true",
                           "type": "string"
                         },
                         "LastModifiedTimestamp": {
-                          "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/OrgLocationType\/LastModifiedTimestamp",
+                          "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/OrgLocationType\/LastModifiedTimestamp",
                           "nullable": "true",
                           "type": "string"
                         }
                       }
                     },
                     "LastModifiedTimestamp": {
-                      "id": "http:\/\/wso2jsonschema.org\/WorkPatterns\/Items\/0\/LastModifiedTimestamp",
+                      "id": "http:\/\/wso2jsonschema.org\/0\/WorkPatterns\/Items\/0\/LastModifiedTimestamp",
                       "nullable": "true",
                       "type": "string"
                     }
@@ -1311,11 +1302,14 @@
           }
         },
         "LastModifiedTimestamp": {
-          "id": "http:\/\/wso2jsonschema.org\/LastModifiedTimestamp",
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
           "nullable": "true",
           "type": "string"
         }
-      }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
     }
-  }
+  ]
 }

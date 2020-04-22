@@ -5,14 +5,5 @@
   "title" : "root",
   "type" : "object",
   "properties" : {
-    "Data" : {
-      "id" : "http:\/\/wso2jsonschema.org\/Data",
-      "type" : "array",
-      "items" : [ {
-        "id" : "http:\/\/wso2jsonschema.org\/Data\/0",
-        "type" : "object",
-
-      } ]
-    }
   }
 }

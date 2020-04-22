@@ -103,7 +103,7 @@
             <description>Retrieve employee pay adjustment groups that control which pay codes can be used in an employee's timesheet REST API</description>
         </component>
         <component name="getEmployeePayGradeRates">
-            <file>payGradeRates/getEmployeePayGradeRates.xml</file>
+            <file>getEmployeePayGradeRates.xml</file>
             <description>Retrieve employee pay grade rates related to their position rate policies REST API</description>
         </component>
         <component name="getEmployeePerformanceRatings">

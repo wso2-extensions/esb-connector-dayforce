@@ -1,0 +1,229 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "object",
+  "properties": {
+    "Data": {
+      "id": "http:\/\/wso2jsonschema.org\/Data",
+      "nullable": "true",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/0",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "TimeStart": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/TimeStart",
+              "nullable": "true",
+              "type": "string"
+            },
+            "TimeEnd": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/TimeEnd",
+              "nullable": "true",
+              "type": "string"
+            },
+            "NetHours": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/NetHours",
+              "nullable": "true",
+              "type": "number"
+            },
+            "DepartmentXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DepartmentXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "JobXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/JobXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "OrgUnitXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/OrgUnitXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "OrgLocationTypeXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/OrgLocationTypeXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "PayAdjCodeXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/PayAdjCodeXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "DocketXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DocketXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ProjectXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ProjectXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Published": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Published",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "Breaks": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Breaks",
+              "nullable": "true",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Breaks\/0",
+                  "nullable": "true",
+                  "type": "object",
+                  "properties": {
+                    "TimeStart": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Breaks\/0\/TimeStart",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "TimeEnd": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Breaks\/0\/TimeEnd",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "NetHours": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Breaks\/0\/NetHours",
+                      "nullable": "true",
+                      "type": "number"
+                    },
+                    "nullable": "true",
+                    "type": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Breaks\/0\/Type",
+                      "nullable": "true",
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            },
+            "Activities": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Activities",
+              "nullable": "true",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Activities\/0",
+                  "nullable": "true",
+                  "type": "object",
+                  "properties": {
+                    "TimeStart": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Activities\/0\/TimeStart",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "TimeEnd": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Activities\/0\/TimeEnd",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "XRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Activities\/0\/XRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            },
+            "Skills": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Skills",
+              "nullable": "true",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Skills\/0",
+                  "nullable": "true",
+                  "type": "object",
+                  "properties": {
+                    "SkillXRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Skills\/0\/SkillXRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "SkillLevelXRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Skills\/0\/SkillLevelXRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "IsMandatory": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Skills\/0\/IsMandatory",
+                      "nullable": "true",
+                      "type": "boolean"
+                    }
+                  }
+                }
+              ]
+            },
+            "LaborMetrics": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/LaborMetrics",
+              "nullable": "true",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/LaborMetrics\/0",
+                  "nullable": "true",
+                  "type": "object",
+                  "properties": {
+                    "CodeXRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/LaborMetrics\/0\/CodeXRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "TypeXRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/LaborMetrics\/0\/TypeXRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ProcessResults": {
+      "id": "http:\/\/wso2jsonschema.org\/ProcessResults",
+      "nullable": "true",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "Code": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Code",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Context": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Context",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Level": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Level",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Message": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Message",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

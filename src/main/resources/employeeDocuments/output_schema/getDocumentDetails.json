@@ -1,0 +1,105 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "object",
+  "properties": {
+    "Data": {
+      "id": "http:\/\/wso2jsonschema.org\/Data",
+      "nullable": "true",
+      "type": "object",
+      "properties": {
+        "DocumentType": {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/DocumentType",
+          "nullable": "true",
+          "type": "string"
+        },
+        "DocumentGroup": {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/DocumentGroup",
+          "nullable": "true",
+          "type": "string"
+        },
+        "UserId": {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/UserId",
+          "nullable": "true",
+          "type": "number"
+        },
+        "SourceReportUniqueId": {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/SourceReportUniqueId",
+          "nullable": "true",
+          "type": "string"
+        },
+        "PublishDateTime": {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/PublishDateTime",
+          "nullable": "true",
+          "type": "string"
+        },
+        "Title": {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/Title",
+          "nullable": "true",
+          "type": "string"
+        },
+        "PageCount": {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/PageCount",
+          "nullable": "true",
+          "type": "number"
+        },
+        "CultureId": {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/CultureId",
+          "nullable": "true",
+          "type": "number"
+        },
+        "Contents": {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/Contents",
+          "nullable": "true",
+          "type": "string"
+        },
+        "FileName": {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/FileName",
+          "nullable": "true",
+          "type": "string"
+        },
+        "SizeBytes": {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/SizeBytes",
+          "nullable": "true",
+          "type": "number"
+        }
+      }
+    },
+    "ProcessResults": {
+      "id": "http:\/\/wso2jsonschema.org\/ProcessResults",
+      "nullable": "true",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "Code": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Code",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Context": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Context",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Level": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Level",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Message": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Message",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

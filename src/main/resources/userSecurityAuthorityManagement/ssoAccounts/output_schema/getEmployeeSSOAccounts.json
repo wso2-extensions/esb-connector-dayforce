@@ -1,0 +1,26 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "LoginName": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LoginName",
+          "nullable": "true",
+          "type": "string"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}
