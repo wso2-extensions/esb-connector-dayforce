@@ -19,87 +19,87 @@
 <component name="employeePersonalInformation" type="synapse/template">
     <subComponents>
         <component name="getEmployeeAddresses">
-            <file>employeeAddresses/getEmployeeAddresses.xml</file>
+            <file>getEmployeeAddresses.xml</file>
             <description>Retrieve addresses of an employee REST API</description>
         </component>
         <component name="postEmployeeAddresses">
-            <file>employeeAddresses/postEmployeeAddresses.xml</file>
+            <file>postEmployeeAddresses.xml</file>
             <description>Create addresses of an employee REST API</description>
         </component>
         <component name="patchEmployeeAddresses">
-            <file>employeeAddresses/patchEmployeeAddresses.xml</file>
+            <file>patchEmployeeAddresses.xml</file>
             <description>Update addresses of an employee REST API</description>
         </component>
         <component name="getEmployeeCANFederalTaxes">
-            <file>employeeCANFederalTaxes/getEmployeeCANFederalTaxes.xml</file>
+            <file>getEmployeeCANFederalTaxes.xml</file>
             <description>Retrieve a Canadian employee's total federal claim amount, resident status and authorized tax credits REST API</description>
         </component>
         <component name="getEmployeeCANStateTaxes">
-            <file>employeeCANStateTaxes/getEmployeeCANStateTaxes.xml</file>
+            <file>getEmployeeCANStateTaxes.xml</file>
             <description>Retrieve a Canadian employee's total provincial claim amount, prescribed deductions and authorized tax credits REST API</description>
         </component>
         <component name="getEmployeeCANTaxStatuses">
-            <file>employeeCANTaxStatuses/getEmployeeCANTaxStatuses.xml</file>
+            <file>getEmployeeCANTaxStatuses.xml</file>
             <description>Retrieve a Canadian employee's provincial tax filing status (e.g. single, married) REST API</description>
         </component>
         <component name="getEmployeeContacts">
-            <file>employeeContacts/getEmployeeContacts.xml</file>
+            <file>getEmployeeContacts.xml</file>
             <description>Retrieve contacts of an employee REST API</description>
         </component>
         <component name="postEmployeeContacts">
-            <file>employeeContacts/postEmployeeContacts.xml</file>
+            <file>postEmployeeContacts.xml</file>
             <description>Create contacts of an employee REST API</description>
         </component>
         <component name="patchEmployeeContacts">
-            <file>employeeContacts/patchEmployeeContacts.xml</file>
+            <file>patchEmployeeContacts.xml</file>
             <description>Update contacts of an employee REST API</description>
         </component>
         <component name="getEmployeeDirectDeposits">
-            <file>employeeDirectDeposits/getEmployeeDirectDeposits.xml</file>
+            <file>getEmployeeDirectDeposits.xml</file>
             <description>Retrieve an employee's direct deposit information REST API</description>
         </component>
         <component name="getEmployeeEmergencyContacts">
-            <file>employeeEmergencyContacts/getEmployeeEmergencyContacts.xml</file>
+            <file>getEmployeeEmergencyContacts.xml</file>
             <description>Retrieve an employee's emergency contacts REST API</description>
         </component>
         <component name="postEmployeeEmergencyContacts">
-            <file>employeeEmergencyContacts/postEmployeeEmergencyContacts.xml</file>
+            <file>postEmployeeEmergencyContacts.xml</file>
             <description>Create an employee's emergency contacts REST API</description>
         </component>
         <component name="patchEmployeeEmergencyContacts">
-            <file>employeeEmergencyContacts/patchEmployeeEmergencyContacts.xml</file>
+            <file>patchEmployeeEmergencyContacts.xml</file>
             <description>Update an employee's emergency contacts REST API</description>
         </component>
         <component name="getEmployeeEthnicities">
-            <file>employeeEthnicities/getEmployeeEthnicities.xml</file>
+            <file>getEmployeeEthnicities.xml</file>
             <description>Retrieve an employee's ethnicity information REST API</description>
         </component>
         <component name="getEmployeeHealthAndWellness">
-            <file>employeeHealthAndWellness/getEmployeeHealthAndWellness.xml</file>
+            <file>getEmployeeHealthAndWellness.xml</file>
             <description>Retrieve an employee's tobacco use status REST API</description>
         </component>
         <component name="getEmployeeMaritalStatuses">
-            <file>employeeMaritalStatuses/getEmployeeMaritalStatuses.xml</file>
+            <file>getEmployeeMaritalStatuses.xml</file>
             <description>Retrieve an employee's marital status information REST API</description>
         </component>
         <component name="postEmployeeMaritalStatuses">
-            <file>employeeMaritalStatuses/postEmployeeMaritalStatuses.xml</file>
+            <file>postEmployeeMaritalStatuses.xml</file>
             <description>Create an employee's marital status information REST API</description>
         </component>
         <component name="patchEmployeeMaritalStatuses">
-            <file>employeeMaritalStatuses/patchEmployeeMaritalStatuses.xml</file>
+            <file>patchEmployeeMaritalStatuses.xml</file>
             <description>Update an employee's marital status information REST API</description>
         </component>
         <component name="getEmployeeUSFederalTaxes">
-            <file>employeeUSFederalTaxes/getEmployeeUSFederalTaxes.xml</file>
+            <file>getEmployeeUSFederalTaxes.xml</file>
             <description>Retrieve a US employee's total federal claim amount, resident status and authorized tax credits REST API</description>
         </component>
         <component name="getEmployeeUSStateTaxes">
-            <file>employeeUSStateTaxes/getEmployeeUSStateTaxes.xml</file>
+            <file>getEmployeeUSStateTaxes.xml</file>
             <description>Retrieve a US employee's total state claim amount, prescribed deductions and authorized tax credits REST API</description>
         </component>
         <component name="getEmployeeUSTaxStatuses">
-            <file>employeeUSTaxStatuses/getEmployeeUSTaxStatuses.xml</file>
+            <file>getEmployeeUSTaxStatuses.xml</file>
             <description>Retrieve a US employee's state tax filing status (e.g. single, married) REST API</description>
         </component>
     </subComponents>
