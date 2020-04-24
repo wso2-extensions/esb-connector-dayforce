@@ -27,7 +27,7 @@
             <ceridiandayforce.init>
                 <username>DFWSTest</username>
                 <password>{$ctx:ceredianPwd}</password>
-                <clientNamespace>usconfigr57.dayforcehcm.com/Api/ddn</clientNamespace>
+                <clientNamespace>usconfigr58.dayforcehcm.com/Api/ddn</clientNamespace>
                 <apiVersion>V1</apiVersion>
             </ceridiandayforce.init>
             <log category="INFO" level="full" separator=","/>
