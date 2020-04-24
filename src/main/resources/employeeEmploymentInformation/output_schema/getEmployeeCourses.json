@@ -1,0 +1,186 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "StartDate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/StartDate",
+          "nullable": "true",
+          "type": "string"
+        },
+        "CompletionDate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/CompletionDate",
+          "nullable": "true",
+          "type": "string"
+        },
+        "CertificationExpiryDate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/CertificationExpiryDate",
+          "nullable": "true",
+          "type": "string"
+        },
+        "Course": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/Course",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "CourseCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Course\/CourseCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "CourseType": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Course\/CourseType",
+              "nullable": "true",
+              "type": "object",
+              "properties": {
+                "XRefCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/Course\/CourseType\/XRefCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "ShortName": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/Course\/CourseType\/ShortName",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "LongName": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/Course\/CourseType\/LongName",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "LastModifiedTimestamp": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/Course\/CourseType\/LastModifiedTimestamp",
+                  "nullable": "true",
+                  "type": "string"
+                }
+              }
+            },
+            "CourseProvider": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Course\/CourseProvider",
+              "nullable": "true",
+              "type": "object",
+              "properties": {
+                "XRefCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/Course\/CourseProvider\/XRefCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "ShortName": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/Course\/CourseProvider\/ShortName",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "LongName": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/Course\/CourseProvider\/LongName",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "LastModifiedTimestamp": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/Course\/CourseProvider\/LastModifiedTimestamp",
+                  "nullable": "true",
+                  "type": "string"
+                }
+              }
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Course\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Course\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Course\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Course\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "EmployeeTrainingProgram": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EmployeeTrainingProgram",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "TrainingProgram": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmployeeTrainingProgram\/TrainingProgram",
+              "nullable": "true",
+              "type": "object",
+              "properties": {
+                "XRefCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/EmployeeTrainingProgram\/TrainingProgram\/XRefCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "ShortName": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/EmployeeTrainingProgram\/TrainingProgram\/ShortName",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "LongName": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/EmployeeTrainingProgram\/TrainingProgram\/LongName",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "LastModifiedTimestamp": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/EmployeeTrainingProgram\/TrainingProgram\/LastModifiedTimestamp",
+                  "nullable": "true",
+                  "type": "string"
+                }
+              }
+            },
+            "EnrollmentDate": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmployeeTrainingProgram\/EnrollmentDate",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmployeeTrainingProgram\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "CertificationNumber": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/CertificationNumber",
+          "nullable": "true",
+          "type": "string"
+        },
+        "Comment": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/Comment",
+          "nullable": "true",
+          "type": "string"
+        },
+        "Score": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/Score",
+          "nullable": "true",
+          "type": "string"
+        },
+        "PassFail": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PassFail",
+          "nullable": "true",
+          "type": "string"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}

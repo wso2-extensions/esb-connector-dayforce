@@ -1,0 +1,32 @@
+{
+  "$schema": "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "id": "http://wso2jsonschema.org",
+  "type": "object",
+  "title": "root",
+  "properties": {
+    "xRefCode": {
+      "id": "http://wso2jsonschema.org/xRefCode",
+      "type": "string"
+    },
+    "isValidateOnly": {
+      "id": "http://wso2jsonschema.org/isValidateOnly",
+      "type": "boolean"
+    },
+    "fieldAndValue": {
+      "id": "http://wso2jsonschema.org/fieldAndValue",
+      "type": "object",
+      "properties": {
+        "LoginName": {
+          "id": "http://wso2jsonschema.org/LoginName",
+          "nullable": "true",
+          "type": "string"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http://wso2jsonschema.org/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "id": "http:\/\/wso2jsonschema.org",
+  "type": "object",
+  "title": "root",
+  "properties": {
+    "xRefCode": {
+      "id": "http:\/\/wso2jsonschema.org\/xRefCode",
+      "type": "string"
+    },
+    "isValidateOnly": {
+      "id": "http:\/\/wso2jsonschema.org\/isValidateOnly",
+      "type": "boolean"
+    },
+    "fieldAndValue": {
+      "id": "http:\/\/wso2jsonschema.org\/fieldAndValue",
+      "type": "object",
+      "properties": {
+        "Address1": {
+          "id": "http:\/\/wso2jsonschema.org\/Address1",
+          "type": "string",
+          "nullable": "true"
+        },
+        "Address2": {
+          "id": "http:\/\/wso2jsonschema.org\/Address2",
+          "type": "string",
+          "nullable": "true"
+        },
+        "Address3": {
+          "id": "http:\/\/wso2jsonschema.org\/Address3",
+          "type": "string",
+          "nullable": "true"
+        },
+        "Address4": {
+          "id": "http:\/\/wso2jsonschema.org\/Address4",
+          "type": "string",
+          "nullable": "true"
+        },
+        "Address5": {
+          "id": "http:\/\/wso2jsonschema.org\/Address5",
+          "type": "string",
+          "nullable": "true"
+        },
+        "Address6": {
+          "id": "http:\/\/wso2jsonschema.org\/Address6",
+          "type": "string",
+          "nullable": "true"
+        },
+        "County": {
+          "id": "http:\/\/wso2jsonschema.org\/County",
+          "type": "string",
+          "nullable": "true"
+        },
+        "City": {
+          "id": "http:\/\/wso2jsonschema.org\/City",
+          "type": "string",
+          "nullable": "true"
+        },
+        "PostalCode": {
+          "id": "http:\/\/wso2jsonschema.org\/PostalCode",
+          "type": "string",
+          "nullable": "true"
+        },
+        "Country": {
+          "id": "http:\/\/wso2jsonschema.org\/Country",
+          "type": "object",
+          "properties": {
+            "Name": {
+              "id": "http:\/\/wso2jsonschema.org\/Country\/Name",
+              "type": "string",
+              "nullable": "true"
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Country\/XRefCode",
+              "type": "string",
+              "nullable": "true"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/Country\/ShortName",
+              "type": "string",
+              "nullable": "true"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/Country\/LongName",
+              "type": "string",
+              "nullable": "true"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/Country\/LastModifiedTimestamp",
+              "type": "string",
+              "nullable": "true"
+            }
+          }
+        },
+        "State": {
+          "id": "http:\/\/wso2jsonschema.org\/State",
+          "type": "object",
+          "properties": {
+            "Name": {
+              "id": "http:\/\/wso2jsonschema.org\/State\/Name",
+              "type": "string",
+              "nullable": "true"
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/State\/XRefCode",
+              "type": "string",
+              "nullable": "true"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/State\/ShortName",
+              "type": "string",
+              "nullable": "true"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/State\/LongName",
+              "type": "string",
+              "nullable": "true"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/State\/LastModifiedTimestamp",
+              "type": "string",
+              "nullable": "true"
+            }
+          }
+        },
+        "EffectiveStart": {
+          "id": "http:\/\/wso2jsonschema.org\/EffectiveStart",
+          "type": "string",
+          "nullable": "true"
+        },
+        "EffectiveEnd": {
+          "id": "http:\/\/wso2jsonschema.org\/EffectiveEnd",
+          "type": "string",
+          "nullable": "true"
+        },
+        "ContactInformationType": {
+          "id": "http:\/\/wso2jsonschema.org\/ContactInformationType",
+          "type": "object",
+          "properties": {
+            "ContactInformationTypeGroup": {
+              "id": "http:\/\/wso2jsonschema.org\/ContactInformationType\/ContactInformationTypeGroup",
+              "type": "object",
+              "nullable": "true",
+              "properties": {
+                "XRefCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/ContactInformationType\/ContactInformationTypeGroup\/XRefCode",
+                  "type": "string",
+                  "nullable": "true"
+                },
+                "ShortName": {
+                  "id": "http:\/\/wso2jsonschema.org\/ContactInformationType\/ContactInformationTypeGroup\/ShortName",
+                  "type": "string",
+                  "nullable": "true"
+                },
+                "LongName": {
+                  "id": "http:\/\/wso2jsonschema.org\/ContactInformationType\/ContactInformationTypeGroup\/LongName",
+                  "type": "string",
+                  "nullable": "true"
+                },
+                "LastModifiedTimestamp": {
+                  "id": "http:\/\/wso2jsonschema.org\/ContactInformationType\/ContactInformationTypeGroup\/LastModifiedTimestamp",
+                  "type": "string",
+                  "nullable": "true"
+                }
+              }
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/ContactInformationType\/XRefCode",
+              "type": "string",
+              "nullable": "true"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/ContactInformationType\/ShortName",
+              "type": "string",
+              "nullable": "true"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/ContactInformationType\/LongName",
+              "type": "string",
+              "nullable": "true"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/ContactInformationType\/LastModifiedTimestamp",
+              "type": "string",
+              "nullable": "true"
+            }
+          }
+        },
+        "IsPayrollMailing": {
+          "id": "http:\/\/wso2jsonschema.org\/IsPayrollMailing",
+          "type": "boolean",
+          "nullable": "true"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/LastModifiedTimestamp",
+          "type": "string",
+          "nullable": "true"
+        }
+      }
+    }
+  }
+}

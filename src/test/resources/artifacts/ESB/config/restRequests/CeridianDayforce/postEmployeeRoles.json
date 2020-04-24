@@ -1,0 +1,18 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr58.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "xRefCode": "42199",
+  "isValidateOnly": "true",
+  "fieldAndValue": {
+    "IsDefault": true,
+    "Role": {
+      "XRefCode": "MAssociate",
+      "ShortName": "MAssociate",
+      "LongName": "MAssociate"
+    },
+    "EffectiveStart": "2015-12-02T00:00:00",
+    "IsPrestartRole": false
+  }
+}

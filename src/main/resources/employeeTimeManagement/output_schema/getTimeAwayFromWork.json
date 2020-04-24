@@ -1,0 +1,107 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "object",
+  "properties": {
+    "Data": {
+      "id": "http:\/\/wso2jsonschema.org\/Data",
+      "nullable": "true",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/0",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "DateOfRequest": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DateOfRequest",
+              "nullable": "true",
+              "type": "string"
+            },
+            "TimeStart": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/TimeStart",
+              "nullable": "true",
+              "type": "string"
+            },
+            "TimeEnd": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/TimeEnd",
+              "nullable": "true",
+              "type": "string"
+            },
+            "NetHours": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/NetHours",
+              "nullable": "true",
+              "type": "number"
+            },
+            "ManagerComment": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ManagerComment",
+              "nullable": "true",
+              "type": "string"
+            },
+            "EmployeeComment": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/EmployeeComment",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ReasonName": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ReasonName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "AllDay": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/AllDay",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "HalfDay": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/HalfDay",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "DailyElapsedHours": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DailyElapsedHours",
+              "nullable": "true",
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "ProcessResults": {
+      "id": "http:\/\/wso2jsonschema.org\/ProcessResults",
+      "nullable": "true",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "Code": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Code",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Context": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Context",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Level": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Level",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Message": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Message",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

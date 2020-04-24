@@ -1,0 +1,121 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "object",
+  "properties": {
+    "Data": {
+      "id": "http:\/\/wso2jsonschema.org\/Data",
+      "nullable": "true",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/0",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "DocumentGUID": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DocumentGUID",
+              "nullable": "true",
+              "type": "string"
+            },
+            "DocumentName": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DocumentName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "DocumentType": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DocumentType",
+              "nullable": "true",
+              "type": "object",
+              "properties": {
+                "ShortName": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DocumentType\/ShortName",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "Description": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DocumentType\/Description",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "XRefCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DocumentType\/XRefCode",
+                  "nullable": "true",
+                  "type": "string"
+                }
+              }
+            },
+            "FileName": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/FileName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "UploadedDate": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/UploadedDate",
+              "nullable": "true",
+              "type": "string"
+            },
+            "UploadedBy": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/UploadedBy",
+              "nullable": "true",
+              "type": "object",
+              "properties": {
+                "DisplayName": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/UploadedBy\/DisplayName",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "XRefCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/UploadedBy\/XRefCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "LoginId": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/UploadedBy\/LoginId",
+                  "nullable": "true",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ProcessResults": {
+      "id": "http:\/\/wso2jsonschema.org\/ProcessResults",
+      "nullable": "true",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "Code": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Code",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Context": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Context",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Level": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Level",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Message": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Message",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

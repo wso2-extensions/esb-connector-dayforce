@@ -1,0 +1,155 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "AccountNumber": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AccountNumber",
+          "nullable": "true",
+          "type": "string"
+        },
+        "BankName": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/BankName",
+          "nullable": "true",
+          "type": "string"
+        },
+        "BankNumber": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/BankNumber",
+          "nullable": "true",
+          "type": "string"
+        },
+        "BuildingSocietyNumber": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/BuildingSocietyNumber",
+          "nullable": "true",
+          "type": "string"
+        },
+        "DepositNumber": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/DepositNumber",
+          "nullable": "true",
+          "type": "number"
+        },
+        "DepositValue": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/DepositValue",
+          "nullable": "true",
+          "type": "number"
+        },
+        "PayMethod": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PayMethod",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayMethod\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayMethod\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayMethod\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayMethod\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "IsDeleted": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/IsDeleted",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "IsPercentage": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/IsPercentage",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "IsRemainder": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/IsRemainder",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "NumberOfPreNoteDays": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/NumberOfPreNoteDays",
+          "nullable": "true",
+          "type": "number"
+        },
+        "PrenoteFileRunPayDate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PrenoteFileRunPayDate",
+          "nullable": "true",
+          "type": "string"
+        },
+        "PrenoteFileSentOn": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PrenoteFileSentOn",
+          "nullable": "true",
+          "type": "string"
+        },
+        "RequiresPreNote": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/RequiresPreNote",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "RoutingTransitNumber": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/RoutingTransitNumber",
+          "nullable": "true",
+          "type": "string"
+        },
+        "PayCardType": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PayCardType",
+          "nullable": "true",
+          "type": "string"
+        },
+        "FinancialInstitution": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/FinancialInstitution",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FinancialInstitution\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FinancialInstitution\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FinancialInstitution\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/FinancialInstitution\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "AccountHolder": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AccountHolder",
+          "nullable": "true",
+          "type": "string"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}

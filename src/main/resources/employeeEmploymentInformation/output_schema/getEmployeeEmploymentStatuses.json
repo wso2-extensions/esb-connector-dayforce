@@ -1,0 +1,814 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "EmployeeNumber": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EmployeeNumber",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EffectiveStart": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveStart",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EffectiveEnd": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveEnd",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EmploymentStatus": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatus",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "IsBenefitArrearsEnabled": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatus\/IsBenefitArrearsEnabled",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatus\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatus\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatus\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatus\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "EmploymentStatusGroup": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusGroup",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusGroup\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusGroup\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusGroup\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusGroup\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "PayType": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PayType",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayType\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayType\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayType\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayType\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "PayGroup": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PayGroup",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "PayFrequency": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayGroup\/PayFrequency",
+              "nullable": "true",
+              "type": "object",
+              "properties": {
+                "PayFrequencyType": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/PayGroup\/PayFrequency\/PayFrequencyType",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "XRefCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/PayGroup\/PayFrequency\/XRefCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "ShortName": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/PayGroup\/PayFrequency\/ShortName",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "LongName": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/PayGroup\/PayFrequency\/LongName",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "LastModifiedTimestamp": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/PayGroup\/PayFrequency\/LastModifiedTimestamp",
+                  "nullable": "true",
+                  "type": "string"
+                }
+              }
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayGroup\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayGroup\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayGroup\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayGroup\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "PayTypeGroup": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PayTypeGroup",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayTypeGroup\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayTypeGroup\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayTypeGroup\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayTypeGroup\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "PayClass": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PayClass",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "LedgerCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayClass\/LedgerCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayClass\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayClass\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayClass\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayClass\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "PunchPolicy": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PunchPolicy",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PunchPolicy\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PunchPolicy\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PunchPolicy\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PunchPolicy\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "PayPolicy": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PayPolicy",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayPolicy\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayPolicy\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayPolicy\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayPolicy\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "PayHolidayGroup": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PayHolidayGroup",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayHolidayGroup\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayHolidayGroup\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayHolidayGroup\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayHolidayGroup\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "EmployeeGroup": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EmployeeGroup",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmployeeGroup\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmployeeGroup\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmployeeGroup\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmployeeGroup\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "EntitlementPolicy": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EntitlementPolicy",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EntitlementPolicy\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EntitlementPolicy\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EntitlementPolicy\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EntitlementPolicy\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "ShiftRotation": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ShiftRotation",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/ShiftRotation\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/ShiftRotation\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/ShiftRotation\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/ShiftRotation\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "ShiftRotationDayOffset": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ShiftRotationDayOffset",
+          "nullable": "true",
+          "type": "number"
+        },
+        "ShiftRotationStartDate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ShiftRotationStartDate",
+          "nullable": "true",
+          "type": "string"
+        },
+        "CreateShiftRotationShift": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/CreateShiftRotationShift",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "TimeOffPolicy": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/TimeOffPolicy",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/TimeOffPolicy\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/TimeOffPolicy\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/TimeOffPolicy\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/TimeOffPolicy\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "ShiftTradePolicy": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ShiftTradePolicy",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/ShiftTradePolicy\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/ShiftTradePolicy\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/ShiftTradePolicy\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/ShiftTradePolicy\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "AttendancePolicy": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AttendancePolicy",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "TrackingBasedOn": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AttendancePolicy\/TrackingBasedOn",
+              "nullable": "true",
+              "type": "number"
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AttendancePolicy\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AttendancePolicy\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AttendancePolicy\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AttendancePolicy\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "SchedulePolicy": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/SchedulePolicy",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/SchedulePolicy\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/SchedulePolicy\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/SchedulePolicy\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/SchedulePolicy\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "OvertimeGroup": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/OvertimeGroup",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OvertimeGroup\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OvertimeGroup\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OvertimeGroup\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OvertimeGroup\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "PayrollPolicy": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PayrollPolicy",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayrollPolicy\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayrollPolicy\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayrollPolicy\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayrollPolicy\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "JobStepPolicy": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/JobStepPolicy",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/JobStepPolicy\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/JobStepPolicy\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/JobStepPolicy\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/JobStepPolicy\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "AlternateRate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AlternateRate",
+          "nullable": "true",
+          "type": "number"
+        },
+        "AverageDailyHours": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AverageDailyHours",
+          "nullable": "true",
+          "type": "number"
+        },
+        "AverageOvertimeRate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AverageOvertimeRate",
+          "nullable": "true",
+          "type": "number"
+        },
+        "BaseRate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/BaseRate",
+          "nullable": "true",
+          "type": "number"
+        },
+        "BaseRateManuallySet": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/BaseRateManuallySet",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "BaseSalary": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/BaseSalary",
+          "nullable": "true",
+          "type": "number"
+        },
+        "PeriodicSalary": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PeriodicSalary",
+          "nullable": "true",
+          "type": "number"
+        },
+        "DailyRate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/DailyRate",
+          "nullable": "true",
+          "type": "number"
+        },
+        "EmploymentStatusReason": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusReason",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "IsCompChangeReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusReason\/IsCompChangeReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsLeaveReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusReason\/IsLeaveReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsPositionChangeReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusReason\/IsPositionChangeReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsTerminationReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusReason\/IsTerminationReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsVoluntaryReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusReason\/IsVoluntaryReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusReason\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusReason\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusReason\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentStatusReason\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "NormalWeeklyHours": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/NormalWeeklyHours",
+          "nullable": "true",
+          "type": "number"
+        },
+        "NormalSemiMonthlyHoursTop": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/NormalSemiMonthlyHoursTop",
+          "nullable": "true",
+          "type": "number"
+        },
+        "NormalSemiMonthlyHoursBottom": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/NormalSemiMonthlyHoursBottom",
+          "nullable": "true",
+          "type": "number"
+        },
+        "ScheduleChangePolicy": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ScheduleChangePolicy",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/ScheduleChangePolicy\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/ScheduleChangePolicy\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/ScheduleChangePolicy\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/ScheduleChangePolicy\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "AuthorizationPolicy": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AuthorizationPolicy",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AuthorizationPolicy\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AuthorizationPolicy\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AuthorizationPolicy\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AuthorizationPolicy\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "WorkContractPremiumPolicy": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/WorkContractPremiumPolicy",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/WorkContractPremiumPolicy\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/WorkContractPremiumPolicy\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/WorkContractPremiumPolicy\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/WorkContractPremiumPolicy\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "LastPayEditDate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastPayEditDate",
+          "nullable": "true",
+          "type": "string"
+        },
+        "VacationRate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/VacationRate",
+          "nullable": "true",
+          "type": "number"
+        },
+        "TargetBonus": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/TargetBonus",
+          "nullable": "true",
+          "type": "number"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}

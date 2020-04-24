@@ -1,0 +1,22 @@
+{
+  "$schema":"http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "id":"http:\/\/wso2jsonschema.org",
+  "title":"result",
+  "type":"object",
+  "properties" : {
+    "Data" : {
+      "id" : "http:\/\/wso2jsonschema.org\/Data",
+      "type" : "array",
+      "items" : [ {
+        "id" : "http:\/\/wso2jsonschema.org\/Data\/0",
+        "type" : "object",
+        "properties" : {
+          "XRefCode" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/XRefCode",
+            "type" : "string"
+          }
+        }
+      } ]
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "$schema" : "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType" : "JSON",
+  "id" : "http:\/\/wso2jsonschema.org",
+  "title" : "root",
+  "type" : "object",
+  "properties" : {
+    "Data" : {
+      "id" : "http:\/\/wso2jsonschema.org\/Data",
+      "nullable":"true",  "type" : "array",
+      "items" : [ {
+        "id" : "http:\/\/wso2jsonschema.org\/Data\/0",
+        "nullable":"true",  "type" : "object",
+        "properties" : {
+          "Title" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/Title",
+            "nullable":"true",  "type" : "string"
+          },
+          "Description" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/Description",
+            "nullable":"true",  "type" : "string"
+          },
+          "ClientSiteName" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/ClientSiteName",
+            "nullable":"true",  "type" : "string"
+          },
+          "ClientSiteXRefCode" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/ClientSiteXRefCode",
+            "nullable":"true",  "type" : "string"
+          },
+          "CompanyName" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/CompanyName",
+            "nullable":"true",  "type" : "string"
+          },
+          "ParentCompanyName" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/ParentCompanyName",
+            "nullable":"true",  "type" : "string"
+          },
+          "JobDetailsUrl" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/JobDetailsUrl",
+            "nullable":"true",  "type" : "string"
+          },
+          "ApplyUrl" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/ApplyUrl",
+            "nullable":"true",  "type" : "string"
+          },
+          "AddressLine1" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/AddressLine1",
+            "nullable":"true",  "type" : "string"
+          },
+          "AddressLine2" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/AddressLine2",
+            "nullable":"true",  "type" : "string"
+          },
+          "City" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/City",
+            "nullable":"true",  "type" : "string"
+          },
+          "State" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/State",
+            "nullable":"true",  "type" : "string"
+          },
+          "Country" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/Country",
+            "nullable":"true",  "type" : "string"
+          },
+          "PostalCode" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/PostalCode",
+            "nullable":"true",  "type" : "string"
+          },
+          "Education" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/Education",
+            "nullable":"true",  "type" : "string"
+          },
+          "JobFamily" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/JobFamily",
+            "nullable":"true",  "type" : "string"
+          },
+          "JobFunction" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/JobFunction",
+            "nullable":"true",  "type" : "string"
+          },
+          "EmploymentIndicator" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/EmploymentIndicator",
+            "nullable":"true",  "type" : "string"
+          },
+          "Qualifications" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/Qualifications",
+            "nullable":"true",  "type" : "string"
+          },
+          "DatePosted" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/DatePosted",
+            "nullable":"true",  "type" : "string"
+          },
+          "LastUpdated" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/LastUpdated",
+            "nullable":"true",  "type" : "string"
+          },
+          "ReferenceNumber" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/ReferenceNumber",
+            "nullable":"true",  "type" : "number"
+          },
+          "JobReferenceNumber" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/JobReferenceNumber",
+            "nullable":"true",  "type" : "string"
+          },
+          "CandidatesUrl" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/CandidatesUrl",
+            "nullable":"true",  "type" : "string"
+          },
+          "CultureCode" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/CultureCode",
+            "nullable":"true",  "type" : "string"
+          },
+          "ParentRequisitionCode" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/ParentRequisitionCode",
+            "nullable":"true",  "type" : "number"
+          },
+          "MinHiringRate" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/MinHiringRate",
+            "nullable":"true",  "type" : "number"
+          },
+          "MaxHiringRate" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/MaxHiringRate",
+            "nullable":"true",  "type" : "number"
+          },
+          "HiringRate" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/HiringRate",
+            "nullable":"true",  "type" : "number"
+          },
+          "JobType" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/JobType",
+            "nullable":"true",  "type" : "number"
+          },
+          "TravelPercentage" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/TravelPercentage",
+            "nullable":"true",  "type" : "number"
+          },
+          "TravelRequired" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/TravelRequired",
+            "nullable":"true",  "type" : "number"
+          },
+          "TelecommutePercentage" : {
+            "id" : "http:\/\/wso2jsonschema.org\/Data\/0\/TelecommutePercentage",
+            "nullable":"true",  "type" : "number"
+          }
+        }
+      } ]
+    },
+    "ProcessResults" : {
+      "id" : "http:\/\/wso2jsonschema.org\/ProcessResults",
+      "nullable":"true",  "type" : "array",
+      "items" : [ {
+        "id" : "http:\/\/wso2jsonschema.org\/ProcessResults\/0",
+        "nullable":"true",  "type" : "object",
+        "properties" : {
+          "Code" : {
+            "id" : "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Code",
+            "nullable":"true",  "type" : "string"
+          },
+          "Context" : {
+            "id" : "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Context",
+            "nullable":"true",  "type" : "string"
+          },
+          "Level" : {
+            "id" : "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Level",
+            "nullable":"true",  "type" : "string"
+          },
+          "Message" : {
+            "id" : "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Message",
+            "nullable":"true",  "type" : "string"
+          }
+        }
+      } ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "result",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "EffectiveStart": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveStart",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EffectiveEnd": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveEnd",
+          "nullable": "true",
+          "type": "string"
+        },
+        "WorkAssignmentEffectiveStart": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/WorkAssignmentEffectiveStart",
+          "nullable": "true",
+          "type": "string"
+        },
+        "WorkAssignmentEffectiveEnd": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/WorkAssignmentEffectiveEnd",
+          "nullable": "true",
+          "type": "string"
+        },
+        "PayGrade": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PayGrade",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayGrade\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayGrade\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayGrade\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/PayGrade\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "MinimumRate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/MinimumRate",
+          "nullable": "true",
+          "type": "number"
+        },
+        "ControlRate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ControlRate",
+          "nullable": "true",
+          "type": "number"
+        },
+        "MaximumRate": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/MaximumRate",
+          "nullable": "true",
+          "type": "number"
+        },
+        "RateMidPoint": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/RateMidPoint",
+          "nullable": "true",
+          "type": "number"
+        },
+        "MinimumSalary": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/MinimumSalary",
+          "nullable": "true",
+          "type": "number"
+        },
+        "ControlSalary": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/ControlSalary",
+          "nullable": "true",
+          "type": "number"
+        },
+        "MaximumSalary": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/MaximumSalary",
+          "nullable": "true",
+          "type": "number"
+        },
+        "SalaryMidPoint": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/SalaryMidPoint",
+          "nullable": "true",
+          "type": "number"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}

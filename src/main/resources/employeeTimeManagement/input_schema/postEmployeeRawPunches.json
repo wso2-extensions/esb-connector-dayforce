@@ -1,0 +1,132 @@
+{
+  "$schema": "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "id": "http://wso2jsonschema.org",
+  "type": "object",
+  "title": "root",
+  "properties": {
+    "isValidateOnly": {
+      "id": "http://wso2jsonschema.org/isValidateOnly",
+      "type": "boolean"
+    },
+    "fieldAndValue": {
+      "id": "http://wso2jsonschema.org/fieldAndValue",
+      "type": "object",
+      "properties": {
+        "EmployeeBadge": {
+          "id": "http://wso2jsonschema.org/EmployeeBadge",
+          "nullable": "true",
+          "type": "string"
+        },
+        "RawPunchTime": {
+          "id": "http://wso2jsonschema.org/RawPunchTime",
+          "nullable": "true",
+          "type": "string"
+        },
+        "PunchType": {
+          "id": "http://wso2jsonschema.org/PunchType",
+          "nullable": "true",
+          "type": "string"
+        },
+        "PunchDevice": {
+          "id": "http://wso2jsonschema.org/PunchDevice",
+          "nullable": "true",
+          "type": "string"
+        },
+        "SupervisorBadge": {
+          "id": "http://wso2jsonschema.org/SupervisorBadge",
+          "nullable": "true",
+          "type": "string"
+        },
+        "LocationXRefCode": {
+          "id": "http://wso2jsonschema.org/LocationXRefCode",
+          "nullable": "true",
+          "type": "string"
+        },
+        "LocationClockTransferCode": {
+          "id": "http://wso2jsonschema.org/LocationClockTransferCode",
+          "nullable": "true",
+          "type": "string"
+        },
+        "PositionXRefCode": {
+          "id": "http://wso2jsonschema.org/PositionXRefCode",
+          "nullable": "true",
+          "type": "string"
+        },
+        "PositionClockTransferCode": {
+          "id": "http://wso2jsonschema.org/PositionClockTransferCode",
+          "nullable": "true",
+          "type": "string"
+        },
+        "DocketXRefCode": {
+          "id": "http://wso2jsonschema.org/DocketXRefCode",
+          "nullable": "true",
+          "type": "string"
+        },
+        "DocketClockTransferCode": {
+          "id": "http://wso2jsonschema.org/DocketClockTransferCode",
+          "nullable": "true",
+          "type": "string"
+        },
+        "ProjectXRefCode": {
+          "id": "http://wso2jsonschema.org/ProjectXRefCode",
+          "nullable": "true",
+          "type": "string"
+        },
+        "ProjectClockTransferCode": {
+          "id": "http://wso2jsonschema.org/ProjectClockTransferCode",
+          "nullable": "true",
+          "type": "string"
+        },
+        "LaborMetrics": {
+          "id": "http://wso2jsonschema.org/LaborMetrics",
+          "nullable": "true",
+          "type": "array",
+          "items": [
+            {
+              "id": "http://wso2jsonschema.org/LaborMetrics/0",
+              "nullable": "true",
+              "type": "object",
+              "properties": {
+                "TypeXRefCode": {
+                  "id": "http://wso2jsonschema.org/LaborMetrics/0/TypeXRefCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "CodeXRefCode": {
+                  "id": "http://wso2jsonschema.org/LaborMetrics/0/CodeXRefCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "TypeClockTransferCode": {
+                  "id": "http://wso2jsonschema.org/LaborMetrics/0/TypeClockTransferCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "CodeClockTransferCode": {
+                  "id": "http://wso2jsonschema.org/LaborMetrics/0/CodeClockTransferCode",
+                  "nullable": "true",
+                  "type": "string"
+                }
+              }
+            }
+          ]
+        },
+        "Quantity": {
+          "id": "http://wso2jsonschema.org/Quantity",
+          "nullable": "true",
+          "type": "number"
+        },
+        "MealWaiver": {
+          "id": "http://wso2jsonschema.org/MealWaiver",
+          "nullable": "true",
+          "type": "string"
+        },
+        "BreakAttestation": {
+          "id": "http://wso2jsonschema.org/BreakAttestation",
+          "nullable": "true",
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

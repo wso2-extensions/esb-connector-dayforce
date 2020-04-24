@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2020, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied. See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+<component name="employeeEmploymentInformation" type="synapse/template">
+    <subComponents>
+        <component name="getEmployeeOrgInfo">
+            <file>getEmployeeOrgInfo.xml</file>
+            <description>Get employee Organization Info REST API</description>
+        </component>
+        <component name="getEmployeeWorkAssignments">
+            <file>getEmployeeWorkAssignments.xml</file>
+            <description>Get employee work assignments REST API</description>
+        </component>
+        <component name="postEmployeeWorkAssignments">
+            <file>postEmployeeWorkAssignments.xml</file>
+            <description>Post employee work assignments REST API</description>
+        </component>
+        <component name="patchEmployeeWorkAssignments">
+            <file>patchEmployeeWorkAssignments.xml</file>
+            <description>Patch employee work assignments REST API</description>
+        </component>
+        <component name="getEmployeeEmploymentStatuses">
+            <file>getEmployeeEmploymentStatuses.xml</file>
+            <description>Retrieve an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API</description>
+        </component>
+        <component name="postEmployeeEmploymentStatuses">
+            <file>postEmployeeEmploymentStatuses.xml</file>
+            <description>Create an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API</description>
+        </component>
+        <component name="patchEmployeeEmploymentStatuses">
+            <file>patchEmployeeEmploymentStatuses.xml</file>
+            <description>Update an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API</description>
+        </component>
+        <component name="getEmployeeClockDeviceGroups">
+            <file>getEmployeeClockDeviceGroups.xml</file>
+            <description>Retrieve an employee's clock device groups that control access to the clocks the employee can punch on. REST API</description>
+        </component>
+        <component name="getEmployeeCompensationSummary">
+            <file>getEmployeeCompensationSummary.xml</file>
+            <description>Retrieve an employee's condensed status information based on compensation changes. REST API</description>
+        </component>
+        <component name="getEmployeeCourses">
+            <file>getEmployeeCourses.xml</file>
+            <description>Retrieve courses associated to an employee. REST API</description>
+        </component>
+        <component name="getEmployeeEmploymentAgreements">
+            <file>getEmployeeEmploymentAgreements.xml</file>
+            <description>Retrieve the employment agreement information of an employee REST API</description>
+        </component>
+        <component name="postEmployeeEmploymentAgreements">
+            <file>postEmployeeEmploymentAgreements.xml</file>
+            <description>Retrieve the employment agreement information of an employee REST API</description>
+        </component>
+        <component name="patchEmployeeEmploymentAgreements">
+            <file>patchEmployeeEmploymentAgreements.xml</file>
+            <description>Retrieve the employment agreement information of an employee REST API</description>
+        </component>
+        <component name="getEmployeeEmploymentTypes">
+            <file>getEmployeeEmploymentTypes.xml</file>
+            <description>Retrieve employee employment types (i.e: contractor, pensioner, etc.) REST API</description>
+        </component>
+        <component name="getEmployeeHighlyCompensatedEmployees">
+            <file>getEmployeeHighlyCompensatedEmployees.xml</file>
+            <description>Retrieve highly compensated employee indicators REST API</description>
+        </component>
+        <component name="getEmployeeHRIncidents">
+            <file>getEmployeeHRIncidents.xml</file>
+            <description>Retrieve HR incidents attached to an employee REST API</description>
+        </component>
+        <component name="getEmployeeLabourDefaults">
+            <file>getEmployeeLabourDefaults.xml</file>
+            <description>Retrieve employee labor defaults. Labor defaults specify an employee default postion, project, docket or other timesheet information. REST API</description>
+        </component>
+        <component name="getEmployeeOnboardingPolicies">
+            <file>getEmployeeOnboardingPolicies.xml</file>
+            <description>Retrieve onboarding policies assigned to an employee REST API</description>
+        </component>
+        <component name="postEmployeeOnboardingPolicies">
+            <file>postEmployeeOnboardingPolicies.xml</file>
+            <description>Assign onboarding policies to an employee REST API</description>
+        </component>
+        <component name="patchEmployeeOnboardingPolicies">
+            <file>patchEmployeeOnboardingPolicies.xml</file>
+            <description>Update the onboarding policies assigned to an employee REST API</description>
+        </component>
+        <component name="getEmployeePayAdjustmentGroups">
+            <file>getEmployeePayAdjustmentGroups.xml</file>
+            <description>Retrieve employee pay adjustment groups that control which pay codes can be used in an employee's timesheet REST API</description>
+        </component>
+        <component name="getEmployeePayGradeRates">
+            <file>getEmployeePayGradeRates.xml</file>
+            <description>Retrieve employee pay grade rates related to their position rate policies REST API</description>
+        </component>
+        <component name="getEmployeePerformanceRatings">
+            <file>getEmployeePerformanceRatings.xml</file>
+            <description>Retrieve details on employee performance reviews REST API</description>
+        </component>
+        <component name="getEmployeeProperties">
+            <file>getEmployeeProperties.xml</file>
+            <description>Retrieve employee properties that represent custom defined information REST API</description>
+        </component>
+        <component name="postEmployeeProperties">
+            <file>postEmployeeProperties.xml</file>
+            <description>Create employee properties that represent custom defined information REST API</description>
+        </component>
+        <component name="patchEmployeeProperties">
+            <file>patchEmployeeProperties.xml</file>
+            <description>Update employee properties that represent custom defined information REST API</description>
+        </component>
+        <component name="getEmployeeSkills">
+            <file>getEmployeeSkills.xml</file>
+            <description>Retrieve skills attached to an employee REST API</description>
+        </component>
+        <component name="getEmployeeTrainingPrograms">
+            <file>getEmployeeTrainingPrograms.xml</file>
+            <description>Retrieve training programs attached to an employee REST API</description>
+        </component>
+        <component name="getEmployeeUnionMemberships">
+            <file>getEmployeeUnionMemberships.xml</file>
+            <description>Retrieve employee union membership information REST API</description>
+        </component>
+        <component name="getEmployeeWorkContracts">
+            <file>getEmployeeWorkContracts.xml</file>
+            <description>Retrieve work contracts used in UK to represent the employee contracted work duration REST API</description>
+        </component>
+        <component name="postEmployeeWorkContracts">
+            <file>postEmployeeWorkContracts.xml</file>
+            <description>Create work contracts used in UK to represent the employee contracted work duration REST API</description>
+        </component>
+        <component name="patchEmployeeWorkContracts">
+            <file>patchEmployeeWorkContracts.xml</file>
+            <description>Update work contracts used in UK to represent the employee contracted work duration REST API</description>
+        </component>
+    </subComponents>
+</component>

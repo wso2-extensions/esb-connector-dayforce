@@ -1,0 +1,17 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr58.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "xRefCode": "42199",
+  "isValidateOnly": "true",
+  "contextDateRangeFrom": "2017-01-01T13:24:56",
+  "fieldAndValue": {
+    "MaritalStatus": {
+      "XRefCode": "SINGLE",
+      "ShortName": "Single",
+      "LongName": "Single"
+    },
+    "EffectiveStart": "2000-01-01T00:00:00"
+  }
+}

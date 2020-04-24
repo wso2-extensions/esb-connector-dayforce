@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2020, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied. See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="postEmployeeOnboardingPolicies" transports="https,http" statistics="disable" trace="disable">
+    <target>
+        <inSequence>
+            <property expression="json-eval($.username)" name="username"/>
+            <property expression="json-eval($.password)" name="password"/>
+            <property expression="json-eval($.clientNamespace)" name="clientNamespace"/>
+            <property expression="json-eval($.apiVersion)" name="apiVersion"/>
+            <property expression="json-eval($.xRefCode)" name="xRefCode"/>
+            <property expression="json-eval($.fieldAndValue)" name="fieldAndValue"/>
+            <property expression="json-eval($.isValidateOnly)" name="isValidateOnly"/>
+            <ceridiandayforce.init>
+                <username>{$ctx:username}</username>
+                <password>{$ctx:password}</password>
+                <clientNamespace>{$ctx:clientNamespace}</clientNamespace>
+                <apiVersion>{$ctx:apiVersion}</apiVersion>
+            </ceridiandayforce.init>
+            <log category="INFO" level="full" separator=","/>
+            <ceridiandayforce.postEmployeeOnboardingPolicies>
+                <isValidateOnly>{$ctx:isValidateOnly}</isValidateOnly>
+                <xRefCode>{$ctx:xRefCode}</xRefCode>
+                <fieldAndValue>{$ctx:fieldAndValue}</fieldAndValue>
+            </ceridiandayforce.postEmployeeOnboardingPolicies>
+            <respond/>
+        </inSequence>
+    </target>
+    <description/>
+</proxy>

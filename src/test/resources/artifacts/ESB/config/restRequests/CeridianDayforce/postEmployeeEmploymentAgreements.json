@@ -1,0 +1,44 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr58.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "xRefCode": "42199",
+  "isValidateOnly": "true",
+  "contextDateRangeFrom": "2017-01-01T13:24:56",
+  "fieldAndValue": {
+    "EffectiveStart": "2019-01-01T00:00:00",
+    "XRefCode": "dcc714ea-0e89-415c-aad1-242185951438",
+    "EmploymentAgreementType": {
+      "XRefCode": "BLCO",
+      "ShortName": "Blue collar",
+      "LongName": "Blue collar"
+    },
+    "EmploymentAgreementPopulation": {
+      "XRefCode": "DKFULI",
+      "ShortName": "Funktionaer-ligende (Salaried \"ligende\")",
+      "LongName": "Funktionaer-ligende (Salaried \"ligende\")"
+    },
+    "EmploymentAgreementDetails": {
+      "XRefCode": "DKFS",
+      "ShortName": "Vacation funktionaer with full salary",
+      "LongName": "Vacation funktionaer with full salary"
+    },
+    "EmploymentAgreementTaxRegime": {
+      "XRefCode": "DKBK",
+      "ShortName": "BIKORT",
+      "LongName": "BIKORT"
+    },
+    "EmploymentAgreementDuration": {
+      "XRefCode": "OE",
+      "ShortName": "Open ended",
+      "LongName": "Open ended"
+    },
+    "Country": {
+      "Name": "Denmark",
+      "XRefCode": "DNK",
+      "ShortName": "Denmark",
+      "LongName": "Denmark"
+    }
+  }
+}

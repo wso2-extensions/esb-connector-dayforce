@@ -1,0 +1,52 @@
+{
+  "$schema": "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "id": "http://wso2jsonschema.org",
+  "type": "object",
+  "title": "root",
+  "properties": {
+    "i9OrderId": {
+      "id": "http://wso2jsonschema.org/i9OrderId",
+      "type": "string"
+    },
+    "isValidateOnly": {
+      "id": "http://wso2jsonschema.org/isValidateOnly",
+      "type": "boolean"
+    },
+    "fieldAndValue": {
+      "id": "http://wso2jsonschema.org/fieldAndValue",
+      "type": "object",
+      "properties" : {
+        "I9OrderId" : {
+          "id" : "http://wso2jsonschema.org/I9OrderId",
+          "nullable":"true", "type": "string"
+        },
+        "OrderStatusXRefCode" : {
+          "id" : "http://wso2jsonschema.org/OrderStatusXRefCode",
+          "nullable":"true", "type": "string"
+        },
+        "EVerify" : {
+          "id" : "http://wso2jsonschema.org/EVerify",
+          "nullable":"true", "type": "object",
+          "properties" : {
+            "EVerifyCaseNumber" : {
+              "id" : "http://wso2jsonschema.org/EVerify/EVerifyCaseNumber",
+              "nullable":"true", "type": "string"
+            },
+            "EVerifyStatus" : {
+              "id" : "http://wso2jsonschema.org/EVerify/EVerifyStatus",
+              "nullable":"true", "type": "string"
+            },
+            "EVerifyStatusDate" : {
+              "id" : "http://wso2jsonschema.org/EVerify/EVerifyStatusDate",
+              "nullable":"true", "type": "string"
+            },
+            "EVerifyStatusDesc" : {
+              "id" : "http://wso2jsonschema.org/EVerify/EVerifyStatusDesc",
+              "nullable":"true", "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

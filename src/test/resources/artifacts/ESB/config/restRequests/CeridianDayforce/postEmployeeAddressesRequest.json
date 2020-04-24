@@ -1,0 +1,37 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr58.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "xRefCode": "42199",
+  "isValidateOnly": "true",
+  "fieldAndValue": {
+    "Address1": "4114 Yonge St.",
+    "City": "North York",
+    "PostalCode": "M2P 2B7",
+    "Country": {
+      "Name": "Canada",
+      "XRefCode": "CAN",
+      "ShortName": "Canada",
+      "LongName": "Canada"
+    },
+    "State": {
+      "Name": "Ontario",
+      "XRefCode": "ON",
+      "ShortName": "Ontario",
+      "LongName": "Ontario"
+    },
+    "EffectiveStart": "2017-01-15T00:00:00",
+    "ContactInformationType": {
+      "ContactInformationTypeGroup": {
+        "XRefCode": "Address",
+        "ShortName": "Address",
+        "LongName": "Address"
+      },
+      "XRefCode": "PrimaryResidence",
+      "ShortName": "Primary Residence",
+      "LongName": "Primary Residence"
+    },
+    "IsPayrollMailing": false
+  }
+}

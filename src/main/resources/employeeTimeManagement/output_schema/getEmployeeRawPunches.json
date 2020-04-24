@@ -1,0 +1,285 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "object",
+  "properties": {
+    "Data": {
+      "id": "http:\/\/wso2jsonschema.org\/Data",
+      "nullable": "true",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/0",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "RawPunchXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/RawPunchXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "PunchState": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/PunchState",
+              "nullable": "true",
+              "type": "string"
+            },
+            "PayDate": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/PayDate",
+              "nullable": "true",
+              "type": "string"
+            },
+            "EmployeeXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/EmployeeXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "EmployeeBadge": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/EmployeeBadge",
+              "nullable": "true",
+              "type": "string"
+            },
+            "RawPunchTime": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/RawPunchTime",
+              "nullable": "true",
+              "type": "string"
+            },
+            "WasOfflinePunch": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/WasOfflinePunch",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "ExtraData": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData",
+              "nullable": "true",
+              "type": "object",
+              "properties": {
+                "DocketXRefCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/DocketXRefCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "ProjectXRefCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/ProjectXRefCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "PositionXRefCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/PositionXRefCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "LocationXRefCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/LocationXRefCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "Quantity": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/Quantity",
+                  "nullable": "true",
+                  "type": "number"
+                },
+                "MealWaiver": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/MealWaiver",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "BreakAttestation": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/BreakAttestation",
+                  "nullable": "true",
+                  "type": "boolean"
+                },
+                "BioFailure": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/BioFailure",
+                  "nullable": "true",
+                  "type": "boolean"
+                },
+                "FaceVerificationFailure": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/FaceVerificationFailure",
+                  "nullable": "true",
+                  "type": "boolean"
+                },
+                "LaborMetrics": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/LaborMetrics",
+                  "nullable": "true",
+                  "type": "array",
+                  "items": [
+                    {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/LaborMetrics\/0",
+                      "nullable": "true",
+                      "type": "object",
+                      "properties": {
+                        "TypeXRefCode": {
+                          "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/LaborMetrics\/0\/TypeXRefCode",
+                          "nullable": "true",
+                          "type": "string"
+                        },
+                        "CodeXRefCode": {
+                          "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/LaborMetrics\/0\/CodeXRefCode",
+                          "nullable": "true",
+                          "type": "string"
+                        },
+                        "TypeClockTransferCode": {
+                          "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/LaborMetrics\/0\/TypeClockTransferCode",
+                          "nullable": "true",
+                          "type": "string"
+                        },
+                        "CodeClockTransferCode": {
+                          "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/LaborMetrics\/0\/CodeClockTransferCode",
+                          "nullable": "true",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "DocketClockTransferCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/DocketClockTransferCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "ProjectClockTransferCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/ProjectClockTransferCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "PositionClockTransferCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/PositionClockTransferCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "LocationClockTransferCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ExtraData\/LocationClockTransferCode",
+                  "nullable": "true",
+                  "type": "string"
+                }
+              }
+            },
+            "PunchType": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/PunchType",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Comment": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Comment",
+              "nullable": "true",
+              "type": "string"
+            },
+            "PunchDevice": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/PunchDevice",
+              "nullable": "true",
+              "type": "string"
+            },
+            "SupervisorBadge": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/SupervisorBadge",
+              "nullable": "true",
+              "type": "string"
+            },
+            "IsDuplicate": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/IsDuplicate",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "RejectedReason": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/RejectedReason",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LocationXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/LocationXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "PositionXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/PositionXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "DepartmentXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DepartmentXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "JobXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/JobXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "IPAddress": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/IPAddress",
+              "nullable": "true",
+              "type": "string"
+            },
+            "PunchOrigin": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/PunchOrigin",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Latitude": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Latitude",
+              "nullable": "true",
+              "type": "number"
+            },
+            "Longitude": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Longitude",
+              "nullable": "true",
+              "type": "number"
+            },
+            "Accuracy": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Accuracy",
+              "nullable": "true",
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "ProcessResults": {
+      "id": "http:\/\/wso2jsonschema.org\/ProcessResults",
+      "nullable": "true",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "Code": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Code",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Context": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Context",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Level": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Level",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Message": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Message",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "Paging": {
+      "id": "http:\/\/wso2jsonschema.org\/Paging",
+      "nullable": "true",
+      "type": "object",
+      "properties": {
+        "Next": {
+          "id": "http:\/\/wso2jsonschema.org\/Paging\/Next",
+          "nullable": "true",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

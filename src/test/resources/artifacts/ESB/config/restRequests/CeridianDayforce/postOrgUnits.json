@@ -1,0 +1,26 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr58.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "isValidateOnly": "true",
+  "fieldAndValue":
+  {
+    "OrgLevel": {
+      "XRefCode": "Site"
+    },
+    "PhysicalLocation": 1,
+    "OrgUnitParents": {
+      "Items": [
+        {
+          "ParentOrgUnit": {
+            "XRefCode": "Corporate"
+          },
+          "EffectiveStart": "2019-06-26T00:00:00-04:00"
+        }
+      ]
+    },
+    "XRefCode": "ShopDDN",
+    "ShortName": "ShopDDN"
+  }
+}

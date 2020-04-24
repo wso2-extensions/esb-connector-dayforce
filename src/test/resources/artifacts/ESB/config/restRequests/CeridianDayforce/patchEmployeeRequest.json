@@ -1,0 +1,51 @@
+{
+  "BioExempt": false,
+  "BirthDate": "1969-06-23T00:00:00",
+  "ChecksumTimestamp": "2019-10-01T08:21:19.28",
+  "ClockSupervisor": false,
+  "Culture": {
+    "XRefCode": "en-US",
+    "ShortName": "English (US)",
+    "LongName": "English (US)"
+  },
+  "EligibleForRehire": "NOTANSWERED",
+  "FederatedId": "aaron.glover",
+  "Gender": "M",
+  "HireDate": "2000-08-23T00:00:00",
+  "HomePhone": "202 265 8987",
+  "NewHireApprovalDate": "2000-01-01T00:00:00",
+  "NewHireApproved": true,
+  "NewHireApprovedBy": "System",
+  "OriginalHireDate": "2000-08-23T00:00:00",
+  "PhotoExempt": false,
+  "RegisteredDisabled": "NO",
+  "RequiresExitInterview": false,
+  "SeniorityDate": "2000-08-23T00:00:00",
+  "SocialSecurityNumber": "252013727",
+  "StartDate": "2000-08-23T00:00:00",
+  "TaxExempt": true,
+  "FirstTimeAccessEmailSentCount": 0,
+  "FirstTimeAccessVerificationAttempts": 0,
+  "SendFirstTimeAccessEmail": false,
+  "EmployeeBadge": {
+    "BadgeNumber": "33333",
+    "EffectiveStart": "2000-01-01T00:00:00"
+  },
+  "LoginId": "mworker",
+  "HomeOrganization": {
+    "XRefCode": "500Packaging",
+    "ShortName": "Plant 1 - Packaging",
+    "LongName": "Plant 1 - Packaging"
+  },
+  "EmployeeNumber": "42199",
+  "BioSensitivityLevel": {
+    "XRefCode": "DEFAULT",
+    "ShortName": "Default",
+    "LongName": "Default"
+  },
+  "XRefCode": "42199",
+  "CommonName": "Aaron",
+  "DisplayName": "Aaron Glover",
+  "FirstName": "Aaron",
+  "LastName": "Glover"
+}

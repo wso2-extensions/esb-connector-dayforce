@@ -1,0 +1,36 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr58.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "xRefCode": "42199",
+  "isValidateOnly": "FALSE",
+  "contextDateRangeFrom": "2017-01-01T13:24:56",
+  "fieldAndValue": {
+    "ContactNumber": "202 265 8987",
+    "Country": {
+      "Name": "United States of America",
+      "XRefCode": "USA",
+      "ShortName": "United States of America",
+      "LongName": "United States of America"
+    },
+    "EffectiveStart": "2000-01-01T00:00:00",
+    "ContactInformationType": {
+      "ContactInformationTypeGroup": {
+        "XRefCode": "Phone",
+        "ShortName": "Phone",
+        "LongName": "Phone"
+      },
+      "XRefCode": "HomePhone",
+      "ShortName": "Home",
+      "LongName": "Home"
+    },
+    "IsForSystemCommunications": false,
+    "IsPreferredContactMethod": false,
+    "IsUnlistedNumber": false,
+    "IsVerified": false,
+    "IsRejected": false,
+    "ShowRejectedWarning": true,
+    "NumberOfVerificationRequests": 0
+  }
+}

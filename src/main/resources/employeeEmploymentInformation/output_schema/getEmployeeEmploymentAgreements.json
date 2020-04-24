@@ -1,0 +1,339 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "EffectiveEnd": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveEnd",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EffectiveStart": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveStart",
+          "nullable": "true",
+          "type": "string"
+        },
+        "XRefCode": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/XRefCode",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EmploymentAgreementType": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementType",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementType\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementType\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementType\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementType\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "EmploymentAgreementPopulation": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementPopulation",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementPopulation\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementPopulation\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementPopulation\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementPopulation\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "EmploymentAgreementDetails": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementDetails",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementDetails\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementDetails\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementDetails\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementDetails\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "EmploymentAgreementTaxRegime": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementTaxRegime",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementTaxRegime\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementTaxRegime\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementTaxRegime\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementTaxRegime\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "EmploymentAgreementDuration": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementDuration",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementDuration\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementDuration\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementDuration\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementDuration\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "EmploymentAgreementSettlement": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementSettlement",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementSettlement\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementSettlement\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementSettlement\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/EmploymentAgreementSettlement\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "GovernmentIdentifier": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/GovernmentIdentifier",
+          "nullable": "true",
+          "type": "string"
+        },
+        "AgreementReason": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AgreementReason",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "IsCompChangeReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementReason\/IsCompChangeReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsLeaveReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementReason\/IsLeaveReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsPositionChangeReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementReason\/IsPositionChangeReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsTerminationReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementReason\/IsTerminationReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsVoluntaryReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementReason\/IsVoluntaryReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementReason\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementReason\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementReason\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementReason\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "AgreementEndReason": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AgreementEndReason",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "IsCompChangeReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementEndReason\/IsCompChangeReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsLeaveReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementEndReason\/IsLeaveReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsPositionChangeReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementEndReason\/IsPositionChangeReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsTerminationReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementEndReason\/IsTerminationReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsVoluntaryReason": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementEndReason\/IsVoluntaryReason",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementEndReason\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementEndReason\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementEndReason\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/AgreementEndReason\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "Country": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/Country",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "Name": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Country\/Name",
+              "nullable": "true",
+              "type": "string"
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Country\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Country\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Country\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Country\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}

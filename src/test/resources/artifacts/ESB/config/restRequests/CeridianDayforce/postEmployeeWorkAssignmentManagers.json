@@ -1,0 +1,22 @@
+{
+  "username": "DFWSTest",
+  "password": "DFWSTest",
+  "clientNamespace": "usconfigr58.dayforcehcm.com/Api/ddn",
+  "apiVersion": "V1",
+  "xRefCode": "42199",
+  "isValidateOnly": "true",
+  "fieldAndValue": {
+    "EffectiveStart": "2000-01-01T00:00:00",
+    "EmploymentStatusGroupXRefCode": "INACTIVE",
+    "ManagerXRefCode": "62779",
+    "ManagerName": "Macon Burke",
+    "ActiveEmployeePosition": {
+      "XRefCode": "Packaging Packager",
+      "ShortName": "Package Handler"
+    },
+    "ActiveEmployeeLocation": {
+      "XRefCode": "500Packaging",
+      "ShortName": "Plant 1 - Packaging"
+    }
+  }
+}

@@ -1,0 +1,386 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "object",
+  "properties": {
+    "Data": {
+      "id": "http:\/\/wso2jsonschema.org\/Data",
+      "nullable": "true",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/0",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "PunchXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/PunchXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "EmployeeXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/EmployeeXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "PunchStatus": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/PunchStatus",
+              "nullable": "true",
+              "type": "string"
+            },
+            "TimeStart": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/TimeStart",
+              "nullable": "true",
+              "type": "string"
+            },
+            "TimeEnd": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/TimeEnd",
+              "nullable": "true",
+              "type": "string"
+            },
+            "TimeStartRaw": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/TimeStartRaw",
+              "nullable": "true",
+              "type": "string"
+            },
+            "TimeEndRaw": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/TimeEndRaw",
+              "nullable": "true",
+              "type": "string"
+            },
+            "NetHours": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/NetHours",
+              "nullable": "true",
+              "type": "number"
+            },
+            "LocationXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/LocationXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "PositionXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/PositionXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "DepartmentXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DepartmentXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "JobXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/JobXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "DocketXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DocketXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "DocketQuantity": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DocketQuantity",
+              "nullable": "true",
+              "type": "number"
+            },
+            "ProjectXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ProjectXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "PayAdjustmentXRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/PayAdjustmentXRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "StartExceptionCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/StartExceptionCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "EndExceptionCode": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/EndExceptionCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "EmployeeComment": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/EmployeeComment",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ManagerComment": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/ManagerComment",
+              "nullable": "true",
+              "type": "string"
+            },
+            "BusinessDate": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/BusinessDate",
+              "nullable": "true",
+              "type": "string"
+            },
+            "IsDeleted": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/IsDeleted",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsOnCall": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/IsOnCall",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "FuturePunch": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/FuturePunch",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "AssumedTimeStart": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/AssumedTimeStart",
+              "nullable": "true",
+              "type": "string"
+            },
+            "AssumedTimeEnd": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/AssumedTimeEnd",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestampUtc": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/LastModifiedTimestampUtc",
+              "nullable": "true",
+              "type": "string"
+            },
+            "MealBreaks": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/MealBreaks",
+              "nullable": "true",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/MealBreaks\/0",
+                  "nullable": "true",
+                  "type": "object",
+                  "properties": {
+                    "PunchXRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/MealBreaks\/0\/PunchXRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "nullable": "true",
+                    "type": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/MealBreaks\/0\/Type",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "TimeStart": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/MealBreaks\/0\/TimeStart",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "TimeEnd": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/MealBreaks\/0\/TimeEnd",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "TimeStartRaw": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/MealBreaks\/0\/TimeStartRaw",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "TimeEndRaw": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/MealBreaks\/0\/TimeEndRaw",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "NetHours": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/MealBreaks\/0\/NetHours",
+                      "nullable": "true",
+                      "type": "number"
+                    },
+                    "StartExceptionCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/MealBreaks\/0\/StartExceptionCode",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "EndExceptionCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/MealBreaks\/0\/EndExceptionCode",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "IsAutoInjected": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/MealBreaks\/0\/IsAutoInjected",
+                      "nullable": "true",
+                      "type": "boolean"
+                    },
+                    "LastModifiedTimestampUtc": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/MealBreaks\/0\/LastModifiedTimestampUtc",
+                      "nullable": "true",
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            },
+            "Transfers": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers",
+              "nullable": "true",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0",
+                  "nullable": "true",
+                  "type": "object",
+                  "properties": {
+                    "TimeStart": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0\/TimeStart",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "TimeStartRaw": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0\/TimeStartRaw",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "LocationXRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0\/LocationXRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "PositionXRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0\/PositionXRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "ProjectXRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0\/ProjectXRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "DocketXRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0\/DocketXRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "DocketQuantity": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0\/DocketQuantity",
+                      "nullable": "true",
+                      "type": "number"
+                    },
+                    "PayAdjustmentXRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0\/PayAdjustmentXRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "EmployeeComment": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0\/EmployeeComment",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "ManagerComment": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0\/ManagerComment",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "LaborMetrics": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0\/LaborMetrics",
+                      "nullable": "true",
+                      "type": "array",
+                      "items": [
+                        {
+                          "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0\/LaborMetrics\/0",
+                          "nullable": "true",
+                          "type": "object",
+                          "properties": {
+                            "LaborMetricsTypeXRefCode": {
+                              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0\/LaborMetrics\/0\/LaborMetricsTypeXRefCode",
+                              "nullable": "true",
+                              "type": "string"
+                            },
+                            "LaborMetricsCodeXRefCode": {
+                              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/Transfers\/0\/LaborMetrics\/0\/LaborMetricsCodeXRefCode",
+                              "nullable": "true",
+                              "type": "string"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            "LaborMetrics": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/LaborMetrics",
+              "nullable": "true",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http:\/\/wso2jsonschema.org\/Data\/0\/LaborMetrics\/0",
+                  "nullable": "true",
+                  "type": "object",
+                  "properties": {
+                    "LaborMetricsTypeXRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/LaborMetrics\/0\/LaborMetricsTypeXRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "LaborMetricsCodeXRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/Data\/0\/LaborMetrics\/0\/LaborMetricsCodeXRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "ProcessResults": {
+      "id": "http:\/\/wso2jsonschema.org\/ProcessResults",
+      "nullable": "true",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "Code": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Code",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Context": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Context",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Level": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Level",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Message": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Message",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "Paging": {
+      "id": "http:\/\/wso2jsonschema.org\/Paging",
+      "nullable": "true",
+      "type": "object",
+      "properties": {
+        "Next": {
+          "id": "http:\/\/wso2jsonschema.org\/Paging\/Next",
+          "nullable": "true",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

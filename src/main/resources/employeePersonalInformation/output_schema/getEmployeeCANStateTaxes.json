@@ -1,0 +1,118 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "EffectiveStart": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveStart",
+          "nullable": "true",
+          "type": "string"
+        },
+        "EffectiveEnd": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EffectiveEnd",
+          "nullable": "true",
+          "type": "string"
+        },
+        "State": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/State",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "Name": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/State\/Name",
+              "nullable": "true",
+              "type": "string"
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/State\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/State\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/State\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/State\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "TotalClaimAmount": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/TotalClaimAmount",
+          "nullable": "true",
+          "type": "number"
+        },
+        "PrescribedAreaDeduction": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/PrescribedAreaDeduction",
+          "nullable": "true",
+          "type": "number"
+        },
+        "MaintenanceDeduction": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/MaintenanceDeduction",
+          "nullable": "true",
+          "type": "number"
+        },
+        "AuthorizedTaxCredits": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AuthorizedTaxCredits",
+          "nullable": "true",
+          "type": "number"
+        },
+        "QuebecDevelopmentFunds": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/QuebecDevelopmentFunds",
+          "nullable": "true",
+          "type": "number"
+        },
+        "EstimatedExpense": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EstimatedExpense",
+          "nullable": "true",
+          "type": "number"
+        },
+        "EstimatedRemuneration": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/EstimatedRemuneration",
+          "nullable": "true",
+          "type": "number"
+        },
+        "AdditionalAmount": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/AdditionalAmount",
+          "nullable": "true",
+          "type": "number"
+        },
+        "LabourSponsoredFunds": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LabourSponsoredFunds",
+          "nullable": "true",
+          "type": "number"
+        },
+        "HasQuebecHealthContributionExemption": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/HasQuebecHealthContributionExemption",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "IncomeLessThanClaim": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/IncomeLessThanClaim",
+          "nullable": "true",
+          "type": "boolean"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}

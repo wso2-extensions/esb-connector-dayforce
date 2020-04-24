@@ -1,0 +1,253 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "array",
+  "items": [
+    {
+      "properties": {
+        "OrgUnitDetail": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "EffectiveStart": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/EffectiveStart",
+              "nullable": "true",
+              "type": "string"
+            },
+            "EffectiveEnd": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/EffectiveEnd",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Address": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address",
+              "nullable": "true",
+              "type": "object",
+              "properties": {
+                "Address1": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/Address1",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "Address2": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/Address2",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "Address3": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/Address3",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "Address4": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/Address4",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "Address5": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/Address5",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "Address6": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/Address6",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "City": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/City",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "PostalCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/PostalCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "Country": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/Country",
+                  "nullable": "true",
+                  "type": "object",
+                  "properties": {
+                    "Name": {
+                      "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/Country\/Name",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "XRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/Country\/XRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "ShortName": {
+                      "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/Country\/ShortName",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "LongName": {
+                      "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/Country\/LongName",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "LastModifiedTimestamp": {
+                      "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/Country\/LastModifiedTimestamp",
+                      "nullable": "true",
+                      "type": "string"
+                    }
+                  }
+                },
+                "State": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/State",
+                  "nullable": "true",
+                  "type": "object",
+                  "properties": {
+                    "Name": {
+                      "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/State\/Name",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "XRefCode": {
+                      "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/State\/XRefCode",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "ShortName": {
+                      "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/State\/ShortName",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "LongName": {
+                      "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/State\/LongName",
+                      "nullable": "true",
+                      "type": "string"
+                    },
+                    "LastModifiedTimestamp": {
+                      "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/State\/LastModifiedTimestamp",
+                      "nullable": "true",
+                      "type": "string"
+                    }
+                  }
+                },
+                "LastModifiedTimestamp": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/Address\/LastModifiedTimestamp",
+                  "nullable": "true",
+                  "type": "string"
+                }
+              }
+            },
+            "ChildSortOrder": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/ChildSortOrder",
+              "nullable": "true",
+              "type": "number"
+            },
+            "IsPhysicalLocation": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/IsPhysicalLocation",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsPrimary": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/IsPrimary",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "LedgerCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/LedgerCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ParentSortOrder": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/ParentSortOrder",
+              "nullable": "true",
+              "type": "number"
+            },
+            "OrgLevel": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/OrgLevel",
+              "nullable": "true",
+              "type": "object",
+              "properties": {
+                "XRefCode": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/OrgLevel\/XRefCode",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "ShortName": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/OrgLevel\/ShortName",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "LongName": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/OrgLevel\/LongName",
+                  "nullable": "true",
+                  "type": "string"
+                },
+                "LastModifiedTimestamp": {
+                  "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/OrgLevel\/LastModifiedTimestamp",
+                  "nullable": "true",
+                  "type": "string"
+                }
+              }
+            },
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/OrgUnitDetail\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "Department": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/Department",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "XRefCode": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Department\/XRefCode",
+              "nullable": "true",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Department\/ShortName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Department\/LongName",
+              "nullable": "true",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http:\/\/wso2jsonschema.org\/0\/Department\/LastModifiedTimestamp",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        },
+        "LastModifiedTimestamp": {
+          "id": "http:\/\/wso2jsonschema.org\/0\/LastModifiedTimestamp",
+          "nullable": "true",
+          "type": "string"
+        }
+      },
+      "id": "http:\/\/wso2jsonschema.org\/0",
+      "nullable": "true",
+      "type": "object"
+    }
+  ]
+}

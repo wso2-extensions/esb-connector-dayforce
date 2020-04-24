@@ -1,0 +1,148 @@
+{
+  "$schema": "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "id": "http://wso2jsonschema.org",
+  "type": "object",
+  "title": "root",
+  "properties": {
+    "xRefCode": {
+      "id": "http://wso2jsonschema.org/xRefCode",
+      "type": "string"
+    },
+    "isValidateOnly": {
+      "id": "http://wso2jsonschema.org/isValidateOnly",
+      "type": "boolean"
+    },
+    "fieldAndValue": {
+      "id": "http://wso2jsonschema.org/fieldAndValue",
+      "type": "object",
+      "properties": {
+        "ContactNumber": {
+          "id": "http://wso2jsonschema.org/ContactNumber",
+          "type": "string"
+        },
+        "Country": {
+          "id": "http://wso2jsonschema.org/Country",
+          "type": "object",
+          "properties": {
+            "Name": {
+              "id": "http://wso2jsonschema.org/Country/Name",
+              "type": "string"
+            },
+            "XRefCode": {
+              "id": "http://wso2jsonschema.org/Country/XRefCode",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http://wso2jsonschema.org/Country/ShortName",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http://wso2jsonschema.org/Country/LongName",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http://wso2jsonschema.org/Country/LastModifiedTimestamp",
+              "type": "string"
+            }
+          }
+        },
+        "ElectronicAddress": {
+          "id": "http://wso2jsonschema.org/ElectronicAddress",
+          "type": "string"
+        },
+        "Extension": {
+          "id": "http://wso2jsonschema.org/Extension",
+          "type": "string"
+        },
+        "EffectiveStart": {
+          "id": "http://wso2jsonschema.org/EffectiveStart",
+          "type": "string"
+        },
+        "EffectiveEnd": {
+          "id": "http://wso2jsonschema.org/EffectiveEnd",
+          "type": "string"
+        },
+        "ContactInformationType": {
+          "id": "http://wso2jsonschema.org/ContactInformationType",
+          "type": "object",
+          "properties": {
+            "ContactInformationTypeGroup": {
+              "id": "http://wso2jsonschema.org/ContactInformationType/ContactInformationTypeGroup",
+              "type": "object",
+              "properties": {
+                "XRefCode": {
+                  "id": "http://wso2jsonschema.org/ContactInformationType/ContactInformationTypeGroup/XRefCode",
+                  "type": "string"
+                },
+                "ShortName": {
+                  "id": "http://wso2jsonschema.org/ContactInformationType/ContactInformationTypeGroup/ShortName",
+                  "type": "string"
+                },
+                "LongName": {
+                  "id": "http://wso2jsonschema.org/ContactInformationType/ContactInformationTypeGroup/LongName",
+                  "type": "string"
+                },
+                "LastModifiedTimestamp": {
+                  "id": "http://wso2jsonschema.org/ContactInformationType/ContactInformationTypeGroup/LastModifiedTimestamp",
+                  "type": "string"
+                }
+              }
+            },
+            "XRefCode": {
+              "id": "http://wso2jsonschema.org/ContactInformationType/XRefCode",
+              "type": "string"
+            },
+            "ShortName": {
+              "id": "http://wso2jsonschema.org/ContactInformationType/ShortName",
+              "type": "string"
+            },
+            "LongName": {
+              "id": "http://wso2jsonschema.org/ContactInformationType/LongName",
+              "type": "string"
+            },
+            "LastModifiedTimestamp": {
+              "id": "http://wso2jsonschema.org/ContactInformationType/LastModifiedTimestamp",
+              "type": "string"
+            }
+          }
+        },
+        "IsForSystemCommunications": {
+          "id": "http://wso2jsonschema.org/IsForSystemCommunications",
+          "type": "boolean"
+        },
+        "IsPreferredContactMethod": {
+          "id": "http://wso2jsonschema.org/IsPreferredContactMethod",
+          "type": "boolean"
+        },
+        "IsUnlistedNumber": {
+          "id": "http://wso2jsonschema.org/IsUnlistedNumber",
+          "type": "boolean"
+        },
+        "FormattedNumber": {
+          "id": "http://wso2jsonschema.org/FormattedNumber",
+          "type": "string"
+        },
+        "IsVerified": {
+          "id": "http://wso2jsonschema.org/IsVerified",
+          "type": "boolean"
+        },
+        "IsRejected": {
+          "id": "http://wso2jsonschema.org/IsRejected",
+          "type": "boolean"
+        },
+        "ShowRejectedWarning": {
+          "id": "http://wso2jsonschema.org/ShowRejectedWarning",
+          "type": "boolean"
+        },
+        "NumberOfVerificationRequests": {
+          "id": "http://wso2jsonschema.org/NumberOfVerificationRequests",
+          "type": "number"
+        },
+        "LastModifiedTimestamp": {
+          "id": "http://wso2jsonschema.org/LastModifiedTimestamp",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

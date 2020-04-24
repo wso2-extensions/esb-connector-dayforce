@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2020, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~
+  ~ WSO2 Inc. licenses this file to you under the Apache License,
+  ~ Version 2.0 (the "License"); you may not use this file except
+  ~ in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing,
+  ~ software distributed under the License is distributed on an
+  ~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  ~ KIND, either express or implied. See the License for the
+  ~ specific language governing permissions and limitations
+  ~ under the License.
+  -->
+<template name="init" onError="fault" xmlns="http://ws.apache.org/ns/synapse">
+    <parameter name="username"/>
+    <parameter name="password"/>
+    <parameter name="clientNamespace"/>
+    <parameter name="uriPath"/>
+    <parameter name="timeout" description="Timeout duration of the API request."/>
+    <parameter name="blocking" description="Set to true to perform the blocking invocations to Dayforce."/>
+    <parameter name="apiVersion" description="Version of the Ceridian Dayforce API."/>
+    <sequence>
+        <property name="dayforceRestBlocking" expression="$func:blocking"/>
+        <property name="uri.var.apiVersion" expression="$func:apiVersion"/>
+        <property name="Accept-Encoding" scope="transport" action="remove"/>
+        <property name="timeout" expression="$func:timeout"/>
+        <script language="js">
+            <![CDATA[
+                var timeout = mc.getProperty("timeout");
+                if (timeout == null || timeout == "") {
+                    timeout = 30000;
+                }
+                mc.setProperty("timeout", timeout.toString());
+            ]]>
+        </script>
+        <filter source="boolean($func:username)" regex="false">
+            <then>
+                <log category="ERROR" level="custom">
+                    <property name="CERIDIAN Dayforce" value="User name is empty."/>
+                </log>
+            </then>
+        </filter>
+        <filter source="boolean($func:password)" regex="false">
+            <then>
+                <log category="ERROR" level="custom">
+                    <property name="CERIDIAN Dayforce" value="Password is empty."/>
+                </log>
+            </then>
+        </filter>
+        <filter source="boolean($func:clientNamespace)" regex="false">
+            <then>
+                <log category="ERROR" level="custom">
+                    <property name="CERIDIAN Dayforce" value="ClientNamespace parameter is empty."/>
+                </log>
+            </then>
+        </filter>
+        <filter source="boolean($func:uriPath)" regex="true">
+            <then>
+                <property name="uri.var.uriPath" expression="$func:uriPath"/>
+            </then>
+            <else>
+                <property name="uri.var.uriPath" value="connectors/Dayforce/"/>
+            </else>
+        </filter>
+        <property expression="base64Encode(fn:concat($func:username,':',$func:password))"
+                  name="ceridianDayForceAuthHeader"/>
+        <property name="uri.var.clientNamespace" expression="$func:clientNamespace"/>
+        <property name="uri.var.serviceUri.reg" expression="get-property('registry', fn:concat($ctx:uri.var.uriPath,$ctx:uri.var.clientNamespace))"/>
+
+        <filter source="$ctx:uri.var.serviceUri.reg=''" regex="true">
+            <then>
+                <property expression="fn:concat('Basic ',$ctx:ceridianDayForceAuthHeader)" name="Authorization"
+                          scope="transport"/>
+                <filter source="$ctx:dayforceRestBlocking" regex="true">
+                    <then>
+                        <call blocking="true">
+                            <endpoint>
+                                <http method="get"
+                                      uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/ClientMetadata">
+                                    <timeout>
+                                        <duration>{$ctx:timeout}</duration>
+                                        <responseAction>fault</responseAction>
+                                    </timeout>
+                                    <suspendOnFailure>
+                                        <initialDuration>-1</initialDuration>
+                                        <progressionFactor>-1</progressionFactor>
+                                        <maximumDuration>0</maximumDuration>
+                                    </suspendOnFailure>
+                                    <markForSuspension>
+                                        <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                                    </markForSuspension>
+                                </http>
+                            </endpoint>
+                        </call>
+                    </then>
+                    <else>
+                        <call>
+                            <endpoint>
+                                <http method="get"
+                                      uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/ClientMetadata">
+                                    <timeout>
+                                        <duration>{$ctx:timeout}</duration>
+                                        <responseAction>fault</responseAction>
+                                    </timeout>
+                                    <suspendOnFailure>
+                                        <initialDuration>-1</initialDuration>
+                                        <progressionFactor>-1</progressionFactor>
+                                        <maximumDuration>0</maximumDuration>
+                                    </suspendOnFailure>
+                                    <markForSuspension>
+                                        <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                                    </markForSuspension>
+                                </http>
+                            </endpoint>
+                        </call>
+                    </else>
+                </filter>
+                <property name="SERVICE_URI" expression="json-eval($.ServiceUri)"/>
+                <filter source="boolean($ctx:SERVICE_URI)" regex="true">
+                    <then>
+                        <class name="org.wso2.carbon.esb.mediator.CeridianDayforceMediator"/>
+                    </then>
+                </filter>
+            </then>
+            <else>
+                <filter source="$ctx:uri.var.serviceUri.reg=''" regex="false">
+                    <then>
+                        <property name="uri.var.clientNamespace" expression="$ctx:uri.var.serviceUri.reg"/>
+                    </then>
+                </filter>
+            </else>
+        </filter>
+    </sequence>
+</template>

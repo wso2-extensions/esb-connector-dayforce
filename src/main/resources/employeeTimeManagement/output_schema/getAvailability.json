@@ -1,0 +1,92 @@
+{
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
+  "outputType": "JSON",
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "type": "object",
+  "properties": {
+    "Data": {
+      "id": "http:\/\/wso2jsonschema.org\/Data",
+      "nullable": "true",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/Data\/0",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "DateOfRequest": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/DateOfRequest",
+              "nullable": "true",
+              "type": "string"
+            },
+            "UnAvailable": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/UnAvailable",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "IsDefault": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/IsDefault",
+              "nullable": "true",
+              "type": "boolean"
+            },
+            "StartTime1": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/StartTime1",
+              "nullable": "true",
+              "type": "string"
+            },
+            "EndTime1": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/EndTime1",
+              "nullable": "true",
+              "type": "string"
+            },
+            "StartTime2": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/StartTime2",
+              "nullable": "true",
+              "type": "string"
+            },
+            "EndTime2": {
+              "id": "http:\/\/wso2jsonschema.org\/Data\/0\/EndTime2",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "ProcessResults": {
+      "id": "http:\/\/wso2jsonschema.org\/ProcessResults",
+      "nullable": "true",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0",
+          "nullable": "true",
+          "type": "object",
+          "properties": {
+            "Code": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Code",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Context": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Context",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Level": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Level",
+              "nullable": "true",
+              "type": "string"
+            },
+            "Message": {
+              "id": "http:\/\/wso2jsonschema.org\/ProcessResults\/0\/Message",
+              "nullable": "true",
+              "type": "string"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
