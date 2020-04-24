@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2019, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ * Copyright (c) 2020, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
  *
  * WSO2 Inc. licenses this file to you under the Apache License,
  * Version 2.0 (the "License"); you may not use this file except
@@ -84,8 +84,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
     @Test(enabled = true, groups = {"wso2.ei"}, description = "GET Employee Details Test Case with contextDate")
     public void GETEmployeeDetailsTestWithcontextDate() throws Exception {
         RestResponse<JSONObject> eiRestResponse =
-                sendJsonRestRequest(getProxyServiceURLHttp("getEmployeeDetails") + "?xRefCode=42199&contextDate=2017-01-01T13:24:56", "GET",
-                        eiRequestHeadersMap, null);
+                sendJsonRestRequest(getProxyServiceURLHttp("getEmployeeDetails") +
+                                "?xRefCode=42199&contextDate=2017-01-01T13:24:56", "GET", eiRequestHeadersMap, null);
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
                 .getProperty("apiVersion") + "/Employees/42199?contextDate=2017-01-01T13:24:56";
@@ -101,7 +101,7 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
     @Test(enabled = true, groups = {"wso2.ei"}, description = "POST Employee Test Case")
     public void PostEmployeeTest() throws Exception {
         RestResponse<JSONObject> eiRestResponse = sendJsonRestRequest(getProxyServiceURLHttp("postEmployee") +
-                        "?isValidateOnly=true", "POST", eiRequestHeadersMap, "postEmployeeRequest.json");
+                "?isValidateOnly=true", "POST", eiRequestHeadersMap, "postEmployeeRequest.json");
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
                 .getProperty("apiVersion") + "/Employees?isValidateOnly=true";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequestHTTPS(apiEndPoint, "POST", apiRequestHeadersMap,
@@ -132,7 +132,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
     @Test(enabled = true, groups = {"wso2.ei"}, description = "POST Employee Addresses Test Case")
     public void PostEmployeeAddressesTest() throws Exception {
         RestResponse<JSONObject> eiRestResponse = sendJsonRestRequest(getProxyServiceURLHttp("postEmployeeAddresses") +
-                "?isValidateOnly=true&xRefCode=42199", "POST", eiRequestHeadersMap, "postEmployeeAddressesRequest.json");
+                "?isValidateOnly=true&xRefCode=42199", "POST", eiRequestHeadersMap,
+                "postEmployeeAddressesRequest.json");
         Assert.assertEquals(eiRestResponse.getHttpStatusCode(), 200);
     }
 
@@ -232,7 +233,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
                         eiRequestHeadersMap, "getEmployeeEmergencyContacts.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
-                .getProperty("apiVersion") + "/Employees/42199/EmergencyContacts?contextDateRangeTo=2017-01-01T13:24:56";
+                .getProperty("apiVersion") +
+                "/Employees/42199/EmergencyContacts?contextDateRangeTo=2017-01-01T13:24:56";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequestHTTPS(apiEndPoint, "GET", apiRequestHeadersMap,
                 null, null);
 
@@ -246,8 +248,6 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
         RestResponse<JSONObject> eiRestResponse =
                 sendJsonRestRequest(getProxyServiceURLHttp("postEmployeeEmergencyContacts"), "POST",
                         eiRequestHeadersMap, "postEmployeeEmergencyContacts.json");
-
-
         Assert.assertEquals(eiRestResponse.getHttpStatusCode(), 200);
     }
 
@@ -274,7 +274,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
                         eiRequestHeadersMap, "getEmployeeHealthAndWellness.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
-                .getProperty("apiVersion") + "/Employees/42199/HealthWellnessDetails?contextDateRangeFrom=2017-01-01T13:24:56";
+                .getProperty("apiVersion") +
+                "/Employees/42199/HealthWellnessDetails?contextDateRangeFrom=2017-01-01T13:24:56";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequestHTTPS(apiEndPoint, "GET", apiRequestHeadersMap,
                 null, null);
 
@@ -290,7 +291,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
                         eiRequestHeadersMap, "getEmployeeMaritalStatuses.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
-                .getProperty("apiVersion") + "/Employees/42199/MaritalStatuses?contextDateRangeFrom=2017-01-01T13:24:56";
+                .getProperty("apiVersion") +
+                "/Employees/42199/MaritalStatuses?contextDateRangeFrom=2017-01-01T13:24:56";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequestHTTPS(apiEndPoint, "GET", apiRequestHeadersMap,
                 null, null);
 
@@ -304,7 +306,6 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
         RestResponse<JSONObject> eiRestResponse =
                 sendJsonRestRequest(getProxyServiceURLHttp("postEmployeeMaritalStatuses"), "POST",
                         eiRequestHeadersMap, "postEmployeeMaritalStatuses.json");
-
 
         Assert.assertEquals(eiRestResponse.getHttpStatusCode(), 200);
     }
@@ -412,7 +413,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
                         eiRequestHeadersMap, "getEmployeeEmploymentAgreements.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
-                .getProperty("apiVersion") + "/Employees/42199/EmploymentAgreements?contextDateRangeFrom=2017-01-01T13:24:56";
+                .getProperty("apiVersion") +
+                "/Employees/42199/EmploymentAgreements?contextDateRangeFrom=2017-01-01T13:24:56";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequestHTTPS(apiEndPoint, "GET", apiRequestHeadersMap,
                 null, null);
 
@@ -436,7 +438,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
                         eiRequestHeadersMap, "getEmployeeEmploymentStatuses.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
-                .getProperty("apiVersion") + "/Employees/42199/EmploymentStatuses?contextDateRangeFrom=2017-01-01T13:24:56";
+                .getProperty("apiVersion") +
+                "/Employees/42199/EmploymentStatuses?contextDateRangeFrom=2017-01-01T13:24:56";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequestHTTPS(apiEndPoint, "GET", apiRequestHeadersMap,
                 null, null);
 
@@ -460,7 +463,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
                         eiRequestHeadersMap, "getEmployeeEmploymentTypes.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
-                .getProperty("apiVersion") + "/Employees/42199/EmploymentTypes?contextDateRangeFrom=2017-01-01T13:24:56";
+                .getProperty("apiVersion") +
+                "/Employees/42199/EmploymentTypes?contextDateRangeFrom=2017-01-01T13:24:56";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequestHTTPS(apiEndPoint, "GET", apiRequestHeadersMap,
                 null, null);
 
@@ -524,7 +528,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
                         eiRequestHeadersMap, "getEmployeeOnboardingPolicies.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
-                .getProperty("apiVersion") + "/Employees/42199/OnboardingPolicies?contextDateRangeFrom=2017-01-01T13:24:56";
+                .getProperty("apiVersion") +
+                "/Employees/42199/OnboardingPolicies?contextDateRangeFrom=2017-01-01T13:24:56";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequestHTTPS(apiEndPoint, "GET", apiRequestHeadersMap,
                 null, null);
 
@@ -772,7 +777,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
                         eiRequestHeadersMap, "getEmployeeManagers.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
-                .getProperty("apiVersion") + "/Employees/42199/EmployeeManagers?contextDateRangeFrom=2017-01-01T13:24:56";
+                .getProperty("apiVersion") +
+                "/Employees/42199/EmployeeManagers?contextDateRangeFrom=2017-01-01T13:24:56";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequestHTTPS(apiEndPoint, "GET", apiRequestHeadersMap,
                 null, null);
 
@@ -908,7 +914,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
                         eiRequestHeadersMap, "getAvailability.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
-                .getProperty("apiVersion") + "/Employees/42199/Availability?filterAvailabilityStartDate=2018-02-04T00:00:00&filterAvailabilityEndDate=2018-02-18T00:00:00";
+                .getProperty("apiVersion") + "/Employees/42199/Availability?filterAvailabilityStartDate=" +
+                "2018-02-04T00:00:00&filterAvailabilityEndDate=2018-02-18T00:00:00";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequestHTTPS(apiEndPoint, "GET", apiRequestHeadersMap,
                 null, null);
 
@@ -924,7 +931,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
                         eiRequestHeadersMap, "getSchedules.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
-                .getProperty("apiVersion") + "/Employees/42199/Schedules?filterScheduleStartDate=2018-02-04T00:00:00&filterScheduleEndDate=2018-02-18T00:00:00";
+                .getProperty("apiVersion") + "/Employees/42199/Schedules?filterScheduleStartDate=2018-02-04T00:00:00&" +
+                "filterScheduleEndDate=2018-02-18T00:00:00";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequestHTTPS(apiEndPoint, "GET", apiRequestHeadersMap,
                 null, null);
 
@@ -940,7 +948,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
                         eiRequestHeadersMap, "getTimeAwayFromWork.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
-                .getProperty("apiVersion") + "/Employees/42199/TimeAwayFromWork?filterTAFWStartDate=2018-02-04T00:00:00&filterTAFWEndDate=2018-02-18T00:00:00&status=APPROVED";
+                .getProperty("apiVersion") + "/Employees/42199/TimeAwayFromWork?filterTAFWStartDate=" +
+                "2018-02-04T00:00:00&filterTAFWEndDate=2018-02-18T00:00:00&status=APPROVED";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequestHTTPS(apiEndPoint, "GET", apiRequestHeadersMap,
                 null, null);
 
@@ -956,7 +965,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
                         eiRequestHeadersMap, "getEmployeePunches.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
-                .getProperty("apiVersion") + "/EmployeePunches?filterTransactionStartTimeUTC=2019-03-25T00:00:00&filterTransactionEndTimeUTC=2019-03-29T00:00:00";
+                .getProperty("apiVersion") + "/EmployeePunches?filterTransactionStartTimeUTC=2019-03-25T00:00:00&" +
+                "filterTransactionEndTimeUTC=2019-03-29T00:00:00";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequestHTTPS(apiEndPoint, "GET", apiRequestHeadersMap,
                 null, null);
 
@@ -972,7 +982,8 @@ public class CeridianDayforceConnectorIntegrationTest extends ConnectorIntegrati
                         eiRequestHeadersMap, "getEmployeeRawPunches.json");
 
         String apiEndPoint = connectorProperties.getProperty("apiUrl") + "/" + connectorProperties
-                .getProperty("apiVersion") + "/EmployeeRawPunches?filterTransactionStartTimeUTC=2019-06-03T00:00:00&filterTransactionEndTimeUTC=2019-06-05T00:00:00";
+                .getProperty("apiVersion") + "/EmployeeRawPunches?filterTransactionStartTimeUTC=2019-06-03T00:00:00&" +
+                "filterTransactionEndTimeUTC=2019-06-05T00:00:00";
         RestResponse<JSONObject> apiRestResponse = sendJsonRestRequestHTTPS(apiEndPoint, "GET", apiRequestHeadersMap,
                 null, null);
 

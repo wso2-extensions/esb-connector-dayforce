@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2019, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ * Copyright (c) 2020, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
  *
  * WSO2 Inc. licenses this file to you under the Apache License,
  * Version 2.0 (the "License"); you may not use this file except
@@ -19,11 +19,9 @@ package org.wso2.carbon.esb.mediator;
 
 import org.apache.synapse.MessageContext;
 import org.apache.synapse.mediators.AbstractMediator;
-import org.wso2.carbon.connector.core.AbstractConnector;
-import org.wso2.carbon.connector.core.ConnectException;
 
 /**
- * Sample method implementation.
+ * Method implementation.
  */
 public class CeridianDayforceMediator extends AbstractMediator {
     private String uriPath;
@@ -36,7 +34,8 @@ public class CeridianDayforceMediator extends AbstractMediator {
             uriPath = synCtx.getProperty("uri.var.uriPath").toString();
             clientNameSpaceKey = synCtx.getProperty("uri.var.clientNamespace").toString();
             uriPath = uriPath + clientNameSpaceKey;
-            serviceUri = synCtx.getProperty("SERVICE_URI").toString() + clientNameSpaceKey.substring(clientNameSpaceKey.lastIndexOf("/"));
+            serviceUri = synCtx.getProperty("SERVICE_URI").toString() +
+                    clientNameSpaceKey.substring(clientNameSpaceKey.lastIndexOf("/"));
             if (serviceUri.startsWith("http://")) {
                 serviceUri = serviceUri.substring(7);
             } else if (serviceUri.startsWith("https://")) {
