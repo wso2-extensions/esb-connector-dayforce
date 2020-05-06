@@ -21,21 +21,20 @@
     <parameter name="password"/>
     <parameter name="clientNamespace"/>
     <parameter name="uriPath"/>
-    <parameter name="timeout" description="Timeout duration of the API request."/>
+    <parameter name="HTTPRequestTimeout" description="Timeout duration of the HTTP request to Dayforce API."/>
     <parameter name="blocking" description="Set to true to perform the blocking invocations to Dayforce."/>
     <parameter name="apiVersion" description="Version of the Ceridian Dayforce API."/>
     <sequence>
         <property name="dayforceRestBlocking" expression="$func:blocking"/>
         <property name="uri.var.apiVersion" expression="$func:apiVersion"/>
         <property name="Accept-Encoding" scope="transport" action="remove"/>
-        <property name="timeout" expression="$func:timeout"/>
+        <property name="HTTPRequestTimeout" expression="$func:HTTPRequestTimeout"/>
         <script language="js">
             <![CDATA[
-                var timeout = mc.getProperty("timeout");
-                if (timeout == null || timeout == "") {
-                    timeout = 30000;
+                var HTTPRequestTimeout = mc.getProperty("HTTPRequestTimeout");
+                if (HTTPRequestTimeout == null || HTTPRequestTimeout == "") {
+                    mc.setProperty("HTTPRequestTimeout", 30000);
                 }
-                mc.setProperty("timeout", timeout.toString());
             ]]>
         </script>
         <filter source="boolean($func:username)" regex="false">
