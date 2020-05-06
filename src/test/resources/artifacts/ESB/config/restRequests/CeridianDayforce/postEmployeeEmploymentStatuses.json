@@ -11,14 +11,14 @@
     "EffectiveStart": "2014-02-04T00:00:00",
     "EmploymentStatus": {
       "IsBenefitArrearsEnabled": false,
-      "XRefCode": "INACTIVE",
-      "ShortName": "Inactive",
-      "LongName": "Inactive"
+      "XRefCode": "ACTIVE",
+      "ShortName": "Active",
+      "LongName": "Active"
     },
     "EmploymentStatusGroup": {
-      "XRefCode": "INACTIVE",
-      "ShortName": "Inactive",
-      "LongName": "Inactive"
+      "XRefCode": "ACTIVE",
+      "ShortName": "Active",
+      "LongName": "Active"
     },
     "PayType": {
       "XRefCode": "HourlyNon",
@@ -103,11 +103,11 @@
       "ShortName": "USA",
       "LongName": "USA"
     },
-    "AlternateRate": 3.00000,
-    "AverageDailyHours": 8.0000,
-    "BaseRate": 21.50000,
-    "BaseSalary": 44720.00000,
-    "NormalWeeklyHours": 40.0000,
-    "VacationRate": 10.00000
+    "AlternateRate": 3,
+    "AverageDailyHours": 8,
+    "BaseRate": 21.5,
+    "BaseSalary": 44720,
+    "NormalWeeklyHours": 40,
+    "VacationRate": 10
   }
 }
