@@ -21,19 +21,19 @@
     <parameter name="password"/>
     <parameter name="clientNamespace"/>
     <parameter name="uriPath"/>
-    <parameter name="HTTPRequestTimeout" description="Timeout duration of the HTTP request to Dayforce API."/>
+    <parameter name="httpRequestTimeout" description="Timeout duration of the HTTP request to Dayforce API."/>
     <parameter name="blocking" description="Set to true to perform the blocking invocations to Dayforce."/>
     <parameter name="apiVersion" description="Version of the Ceridian Dayforce API."/>
     <sequence>
         <property name="dayforceRestBlocking" expression="$func:blocking"/>
         <property name="uri.var.apiVersion" expression="$func:apiVersion"/>
         <property name="Accept-Encoding" scope="transport" action="remove"/>
-        <property name="HTTPRequestTimeout" expression="$func:HTTPRequestTimeout"/>
+        <property name="httpRequestTimeout" expression="$func:httpRequestTimeout"/>
         <script language="js">
             <![CDATA[
-                var HTTPRequestTimeout = mc.getProperty("HTTPRequestTimeout");
-                if (HTTPRequestTimeout == null || HTTPRequestTimeout == "") {
-                    mc.setProperty("HTTPRequestTimeout", 30000);
+                var httpRequestTimeout = mc.getProperty("httpRequestTimeout");
+                if (httpRequestTimeout == null || httpRequestTimeout == "") {
+                    mc.setProperty("httpRequestTimeout", 30000);
                 }
             ]]>
         </script>
@@ -82,7 +82,7 @@
                                 <http method="get"
                                       uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/ClientMetadata">
                                     <timeout>
-                                        <duration>{$ctx:timeout}</duration>
+                                        <duration>{$ctx:httpRequestTimeout}</duration>
                                         <responseAction>fault</responseAction>
                                     </timeout>
                                     <suspendOnFailure>
@@ -103,7 +103,7 @@
                                 <http method="get"
                                       uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/ClientMetadata">
                                     <timeout>
-                                        <duration>{$ctx:timeout}</duration>
+                                        <duration>{$ctx:httpRequestTimeout}</duration>
                                         <responseAction>fault</responseAction>
                                     </timeout>
                                     <suspendOnFailure>

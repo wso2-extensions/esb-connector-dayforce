@@ -51,7 +51,7 @@
                         <http method="post"
                               uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/Employees/{+uri.var.xRefCode}/WorkAssignments?isValidateOnly={+uri.var.isValidateOnly}">
                             <timeout>
-                                <duration>{$ctx:timeout}</duration>
+                                <duration>{$ctx:httpRequestTimeout}</duration>
                                 <responseAction>fault</responseAction>
                             </timeout>
                             <suspendOnFailure>
@@ -72,7 +72,7 @@
                         <http method="post"
                               uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/Employees/{+uri.var.xRefCode}/WorkAssignments?isValidateOnly={+uri.var.isValidateOnly}">
                             <timeout>
-                                <duration>{$ctx:timeout}</duration>
+                                <duration>{$ctx:httpRequestTimeout}</duration>
                                 <responseAction>fault</responseAction>
                             </timeout>
                             <suspendOnFailure>
