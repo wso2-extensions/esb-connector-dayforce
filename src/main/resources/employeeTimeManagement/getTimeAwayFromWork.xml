@@ -36,7 +36,7 @@
                         <http method="get"
                               uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/Employees/{+uri.var.xRefCode}/TimeAwayFromWork?filterTAFWStartDate={+uri.var.filterTAFWStartDate}&amp;filterTAFWEndDate={+uri.var.filterTAFWEndDate}&amp;status={+uri.var.status}">
                             <timeout>
-                                <duration>{$ctx:timeout}</duration>
+                                <duration>{$ctx:httpRequestTimeout}</duration>
                                 <responseAction>fault</responseAction>
                             </timeout>
                             <suspendOnFailure>
@@ -57,7 +57,7 @@
                         <http method="get"
                               uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/Employees/{+uri.var.xRefCode}/TimeAwayFromWork?filterTAFWStartDate={+uri.var.filterTAFWStartDate}&amp;filterTAFWEndDate={+uri.var.filterTAFWEndDate}&amp;status={+uri.var.status}">
                             <timeout>
-                                <duration>{$ctx:timeout}</duration>
+                                <duration>{$ctx:httpRequestTimeout}</duration>
                                 <responseAction>fault</responseAction>
                             </timeout>
                             <suspendOnFailure>

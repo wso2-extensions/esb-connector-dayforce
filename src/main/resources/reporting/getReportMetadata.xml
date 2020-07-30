@@ -28,7 +28,7 @@
                         <http method="get"
                               uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/ReportMetadata">
                             <timeout>
-                                <duration>{$ctx:timeout}</duration>
+                                <duration>{$ctx:httpRequestTimeout}</duration>
                                 <responseAction>fault</responseAction>
                             </timeout>
                             <suspendOnFailure>
@@ -49,7 +49,7 @@
                         <http method="get"
                               uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/ReportMetadata">
                             <timeout>
-                                <duration>{$ctx:timeout}</duration>
+                                <duration>{$ctx:httpRequestTimeout}</duration>
                                 <responseAction>fault</responseAction>
                             </timeout>
                             <suspendOnFailure>

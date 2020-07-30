@@ -50,7 +50,7 @@
                         <http method="patch"
                               uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/I9Orders/{+uri.var.i9OrderId}?isValidateOnly={+uri.var.isValidateOnly}">
                             <timeout>
-                                <duration>{$ctx:timeout}</duration>
+                                <duration>{$ctx:httpRequestTimeout}</duration>
                                 <responseAction>fault</responseAction>
                             </timeout>
                             <suspendOnFailure>
@@ -71,7 +71,7 @@
                         <http method="patch"
                               uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/I9Orders/{+uri.var.i9OrderId}?isValidateOnly={+uri.var.isValidateOnly}">
                             <timeout>
-                                <duration>{$ctx:timeout}</duration>
+                                <duration>{$ctx:httpRequestTimeout}</duration>
                                 <responseAction>fault</responseAction>
                             </timeout>
                             <suspendOnFailure>
