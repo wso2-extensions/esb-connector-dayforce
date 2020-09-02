@@ -38,12 +38,13 @@
                                 <responseAction>fault</responseAction>
                             </timeout>
                             <suspendOnFailure>
-                                <initialDuration>-1</initialDuration>
-                                <progressionFactor>-1</progressionFactor>
+                                <errorCodes>-1</errorCodes>
+                                <initialDuration>0</initialDuration>
+                                <progressionFactor>1</progressionFactor>
                                 <maximumDuration>0</maximumDuration>
                             </suspendOnFailure>
                             <markForSuspension>
-                                <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                                <errorCodes>-1</errorCodes>
                             </markForSuspension>
                         </http>
                     </endpoint>
@@ -59,12 +60,13 @@
                                 <responseAction>fault</responseAction>
                             </timeout>
                             <suspendOnFailure>
-                                <initialDuration>-1</initialDuration>
-                                <progressionFactor>-1</progressionFactor>
+                                <errorCodes>-1</errorCodes>
+                                <initialDuration>0</initialDuration>
+                                <progressionFactor>1</progressionFactor>
                                 <maximumDuration>0</maximumDuration>
                             </suspendOnFailure>
                             <markForSuspension>
-                                <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                                <errorCodes>-1</errorCodes>
                             </markForSuspension>
                         </http>
                     </endpoint>
