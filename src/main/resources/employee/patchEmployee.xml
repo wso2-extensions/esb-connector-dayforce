@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright (c) 2020, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~ Copyright (c) 2020-2021, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
   ~
   ~ WSO2 Inc. licenses this file to you under the Apache License,
   ~ Version 2.0 (the "License"); you may not use this file except
@@ -19,6 +19,7 @@
     <parameter name="xRefCode"/>
     <parameter name="isValidateOnly"/>
     <parameter name="fieldAndValue"/>
+    <parameter name="replaceExisting"/>
     <sequence>
         <property value="application/json" name="accept" scope="transport"/>
         <property expression="fn:concat('Basic ',$ctx:ceridianDayForceAuthHeader)" name="Authorization"
@@ -27,6 +28,7 @@
         <property name="uri.var.isValidateOnly" expression="$func:isValidateOnly"/>
         <property name="Accept-Encoding" scope="transport" action="remove"/>
         <property name="uri.var.fieldAndValue" expression="$func:fieldAndValue"/>
+        <property name="uri.var.query_params" value=""/>
         <payloadFactory media-type="json">
             <format>
                 $1
@@ -43,12 +45,24 @@
                 </log>
             </then>
         </filter>
+        <!-- Filter the query parameter and append to query parameters list if they are not empty-->
+        <filter source="boolean($func:replaceExisting)" regex="true">
+            <then>
+                <property name="uri.var.query_params"
+                          expression="fn:concat('?isValidateOnly=', $ctx:uri.var.isValidateOnly, '&amp;', 'replaceExisting=', $func:replaceExisting)"/>
+
+            </then>
+            <else>
+                <property name="uri.var.query_params"
+                          expression="fn:concat('?isValidateOnly=', $ctx:uri.var.isValidateOnly)"/>
+            </else>
+        </filter>
         <filter source="$ctx:dayforceRestBlocking" regex="true">
             <then>
                 <call blocking="true">
                     <endpoint>
                         <http method="patch"
-                              uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/Employees/{+uri.var.xRefCode}?isValidateOnly={+uri.var.isValidateOnly}">
+                              uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/Employees/{+uri.var.xRefCode}{+uri.var.query_params}">
                             <timeout>
                                 <duration>{$ctx:httpRequestTimeout}</duration>
                                 <responseAction>fault</responseAction>
@@ -70,7 +84,7 @@
                 <call>
                     <endpoint>
                         <http method="patch"
-                              uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/Employees/{+uri.var.xRefCode}?isValidateOnly={+uri.var.isValidateOnly}">
+                              uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/Employees/{+uri.var.xRefCode}{+uri.var.query_params}">
                             <timeout>
                                 <duration>{$ctx:httpRequestTimeout}</duration>
                                 <responseAction>fault</responseAction>
