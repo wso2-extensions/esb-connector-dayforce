@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright (c) 2020, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+  ~ Copyright (c) 2020-2021, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
   ~
   ~ WSO2 Inc. licenses this file to you under the Apache License,
   ~ Version 2.0 (the "License"); you may not use this file except
@@ -19,10 +19,30 @@
 
     <parameter name="employeeNumber"
                description="Employment identification number assigned to an employee. A partial value can be provided for a wider search."/>
+    <parameter name="displayName"
+               description="Employee Name. A partial value can be provided for a wider search."/>
+    <parameter name="socialSecurityNumber"
+               description="Social Security Number of the employee. A partial value can be provided for a wider search."/>
     <parameter name="employmentStatusXRefCode"
                description="A case-sensitive field containing employment status values, which can be client-specific. Use a ContextDate value to search for employees with a given status as of a point in time. Otherwise, the search will use the current date and time."/>
     <parameter name="orgUnitXRefCode"
                description="A case-sensitive field that identifies a client's organizational units. Use this to search all levels of the employees’ organization including department, location, region, corporate, etc. Use a ContextDate value to search for employees with a specific value as of a point in time. Otherwise, the search will use the current date and time."/>
+    <parameter name="departmentXRefCode"
+               description="Department xrefcode value, which can be client-specific. Use this to search employees' work assignments having the given department.Use a ContextDate value to search for employees with a given department as of a point in time. Otherwise, the search will use the current date and time."/>
+    <parameter name="jobXRefCode"
+               description="Job xrefcode value, which can be client-specific. Use this to search employees' work assignments having the given job. Use a ContextDate value to search for employees with a given job as of a point in time. Otherwise, the search will use the current date and time."/>
+    <parameter name="positionXRefCode"
+               description="Position xrefcode value, which can be client-specific. Use this to search employees' work assignments having the given position. Use a ContextDate value to search for employees with a given position as of a point in time. Otherwise, the search will use the current date and time."/>
+    <parameter name="payClassXRefCode"
+               description="Pay class xrefcode value, which can be client-specific. Use this to search employees having the given pay class. Use a ContextDate value to search for employees with a given pay class as of a point in time. Otherwise, the search will use the current date and time."/>
+    <parameter name="payGroupXRefCode"
+               description="Pay group xrefcode value, which can be client-specific. Use this to search employees having the given pay group. Use a ContextDate value to search for employees with a given pay group as of a point in time. Otherwise, the search will use the current date and time."/>
+    <parameter name="payPolicyXRefCode"
+               description="Pay policy xrefcode value, which can be client-specific. Use this to search employees having the given pay policy. Use a ContextDate value to search for employees with a given pay policy as of a point in time. Otherwise, the search will use the current date and time."/>
+    <parameter name="payTypeXRefCode"
+               description="Pay type xrefcode value, which can be client-specific. Use this to search employees having the given pay type. Use a ContextDate value to search for employees with a given pay type as of a point in time. Otherwise, the search will use the current date and time."/>
+    <parameter name="payrollPolicyXRefCode"
+               description="Payroll policy xrefcode value, which can be client-specific. Use this to search employees having the given payroll policy. Use a ContextDate value to search for employees with a given payroll policy as of a point in time. Otherwise, the search will use the current date and time."/>
     <parameter name="filterHireStartDate"
                description="Use to search for employees whose most recent hire date is greater than or equal to the specified value (e.g. 2017-01-01T13:24:56). Use with filterHireEndDate to search for employees hired or rehired in a given timeframe."/>
     <parameter name="filterHireEndDate"
@@ -35,6 +55,24 @@
                description="The beginning date used when searching for employees with updates (and newly effective records) in a specified timeframe. When a value is provided for this parameter, a filterUpdatedEndDate value must also be provided. Because this search is conducted across all entities in the HR data model regardless of whether the requesting user has access to them, it is possible that the query will return XRefCode of employees with changes in which the consuming application is not interested. Example: 2017-01-01T13:24:56"/>
     <parameter name="filterUpdatedEndDate"
                description="The end date used when searching for employees with updates (and newly effective records) in a specified timeframe. When a value is provided for this parameter, a filterUpdatedStartDate value must also be provided. Example: 2017-01-01T13:24:56"/>
+    <parameter name="filterUpdatedEntities"
+               description="Use to search employees with changes to specific employee sub-entities. These sub-entity names, based on the employee model, can be provided in a comma-separated value, e.g. filterUpdatedEntities=EmploymentStatuses,WorkAssignments,Addresses. The base Employee is always searched by default. This parameter requires that filterUpdatedStartDate/filterUpdatedEndDate range is provided, otherwise it is ignored and all relevant employee entities are searched."/>
+    <parameter name="filterOriginalHireStartDate"
+               description="Use to search for employees with original hire date values greater than or equal to the specified value. Typically this parameter is used in conjunction with filterOriginialHireEndDate to search for employees who were originally hired in a given timeframe. Example: 2017-01-01T13:24:56"/>
+    <parameter name="filterOriginalHireEndDate"
+               description="Use to search for employees with original hire date values less than or equal to the specified value. Typically this parameter is used in conjunction with filterOriginialHireStartDate to search for employees who were originally hired in a given timeframe. Example: 2017-01-01T13:24:56"/>
+    <parameter name="filterSeniorityStartDate"
+               description="Use to search for employees with seniority date values greater than or equal to the specified value. Typically this parameter is used in conjunction with filterSeniorityEndDate to search for employees seniority date in a given timeframe. Example: 2017-01-01T13:24:56"/>
+    <parameter name="filterSeniorityEndDate"
+               description="Use to search for employees with original hire date values less than or equal to the specified value. Typically this parameter is used in conjunction with filterSeniorityStartDate to search for employees seniority date in a given timeframe. Example: 2017-01-01T13:24:56"/>
+    <parameter name="filterBaseSalaryFrom"
+               description="Use to search for employees base salary greater than or equal to the specified value. Typically this parameter is used in conjunction with filterBaseSalaryTo to search for employees base salary in a given range. Example: 20000"/>
+    <parameter name="filterBaseSalaryTo"
+               description="Use to search for employees base salary less than or equal to the specified value. Typically this parameter is used in conjunction with filterBaseSalaryFrom to search for employees base salary in a given range. Example: 40000"/>
+    <parameter name="filterBaseRateFrom"
+               description="Use to search for employees base rate greater than or equal to the specified value. Typically this parameter is used in conjunction with filterBaseRateTo to search for employees base rate in a given range. Example: 10"/>
+    <parameter name="filterBaseRateTo"
+               description="Use to search for employees base rate less than or equal to the specified value. Typically this parameter is used in conjunction with filterBaseRateFrom to search for employees base rate in a given range. Example: 40"/>
     <parameter name="contextDate"
                description="The Context Date value is an “as-of” date used to determine which employee data to search when records have specific start and end dates. The service defaults to the current datetime if the requester does not specify a value. Example: 2017-01-01T13:24:56"/>
     <sequence>
@@ -52,6 +90,18 @@
                           expression="fn:concat($ctx:uri.var.optional_query_params,'employeeNumber=',$func:employeeNumber,'&amp;')"/>
             </then>
         </filter>
+        <filter source="boolean($func:displayName)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'displayName=',$func:displayName,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:socialSecurityNumber)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'socialSecurityNumber=',$func:socialSecurityNumber,'&amp;')"/>
+            </then>
+        </filter>
         <filter source="boolean($func:employmentStatusXRefCode)" regex="true">
             <then>
                 <property name="uri.var.optional_query_params"
@@ -62,6 +112,54 @@
             <then>
                 <property name="uri.var.optional_query_params"
                           expression="fn:concat($ctx:uri.var.optional_query_params,'orgUnitXRefCode=',$func:orgUnitXRefCode,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:departmentXRefCode)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'departmentXRefCode=',$func:departmentXRefCode,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:jobXRefCode)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'jobXRefCode=',$func:jobXRefCode,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:positionXRefCode)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'positionXRefCode=',$func:positionXRefCode,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:payClassXRefCode)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'payClassXRefCode=',$func:payClassXRefCode,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:payGroupXRefCode)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'payGroupXRefCode=',$func:payGroupXRefCode,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:payPolicyXRefCode)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'payPolicyXRefCode=',$func:payPolicyXRefCode,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:payTypeXRefCode)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'payTypeXRefCode=',$func:payTypeXRefCode,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:payrollPolicyXRefCode)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'payrollPolicyXRefCode=',$func:payrollPolicyXRefCode,'&amp;')"/>
             </then>
         </filter>
         <filter source="boolean($func:filterHireStartDate)" regex="true">
@@ -101,6 +199,60 @@
                           expression="fn:concat($ctx:uri.var.optional_query_params,'filterUpdatedEndDate=',$func:filterUpdatedEndDate,'&amp;')"/>
             </then>
         </filter>
+        <filter source="boolean($func:filterUpdatedEntities)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'filterUpdatedEntities=',$func:filterUpdatedEntities,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:filterOriginalHireStartDate)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'filterOriginalHireStartDate=',$func:filterOriginalHireStartDate,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:filterOriginalHireEndDate)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'filterOriginalHireEndDate=',$func:filterOriginalHireEndDate,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:filterSeniorityStartDate)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'filterSeniorityStartDate=',$func:filterSeniorityStartDate,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:filterSeniorityEndDate)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'filterSeniorityEndDate=',$func:filterSeniorityEndDate,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:filterBaseSalaryFrom)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'filterBaseSalaryFrom=',$func:filterBaseSalaryFrom,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:filterBaseSalaryTo)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'filterBaseSalaryTo=',$func:filterBaseSalaryTo,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:filterBaseRateFrom)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'filterBaseRateFrom=',$func:filterBaseRateFrom,'&amp;')"/>
+            </then>
+        </filter>
+        <filter source="boolean($func:filterBaseRateTo)" regex="true">
+            <then>
+                <property name="uri.var.optional_query_params"
+                          expression="fn:concat($ctx:uri.var.optional_query_params,'filterBaseRateTo=',$func:filterBaseRateTo,'&amp;')"/>
+            </then>
+        </filter>
         <filter source="boolean($func:contextDate)" regex="true">
             <then>
                 <property name="uri.var.optional_query_params"
@@ -130,12 +282,13 @@
                                 <responseAction>fault</responseAction>
                             </timeout>
                             <suspendOnFailure>
-                                <initialDuration>-1</initialDuration>
-                                <progressionFactor>-1</progressionFactor>
+                                <errorCodes>-1</errorCodes>
+                                <initialDuration>0</initialDuration>
+                                <progressionFactor>1</progressionFactor>
                                 <maximumDuration>0</maximumDuration>
                             </suspendOnFailure>
                             <markForSuspension>
-                                <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                                <errorCodes>-1</errorCodes>
                             </markForSuspension>
                         </http>
                     </endpoint>
@@ -151,12 +304,13 @@
                                 <responseAction>fault</responseAction>
                             </timeout>
                             <suspendOnFailure>
-                                <initialDuration>-1</initialDuration>
-                                <progressionFactor>-1</progressionFactor>
+                                <errorCodes>-1</errorCodes>
+                                <initialDuration>0</initialDuration>
+                                <progressionFactor>1</progressionFactor>
                                 <maximumDuration>0</maximumDuration>
                             </suspendOnFailure>
                             <markForSuspension>
-                                <retriesBeforeSuspension>0</retriesBeforeSuspension>
+                                <errorCodes>-1</errorCodes>
                             </markForSuspension>
                         </http>
                     </endpoint>
