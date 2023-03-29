@@ -22,6 +22,14 @@
             <file>getEmployeeDetails.xml</file>
             <description>Get employee details REST API</description>
         </component>
+        <component name="getBulkEmployeeStatus">
+            <file>getBulkEmployeeStatus.xml</file>
+            <description>GET Bulk Employee Background Job Status REST API</description>
+        </component>
+        <component name="getBulkEmployeeData">
+            <file>getBulkEmployeeData.xml</file>
+            <description>GET Bulk Employee REST API</description>
+        </component>
         <component name="getEmployees">
             <file>getEmployees.xml</file>
             <description>Get employees REST API</description>
@@ -29,6 +37,10 @@
         <component name="postEmployee">
             <file>postEmployee.xml</file>
             <description>POST employees REST API</description>
+        </component>
+        <component name="postBulkEmployeeData">
+            <file>postBulkEmployeeData.xml</file>
+            <description>POST Bulk Employee Data REST API</description>
         </component>
         <component name="patchEmployee">
             <file>patchEmployee.xml</file>
