@@ -46,13 +46,22 @@
                         </http>
                     </endpoint>
                 </call>
+                <log level="custom">
+                    <property name="After" value="GetBulkEmployeeData"/>
+                </log>
                 <property value="application/json" name="accept" scope="transport"/>
                 <property expression="fn:concat('Basic ',$ctx:ceridianDayForceAuthHeader)" name="Authorization"
                         scope="transport"/>
                 <property name="Accept-Encoding" scope="transport" action="remove"/>
                 <filter source="$axis2:HTTP_SC" regex="30.">
                     <then>
+                        <log level="custom">
+                            <property name="----Working on 30x--------" value="TRUE"/>
+                        </log>
                         <property name="uri.var.httpendpointurl" expression="$trp:Location"/>
+                        <log level="custom">
+                            <property name="httpendpointurl" expression="$ctx:uri.var.httpendpointurl"/>
+                        </log>
                         <call blocking="true">
                             <endpoint>
                                 <http method="get"
@@ -75,8 +84,12 @@
                         </call>
                     </then>
                     <else>
+                        <log level="custom">
+                            <property name="---------------no redirection----------------------" value="Return"/>
+                        </log>
                     </else>
                 </filter>
+                <log level="full" separator=","/>
             </then>
             <else>
                 <call>
@@ -99,13 +112,22 @@
                         </http>
                     </endpoint>
                 </call>
+                <log level="custom">
+                    <property name="After" value="GetBulkEmployeeData"/>
+                </log>
                 <property value="application/json" name="accept" scope="transport"/>
                 <property expression="fn:concat('Basic ',$ctx:ceridianDayForceAuthHeader)" name="Authorization"
                         scope="transport"/>
                 <property name="Accept-Encoding" scope="transport" action="remove"/>
                 <filter source="$axis2:HTTP_SC" regex="30.">
                     <then>
+                        <log level="custom">
+                            <property name="----Working on 30x--------" value="TRUE"/>
+                        </log>
                         <property name="uri.var.httpendpointurl" expression="$trp:Location"/>
+                        <log level="custom">
+                            <property name="httpendpointurl" expression="$ctx:uri.var.httpendpointurl"/>
+                        </log>
                         <call>
                             <endpoint>
                                 <http method="get"
@@ -128,8 +150,12 @@
                         </call>
                     </then>
                     <else>
+                        <log level="custom">
+                            <property name="---------------no redirection----------------------" value="Return"/>
+                        </log>
                     </else>
                 </filter>
+                <log level="full" separator=","/>
             </else>
         </filter>
     </sequence>

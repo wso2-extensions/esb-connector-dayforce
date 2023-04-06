@@ -33,6 +33,10 @@
                 <arg expression="$ctx:uri.var.fieldAndValue"/>
             </args>
         </payloadFactory>
+        <log level="custom">
+            <property name="After" value="PayloadFactory"/>
+        </log>
+        <log level="full" separator=","/>
         <filter source="boolean($func:isValidateOnly)" regex="false">
             <then>
                 <log category="ERROR" level="custom">
@@ -63,6 +67,62 @@
                         </http>
                     </endpoint>
                 </call>
+                <log level="custom">
+                    <property name="After" value="PostBulkEmployeeData"/>
+                </log>
+                <log level="full" separator=","/>
+                <property value="application/json" name="accept" scope="transport"/>
+                <property expression="fn:concat('Basic ',$ctx:ceridianDayForceAuthHeader)" name="Authorization"
+                        scope="transport"/>
+                <property name="Accept-Encoding" scope="transport" action="remove"/>
+                <property name="DISABLE_CHUNKING" scope="axis2" value="true"/> 
+                <property name="FORCE_HTTP_CONTENT_LENGTH" scope="axis2" value="true"/>
+                <property name="COPY_CONTENT_LENGTH_FROM_INCOMING" value="true" scope="axis2"/>
+                <payloadFactory media-type="json">
+                    <format>
+                        $1
+                    </format>
+                    <args>
+                        <arg expression="$ctx:uri.var.fieldAndValue"/>
+                    </args>
+                </payloadFactory>
+                <filter source="$axis2:HTTP_SC" regex="30.">
+                    <then>
+                        <log level="custom">
+                            <property name="----Working on 30x--------" value="TRUE"/>
+                        </log>
+                        <property name="uri.var.httpendpointurl" expression="$trp:Location"/>
+                        <log level="custom">
+                            <property name="httpendpointurl" expression="$ctx:uri.var.httpendpointurl"/>
+                        </log>
+                        <call blocking="true">
+                            <endpoint>
+                                <http method="post"
+                                      uri-template="{uri.var.httpendpointurl}">
+                                      <timeout>
+                                        <duration>{$ctx:httpRequestTimeout}</duration>
+                                        <responseAction>fault</responseAction>
+                                    </timeout>
+                                    <suspendOnFailure>
+                                        <errorCodes>-1</errorCodes>
+                                        <initialDuration>0</initialDuration>
+                                        <progressionFactor>1</progressionFactor>
+                                        <maximumDuration>0</maximumDuration>
+                                    </suspendOnFailure>
+                                    <markForSuspension>
+                                        <errorCodes>-1</errorCodes>
+                                    </markForSuspension>
+                                </http>
+                            </endpoint>
+                        </call>
+                    </then>
+                    <else>
+                        <log level="custom">
+                            <property name="---------------no redirection----------------------" value="Return"/>
+                        </log>
+                    </else>
+                </filter>
+                <log level="full" separator=","/>
             </then>
             <else>
                 <call>
@@ -85,6 +145,62 @@
                         </http>
                     </endpoint>
                 </call>
+                <log level="custom">
+                    <property name="After" value="PostBulkEmployeeData"/>
+                </log>
+                <log level="full" separator=","/>
+                <property value="application/json" name="accept" scope="transport"/>
+                <property expression="fn:concat('Basic ',$ctx:ceridianDayForceAuthHeader)" name="Authorization"
+                        scope="transport"/>
+                <property name="Accept-Encoding" scope="transport" action="remove"/>
+                <property name="DISABLE_CHUNKING" scope="axis2" value="true"/> 
+                <property name="FORCE_HTTP_CONTENT_LENGTH" scope="axis2" value="true"/>
+                <property name="COPY_CONTENT_LENGTH_FROM_INCOMING" value="true" scope="axis2"/>
+                <payloadFactory media-type="json">
+                    <format>
+                        $1
+                    </format>
+                    <args>
+                        <arg expression="$ctx:uri.var.fieldAndValue"/>
+                    </args>
+                </payloadFactory>
+                <filter source="$axis2:HTTP_SC" regex="30.">
+                    <then>
+                        <log level="custom">
+                            <property name="----Working on 30x--------" value="TRUE"/>
+                        </log>
+                        <property name="uri.var.httpendpointurl" expression="$trp:Location"/>
+                        <log level="custom">
+                            <property name="httpendpointurl" expression="$ctx:uri.var.httpendpointurl"/>
+                        </log>
+                        <call>
+                            <endpoint>
+                                <http method="post"
+                                uri-template="{uri.var.httpendpointurl}">
+                                    <timeout>
+                                        <duration>{$ctx:httpRequestTimeout}</duration>
+                                        <responseAction>fault</responseAction>
+                                    </timeout>
+                                    <suspendOnFailure>
+                                        <errorCodes>-1</errorCodes>
+                                        <initialDuration>0</initialDuration>
+                                        <progressionFactor>1</progressionFactor>
+                                        <maximumDuration>0</maximumDuration>
+                                    </suspendOnFailure>
+                                    <markForSuspension>
+                                        <errorCodes>-1</errorCodes>
+                                    </markForSuspension>
+                                </http>
+                            </endpoint>
+                        </call>
+                    </then>
+                    <else>
+                        <log level="custom">
+                            <property name="---------------no redirection----------------------" value="Return"/>
+                        </log>
+                    </else>
+                </filter>
+                <log level="full" separator=","/>
             </else>
         </filter>
     </sequence>
