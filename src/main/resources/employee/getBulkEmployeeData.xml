@@ -90,6 +90,46 @@
                     </else>
                 </filter>
                 <log level="full" separator=","/>
+                <log level="custom">
+                    <property name="After" value="GetBulkEmployeeDataRedirection"/>
+                </log>
+                <property name="uri.var.nextpageurl" expression="json-eval($.Paging.Next)"/>
+                <log level="custom">
+                    <property name="nextpageurl" expression="$ctx:uri.var.nextpageurl"/>
+                </log>
+                <filter source="json-eval($.Paging.Next)" regex="http.*">
+                    <then>
+                        <log level="custom">
+                            <property name="CERIDIAN Dayforce" value="Getting next page"/>
+                        </log>
+                        <call blocking="true">
+                            <endpoint>
+                                <http method="get"
+                                uri-template="{uri.var.nextpageurl}">
+                                    <timeout>
+                                        <duration>{$ctx:httpRequestTimeout}</duration>
+                                        <responseAction>fault</responseAction>
+                                    </timeout>
+                                    <suspendOnFailure>
+                                        <errorCodes>-1</errorCodes>
+                                        <initialDuration>0</initialDuration>
+                                        <progressionFactor>1</progressionFactor>
+                                        <maximumDuration>0</maximumDuration>
+                                    </suspendOnFailure>
+                                    <markForSuspension>
+                                        <errorCodes>-1</errorCodes>
+                                    </markForSuspension>
+                                </http>
+                            </endpoint>
+                        </call>
+                    </then>
+                    <else>
+                        <log level="custom">
+                            <property name="CERIDIAN Dayforce" value="This is the last page"/>
+                        </log>
+                    </else>
+                </filter>
+                <log level="full" separator=","/>
             </then>
             <else>
                 <call>
@@ -155,7 +195,67 @@
                         </log>
                     </else>
                 </filter>
-                <log level="full" separator=","/>
+                <!-- <log level="full" separator=","/> -->
+                <property name="firstpage" expression="json-eval($.Data)"/>
+                <log level="custom">
+                    <property name="After" value="GetBulkEmployeeDataRedirection"/>
+                </log>
+                <property name="uri.var.nextpageurl" expression="json-eval($.Paging.Next)"/>
+                <log level="custom">
+                    <property name="nextpageurl" expression="$ctx:uri.var.nextpageurl"/>
+                </log>
+                <filter source="json-eval($.Paging.Next)" regex="http.*">
+                    <then>
+                        <log level="custom">
+                            <property name="CERIDIAN Dayforce" value="Getting next page"/>
+                        </log>
+                        <property value="application/json" name="accept" scope="transport"/>
+                        <property expression="fn:concat('Basic ',$ctx:ceridianDayForceAuthHeader)" name="Authorization"
+                                scope="transport"/>
+                        <property name="Accept-Encoding" scope="transport" action="remove"/>
+                        <call>
+                            <endpoint>
+                                <http method="get"
+                                uri-template="{uri.var.nextpageurl}">
+                                    <timeout>
+                                        <duration>{$ctx:httpRequestTimeout}</duration>
+                                        <responseAction>fault</responseAction>
+                                    </timeout>
+                                    <suspendOnFailure>
+                                        <errorCodes>-1</errorCodes>
+                                        <initialDuration>0</initialDuration>
+                                        <progressionFactor>1</progressionFactor>
+                                        <maximumDuration>0</maximumDuration>
+                                    </suspendOnFailure>
+                                    <markForSuspension>
+                                        <errorCodes>-1</errorCodes>
+                                    </markForSuspension>
+                                </http>
+                            </endpoint>
+                        </call>
+                    </then>
+                    <else>
+                        <log level="custom">
+                            <property name="CERIDIAN Dayforce" value="This is the last page"/>
+                        </log>
+                    </else>
+                </filter>
+                <!-- <log level="full" separator=","/> -->
+                <log level="custom">
+                    <property name="After" value="Getting next page"/>
+                </log>
+                <property name="secondpage" expression="json-eval($.Data)"/>
+                <script language="js"> 
+                    <![CDATA[
+                    var firstpage = mc.getProperty("firstpage");
+                    firstpage = firstpage.slice(0, -1);
+                    var secondpage = mc.getProperty("secondpage");
+                    secondpage = secondpage.substring(1);
+                    var response = firstpage + ", " + secondpage;
+                    var obj = JSON.parse(response);
+                    mc.setPayloadJSON(obj);
+                    ]]> 
+                </script>
             </else>
         </filter>
     </sequence>
