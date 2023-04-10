@@ -196,15 +196,7 @@
                     </else>
                 </filter>
                 <!-- <log level="full" separator=","/> -->
-                <property name="firstpage" expression="json-eval($.Data)"/>
-                <log level="custom">
-                    <property name="After" value="GetBulkEmployeeDataRedirection"/>
-                </log>
-                <property name="uri.var.nextpageurl" expression="json-eval($.Paging.Next)"/>
-                <log level="custom">
-                    <property name="nextpageurl" expression="$ctx:uri.var.nextpageurl"/>
-                </log>
-                <sequence key="CheckNextPageStatus"/>
+                <sequence key="HandlePagination"/>
             </else>
         </filter>
     </sequence>
