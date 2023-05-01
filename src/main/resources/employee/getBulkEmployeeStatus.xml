@@ -56,7 +56,7 @@
                 <filter source="$axis2:HTTP_SC" regex="30.">
                     <then>
                         <log level="custom">
-                            <property name="----Working on 30x--------" value="TRUE"/>
+                            <property name="Received redirect response 30x" value="TRUE"/>
                         </log>
                         <property name="uri.var.httpendpointurl" expression="$trp:Location"/>
                         <log level="custom">
@@ -121,7 +121,7 @@
                 <filter source="$axis2:HTTP_SC" regex="30.">
                     <then>
                         <log level="custom">
-                            <property name="----Working on 30x--------" value="TRUE"/>
+                            <property name="Received redirect response 30x" value="TRUE"/>
                         </log>
                         <property name="uri.var.httpendpointurl" expression="$trp:Location"/>
                         <log level="custom">
