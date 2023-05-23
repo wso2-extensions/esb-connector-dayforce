@@ -118,7 +118,7 @@
                     </then>
                     <else>
                         <log level="custom">
-                            <property name="---------------no redirection----------------------" value="Return"/>
+                            <property name="No redirection, Returning" value="True"/>
                         </log>
                     </else>
                 </filter>
@@ -196,7 +196,7 @@
                     </then>
                     <else>
                         <log level="custom">
-                            <property name="---------------no redirection----------------------" value="Return"/>
+                            <property name="No redirection, Returning" value="True"/>
                         </log>
                     </else>
                 </filter>
