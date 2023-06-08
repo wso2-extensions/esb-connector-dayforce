@@ -26,7 +26,7 @@
         <property name="Accept-Encoding" scope="transport" action="remove"/>
         <filter source="$ctx:dayforceRestBlocking" regex="true">
             <then>
-                <call blocking="true">
+                <call>
                     <endpoint>
                         <http method="get"
                               uri-template="https://{+uri.var.clientNamespace}/{uri.var.apiVersion}/EmployeeExportJobs/Data/{+uri.var.jobPath}">
@@ -65,7 +65,7 @@
                         <call blocking="true">
                             <endpoint>
                                 <http method="get"
-                                      uri-template="{uri.var.httpendpointurl}">
+                                uri-template="{uri.var.httpendpointurl}">
                                     <timeout>
                                         <duration>{$ctx:httpRequestTimeout}</duration>
                                         <responseAction>fault</responseAction>
@@ -89,47 +89,7 @@
                         </log>
                     </else>
                 </filter>
-                <log level="full" separator=","/>
-                <log level="custom">
-                    <property name="After" value="GetBulkEmployeeDataRedirection"/>
-                </log>
-                <property name="uri.var.nextpageurl" expression="json-eval($.Paging.Next)"/>
-                <log level="custom">
-                    <property name="nextpageurl" expression="$ctx:uri.var.nextpageurl"/>
-                </log>
-                <filter source="json-eval($.Paging.Next)" regex="http.*">
-                    <then>
-                        <log level="custom">
-                            <property name="CERIDIAN Dayforce" value="Getting next page"/>
-                        </log>
-                        <call blocking="true">
-                            <endpoint>
-                                <http method="get"
-                                uri-template="{uri.var.nextpageurl}">
-                                    <timeout>
-                                        <duration>{$ctx:httpRequestTimeout}</duration>
-                                        <responseAction>fault</responseAction>
-                                    </timeout>
-                                    <suspendOnFailure>
-                                        <errorCodes>-1</errorCodes>
-                                        <initialDuration>0</initialDuration>
-                                        <progressionFactor>1</progressionFactor>
-                                        <maximumDuration>0</maximumDuration>
-                                    </suspendOnFailure>
-                                    <markForSuspension>
-                                        <errorCodes>-1</errorCodes>
-                                    </markForSuspension>
-                                </http>
-                            </endpoint>
-                        </call>
-                    </then>
-                    <else>
-                        <log level="custom">
-                            <property name="CERIDIAN Dayforce" value="This is the last page"/>
-                        </log>
-                    </else>
-                </filter>
-                <log level="full" separator=","/>
+                <ceridiandayforce.handlePagination/>
             </then>
             <else>
                 <call>
@@ -195,7 +155,7 @@
                         </log>
                     </else>
                 </filter>
-                <sequence key="HandlePagination"/>
+                <ceridiandayforce.handlePagination/>
             </else>
         </filter>
     </sequence>

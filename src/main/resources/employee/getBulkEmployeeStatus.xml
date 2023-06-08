@@ -65,7 +65,7 @@
                         <call blocking="true">
                             <endpoint>
                                 <http method="get"
-                                      uri-template="{uri.var.httpendpointurl}">
+                                uri-template="{uri.var.httpendpointurl}">
                                     <timeout>
                                         <duration>{$ctx:httpRequestTimeout}</duration>
                                         <responseAction>fault</responseAction>

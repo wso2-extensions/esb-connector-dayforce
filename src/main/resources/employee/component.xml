@@ -46,5 +46,13 @@
             <file>patchEmployee.xml</file>
             <description>PATCH employees REST API</description>
         </component>
+        <component name="handlePagination">
+            <file>handlePagination.xml</file>
+            <description>Handle pagination of Results</description>
+        </component>
+        <component name="processNextPage">
+            <file>processNextPage.xml</file>
+            <description>Process next page of results</description>
+        </component>
     </subComponents>
 </component>

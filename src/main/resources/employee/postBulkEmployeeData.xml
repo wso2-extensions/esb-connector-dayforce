@@ -33,9 +33,6 @@
                 <arg expression="$ctx:uri.var.fieldAndValue"/>
             </args>
         </payloadFactory>
-        <log level="custom">
-            <property name="After" value="PayloadFactory"/>
-        </log>
         <log level="full" separator=","/>
         <filter source="boolean($func:isValidateOnly)" regex="false">
             <then>
