@@ -9,5 +9,15 @@
         "Application",
         "HRM"
     ],
-    "releases": []
+    "releases": [
+        {
+            "tagName": "v1.0.1",
+            "products": [
+                "EI 7.0.x",
+                "EI 6.6.0",
+                "EI 6.5.0"
+            ],
+            "isHidden": false
+        }
+    ]
 }
