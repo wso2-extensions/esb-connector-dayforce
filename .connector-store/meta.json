@@ -6,14 +6,16 @@
     "description": "Dayforce, provided by Ceridian, is a cloud-based solution for Payroll, Benefits, Workforce Management, Human Resources, Talent Management, Document Management, and Analytics. You can use this connector to connect to perform operations on Dayforce HCM API within WSO2 MI development workflow. ",
     "status": "Active",
     "labels": [
-        "Application",
         "HRM"
     ],
     "releases": [
         {
             "tagName": "v1.0.1",
             "products": [
-                "MI 4.x.x"
+                "MI 4.3.0",
+                "MI 4.2.0",
+                "MI 4.1.0",
+                "MI 4.0.0"
             ],
             "isHidden": false
         }
