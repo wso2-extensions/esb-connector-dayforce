@@ -8,7 +8,7 @@
     "mavenArtifactId": "esb-ceridian-dayforce-connector",
     "description": "Dayforce, provided by Ceridian, is a cloud-based solution for Payroll, Benefits, Workforce Management, Human Resources, Talent Management, Document Management, and Analytics. You can use this connector to connect to perform operations on Dayforce HCM API within WSO2 MI development workflow. ",
     "status": "Active",
-    "connectorRank": 56,
+    "rank": 56,
     "type": "Connector",
     "labels": [
         "HRM"
@@ -474,7 +474,12 @@
                     "isHidden":false
                 }
             ],
-            "connections": [],
+            "connections": [
+                {
+                    "name": "ceridiandayforce",
+                    "description": "Connection for accessing Ceridian Dayforce data."
+                }
+            ],
             "isHidden": false
         }
     ]
