@@ -20,8 +20,8 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.wso2.carbon.esb.connector</groupId>
-    <artifactId>esb-ceridian-dayforce-connector</artifactId>
+    <groupId>org.wso2.integration.connector</groupId>
+    <artifactId>mi-connector-ceridiandayforce</artifactId>
     <version>1.0.1</version>
     <packaging>jar</packaging>
     <name>WSO2 Carbon - Connector For CeridianDayforce</name>
