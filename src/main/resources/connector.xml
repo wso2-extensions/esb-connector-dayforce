@@ -31,5 +31,6 @@
         <dependency component="employeeEligibilityVerification"/>
         <description>WSO2 CeridianDayforce connector library</description>
     </component>
+    <displayName>Ceridian Dayforce</displayName>
     <icon>icon/icon-small.gif</icon>
 </connector>
