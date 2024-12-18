@@ -16,13 +16,11 @@
   ~ specific language governing permissions and limitations
   ~ under the License.
   -->
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.wso2.integration.connector</groupId>
     <artifactId>mi-connector-ceridiandayforce</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
     <name>WSO2 Carbon - Connector For CeridianDayforce</name>
     <url>http://wso2.org</url>
@@ -204,7 +202,7 @@
         <connection>scm:git:https://github.com/wso2-extensions/esb-connector-dayforce.git</connection>
         <url>https://github.com/wso2-extensions/esb-connector-dayforce.git</url>
         <developerConnection>scm:git:https://github.com/wso2-extensions/esb-connector-dayforce</developerConnection>
-        <tag>HEAD</tag>
+        <tag>v1.0.2</tag>
     </scm>
     <build>
         <plugins>
