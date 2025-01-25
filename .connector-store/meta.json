@@ -474,12 +474,7 @@
                     "isHidden":false
                 }
             ],
-            "connections": [
-                {
-                    "name": "ceridiandayforce",
-                    "description": "Connection for accessing Ceridian Dayforce data."
-                }
-            ],
+            "connections": [],
             "isHidden": false
         },
         {
@@ -942,12 +937,7 @@
                     "isHidden":false
                 }
             ],
-            "connections": [
-                {
-                    "name": "ceridiandayforce",
-                    "description": "Connection for accessing Ceridian Dayforce data."
-                }
-            ],
+            "connections": [],
             "isHidden": false
         }
     ]
