@@ -17,6 +17,7 @@
         {
             "tagName": "v1.0.2",
             "products": [
+                "MI 4.4.0",
                 "MI 4.3.0",
                 "MI 4.2.0",
                 "MI 4.1.0",
@@ -24,454 +25,454 @@
             ],
             "operations": [
                 {
-                    "name":"init",
-                    "description":"Init operation",
-                    "isHidden":false
+                    "name": "init",
+                    "description": "Init operation",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeDetails",
-                    "description":"Get employee details REST API",
-                    "isHidden":false
+                    "name": "getEmployeeDetails",
+                    "description": "Get employee details REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployees",
-                    "description":"Get employees REST API",
-                    "isHidden":false
+                    "name": "getEmployees",
+                    "description": "Get employees REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployee",
-                    "description":"POST employees REST API",
-                    "isHidden":false
+                    "name": "postEmployee",
+                    "description": "POST employees REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployee",
-                    "description":"PATCH employees REST API",
-                    "isHidden":false
+                    "name": "patchEmployee",
+                    "description": "PATCH employees REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getOrgUnits",
-                    "description":"Get Organization Units REST API",
-                    "isHidden":false
+                    "name": "getOrgUnits",
+                    "description": "Get Organization Units REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postOrgUnits",
-                    "description":"Post Organization Units REST API",
-                    "isHidden":false
+                    "name": "postOrgUnits",
+                    "description": "Post Organization Units REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchOrgUnits",
-                    "description":"Patch Organization Units REST API",
-                    "isHidden":false
+                    "name": "patchOrgUnits",
+                    "description": "Patch Organization Units REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getOrgUnitDetails",
-                    "description":"Get Organization Units Details REST API",
-                    "isHidden":false
+                    "name": "getOrgUnitDetails",
+                    "description": "Get Organization Units Details REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getReportMetadata",
-                    "description":"Get Organization Units REST API",
-                    "isHidden":false
+                    "name": "getReportMetadata",
+                    "description": "Get Organization Units REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getReportMetadataDetails",
-                    "description":"Get Organization Units REST API",
-                    "isHidden":false
+                    "name": "getReportMetadataDetails",
+                    "description": "Get Organization Units REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getReports",
-                    "description":"Get Organization Units REST API",
-                    "isHidden":false
+                    "name": "getReports",
+                    "description": "Get Organization Units REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeManagers",
-                    "description":"Get employee Managers REST API",
-                    "isHidden":false
+                    "name": "getEmployeeManagers",
+                    "description": "Get employee Managers REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeWorkAssignmentManagers",
-                    "description":"Get employee Managers REST API",
-                    "isHidden":false
+                    "name": "getEmployeeWorkAssignmentManagers",
+                    "description": "Get employee Managers REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeWorkAssignmentManagers",
-                    "description":"Post employee Managers REST API",
-                    "isHidden":false
+                    "name": "postEmployeeWorkAssignmentManagers",
+                    "description": "Post employee Managers REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeWorkAssignmentManagers",
-                    "description":"Patch employee Managers REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeWorkAssignmentManagers",
+                    "description": "Patch employee Managers REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getDocumentManagementSecurityGroups",
-                    "description":"Retrieve Document Management Security Groups assigned to an employee that control access to documents REST API",
-                    "isHidden":false
+                    "name": "getDocumentManagementSecurityGroups",
+                    "description": "Retrieve Document Management Security Groups assigned to an employee that control access to documents REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeLocations",
-                    "description":"Retrieve locations, and their respective authority types, that an employee manages REST API",
-                    "isHidden":false
+                    "name": "getEmployeeLocations",
+                    "description": "Retrieve locations, and their respective authority types, that an employee manages REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeLocations",
-                    "description":"Assign locations and authority types for an employee to manage REST API",
-                    "isHidden":false
+                    "name": "postEmployeeLocations",
+                    "description": "Assign locations and authority types for an employee to manage REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeLocations",
-                    "description":"Update assigned locations and authority types for an employee to manage REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeLocations",
+                    "description": "Update assigned locations and authority types for an employee to manage REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeRoles",
-                    "description":"Retrieve user roles assigned to an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeRoles",
+                    "description": "Retrieve user roles assigned to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeRoles",
-                    "description":"Assign roles to an employee REST API",
-                    "isHidden":false
+                    "name": "postEmployeeRoles",
+                    "description": "Assign roles to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeRoles",
-                    "description":"Update the assigned roles to an employee REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeRoles",
+                    "description": "Update the assigned roles to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeSSOAccounts",
-                    "description":"Retrieve Single Sign-On (SSO) accounts of an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeSSOAccounts",
+                    "description": "Retrieve Single Sign-On (SSO) accounts of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeSSOAccounts",
-                    "description":"Create Single Sign-On (SSO) accounts of an employee REST API",
-                    "isHidden":false
+                    "name": "postEmployeeSSOAccounts",
+                    "description": "Create Single Sign-On (SSO) accounts of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeSSOAccounts",
-                    "description":"Update Single Sign-On (SSO) accounts of an employee REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeSSOAccounts",
+                    "description": "Update Single Sign-On (SSO) accounts of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getUserPayAdjustCodeGroups",
-                    "description":"Retrieve User Pay Adjustment Groups assigned to an employee. These control which pay adjustment codes the employee can assign to timesheets REST API",
-                    "isHidden":false
+                    "name": "getUserPayAdjustCodeGroups",
+                    "description": "Retrieve User Pay Adjustment Groups assigned to an employee. These control which pay adjustment codes the employee can assign to timesheets REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeOrgInfo",
-                    "description":"Get employee Organization Info REST API",
-                    "isHidden":false
+                    "name": "getEmployeeOrgInfo",
+                    "description": "Get employee Organization Info REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeWorkAssignments",
-                    "description":"Get employee work assignments REST API",
-                    "isHidden":false
+                    "name": "getEmployeeWorkAssignments",
+                    "description": "Get employee work assignments REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeWorkAssignments",
-                    "description":"Post employee work assignments REST API",
-                    "isHidden":false
+                    "name": "postEmployeeWorkAssignments",
+                    "description": "Post employee work assignments REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeWorkAssignments",
-                    "description":"Patch employee work assignments REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeWorkAssignments",
+                    "description": "Patch employee work assignments REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeEmploymentStatuses",
-                    "description":"Retrieve an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API",
-                    "isHidden":false
+                    "name": "getEmployeeEmploymentStatuses",
+                    "description": "Retrieve an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeEmploymentStatuses",
-                    "description":"Create an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API",
-                    "isHidden":false
+                    "name": "postEmployeeEmploymentStatuses",
+                    "description": "Create an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeEmploymentStatuses",
-                    "description":"Update an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeEmploymentStatuses",
+                    "description": "Update an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeClockDeviceGroups",
-                    "description":"Retrieve an employee's clock device groups that control access to the clocks the employee can punch on. REST API",
-                    "isHidden":false
+                    "name": "getEmployeeClockDeviceGroups",
+                    "description": "Retrieve an employee's clock device groups that control access to the clocks the employee can punch on. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeCompensationSummary",
-                    "description":"Retrieve an employee's condensed status information based on compensation changes. REST API",
-                    "isHidden":false
+                    "name": "getEmployeeCompensationSummary",
+                    "description": "Retrieve an employee's condensed status information based on compensation changes. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeCourses",
-                    "description":"Retrieve courses associated to an employee. REST API",
-                    "isHidden":false
+                    "name": "getEmployeeCourses",
+                    "description": "Retrieve courses associated to an employee. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeEmploymentAgreements",
-                    "description":"Retrieve the employment agreement information of an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeEmploymentAgreements",
+                    "description": "Retrieve the employment agreement information of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeEmploymentAgreements",
-                    "description":"Retrieve the employment agreement information of an employee REST API",
-                    "isHidden":false
+                    "name": "postEmployeeEmploymentAgreements",
+                    "description": "Retrieve the employment agreement information of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeEmploymentAgreements",
-                    "description":"Retrieve the employment agreement information of an employee REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeEmploymentAgreements",
+                    "description": "Retrieve the employment agreement information of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeEmploymentTypes",
-                    "description":"Retrieve employee employment types (i.e: contractor, pensioner, etc.) REST API",
-                    "isHidden":false
+                    "name": "getEmployeeEmploymentTypes",
+                    "description": "Retrieve employee employment types (i.e: contractor, pensioner, etc.) REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeHighlyCompensatedEmployees",
-                    "description":"Retrieve highly compensated employee indicators REST API",
-                    "isHidden":false
+                    "name": "getEmployeeHighlyCompensatedEmployees",
+                    "description": "Retrieve highly compensated employee indicators REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeHRIncidents",
-                    "description":"Retrieve HR incidents attached to an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeHRIncidents",
+                    "description": "Retrieve HR incidents attached to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeLabourDefaults",
-                    "description":"Retrieve employee labor defaults. Labor defaults specify an employee default postion, project, docket or other timesheet information. REST API",
-                    "isHidden":false
+                    "name": "getEmployeeLabourDefaults",
+                    "description": "Retrieve employee labor defaults. Labor defaults specify an employee default postion, project, docket or other timesheet information. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeOnboardingPolicies",
-                    "description":"Retrieve onboarding policies assigned to an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeOnboardingPolicies",
+                    "description": "Retrieve onboarding policies assigned to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeOnboardingPolicies",
-                    "description":"Assign onboarding policies to an employee REST API",
-                    "isHidden":false
+                    "name": "postEmployeeOnboardingPolicies",
+                    "description": "Assign onboarding policies to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeOnboardingPolicies",
-                    "description":"Update the onboarding policies assigned to an employee REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeOnboardingPolicies",
+                    "description": "Update the onboarding policies assigned to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeePayAdjustmentGroups",
-                    "description":"Retrieve employee pay adjustment groups that control which pay codes can be used in an employee's timesheet REST API",
-                    "isHidden":false
+                    "name": "getEmployeePayAdjustmentGroups",
+                    "description": "Retrieve employee pay adjustment groups that control which pay codes can be used in an employee's timesheet REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeePayGradeRates",
-                    "description":"Retrieve employee pay grade rates related to their position rate policies REST API",
-                    "isHidden":false
+                    "name": "getEmployeePayGradeRates",
+                    "description": "Retrieve employee pay grade rates related to their position rate policies REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeePerformanceRatings",
-                    "description":"Retrieve details on employee performance reviews REST API",
-                    "isHidden":false
+                    "name": "getEmployeePerformanceRatings",
+                    "description": "Retrieve details on employee performance reviews REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeProperties",
-                    "description":"Retrieve employee properties that represent custom defined information REST API",
-                    "isHidden":false
+                    "name": "getEmployeeProperties",
+                    "description": "Retrieve employee properties that represent custom defined information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeProperties",
-                    "description":"Create employee properties that represent custom defined information REST API",
-                    "isHidden":false
+                    "name": "postEmployeeProperties",
+                    "description": "Create employee properties that represent custom defined information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeProperties",
-                    "description":"Update employee properties that represent custom defined information REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeProperties",
+                    "description": "Update employee properties that represent custom defined information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeSkills",
-                    "description":"Retrieve skills attached to an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeSkills",
+                    "description": "Retrieve skills attached to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeTrainingPrograms",
-                    "description":"Retrieve training programs attached to an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeTrainingPrograms",
+                    "description": "Retrieve training programs attached to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeUnionMemberships",
-                    "description":"Retrieve employee union membership information REST API",
-                    "isHidden":false
+                    "name": "getEmployeeUnionMemberships",
+                    "description": "Retrieve employee union membership information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeWorkContracts",
-                    "description":"Retrieve work contracts used in UK to represent the employee contracted work duration REST API",
-                    "isHidden":false
+                    "name": "getEmployeeWorkContracts",
+                    "description": "Retrieve work contracts used in UK to represent the employee contracted work duration REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeWorkContracts",
-                    "description":"Create work contracts used in UK to represent the employee contracted work duration REST API",
-                    "isHidden":false
+                    "name": "postEmployeeWorkContracts",
+                    "description": "Create work contracts used in UK to represent the employee contracted work duration REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeWorkContracts",
-                    "description":"Update work contracts used in UK to represent the employee contracted work duration REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeWorkContracts",
+                    "description": "Update work contracts used in UK to represent the employee contracted work duration REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeAddresses",
-                    "description":"Retrieve addresses of an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeAddresses",
+                    "description": "Retrieve addresses of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeAddresses",
-                    "description":"Create addresses of an employee REST API",
-                    "isHidden":false
+                    "name": "postEmployeeAddresses",
+                    "description": "Create addresses of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeAddresses",
-                    "description":"Update addresses of an employee REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeAddresses",
+                    "description": "Update addresses of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeCANFederalTaxes",
-                    "description":"Retrieve a Canadian employee's total federal claim amount, resident status and authorized tax credits REST API",
-                    "isHidden":false
+                    "name": "getEmployeeCANFederalTaxes",
+                    "description": "Retrieve a Canadian employee's total federal claim amount, resident status and authorized tax credits REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeCANStateTaxes",
-                    "description":"Retrieve a Canadian employee's total provincial claim amount, prescribed deductions and authorized tax credits REST API",
-                    "isHidden":false
+                    "name": "getEmployeeCANStateTaxes",
+                    "description": "Retrieve a Canadian employee's total provincial claim amount, prescribed deductions and authorized tax credits REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeCANTaxStatuses",
-                    "description":"Retrieve a Canadian employee's provincial tax filing status (e.g. single, married) REST API",
-                    "isHidden":false
+                    "name": "getEmployeeCANTaxStatuses",
+                    "description": "Retrieve a Canadian employee's provincial tax filing status (e.g. single, married) REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeContacts",
-                    "description":"Retrieve contacts of an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeContacts",
+                    "description": "Retrieve contacts of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeContacts",
-                    "description":"Create contacts of an employee REST API",
-                    "isHidden":false
+                    "name": "postEmployeeContacts",
+                    "description": "Create contacts of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeContacts",
-                    "description":"Update contacts of an employee REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeContacts",
+                    "description": "Update contacts of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeDirectDeposits",
-                    "description":"Retrieve an employee's direct deposit information REST API",
-                    "isHidden":false
+                    "name": "getEmployeeDirectDeposits",
+                    "description": "Retrieve an employee's direct deposit information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeEmergencyContacts",
-                    "description":"Retrieve an employee's emergency contacts REST API",
-                    "isHidden":false
+                    "name": "getEmployeeEmergencyContacts",
+                    "description": "Retrieve an employee's emergency contacts REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeEmergencyContacts",
-                    "description":"Create an employee's emergency contacts REST API",
-                    "isHidden":false
+                    "name": "postEmployeeEmergencyContacts",
+                    "description": "Create an employee's emergency contacts REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeEmergencyContacts",
-                    "description":"Update an employee's emergency contacts REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeEmergencyContacts",
+                    "description": "Update an employee's emergency contacts REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeEthnicities",
-                    "description":"Retrieve an employee's ethnicity information REST API",
-                    "isHidden":false
+                    "name": "getEmployeeEthnicities",
+                    "description": "Retrieve an employee's ethnicity information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeHealthAndWellness",
-                    "description":"Retrieve an employee's tobacco use status REST API",
-                    "isHidden":false
+                    "name": "getEmployeeHealthAndWellness",
+                    "description": "Retrieve an employee's tobacco use status REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeMaritalStatuses",
-                    "description":"Retrieve an employee's marital status information REST API",
-                    "isHidden":false
+                    "name": "getEmployeeMaritalStatuses",
+                    "description": "Retrieve an employee's marital status information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeMaritalStatuses",
-                    "description":"Create an employee's marital status information REST API",
-                    "isHidden":false
+                    "name": "postEmployeeMaritalStatuses",
+                    "description": "Create an employee's marital status information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeMaritalStatuses",
-                    "description":"Update an employee's marital status information REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeMaritalStatuses",
+                    "description": "Update an employee's marital status information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeUSFederalTaxes",
-                    "description":"Retrieve a US employee's total federal claim amount, resident status and authorized tax credits REST API",
-                    "isHidden":false
+                    "name": "getEmployeeUSFederalTaxes",
+                    "description": "Retrieve a US employee's total federal claim amount, resident status and authorized tax credits REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeUSStateTaxes",
-                    "description":"Retrieve a US employee's total state claim amount, prescribed deductions and authorized tax credits REST API",
-                    "isHidden":false
+                    "name": "getEmployeeUSStateTaxes",
+                    "description": "Retrieve a US employee's total state claim amount, prescribed deductions and authorized tax credits REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeUSTaxStatuses",
-                    "description":"Retrieve a US employee's state tax filing status (e.g. single, married) REST API",
-                    "isHidden":false
+                    "name": "getEmployeeUSTaxStatuses",
+                    "description": "Retrieve a US employee's state tax filing status (e.g. single, married) REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getAListOfDocuments",
-                    "description":"This request allows to retrieve the list of documents attached to an employee. The response includes the document GUID used to retrieve contents with Get Document Details REST API",
-                    "isHidden":false
+                    "name": "getAListOfDocuments",
+                    "description": "This request allows to retrieve the list of documents attached to an employee. The response includes the document GUID used to retrieve contents with Get Document Details REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getDocumentDetails",
-                    "description":"This request allows to retrieve the contents of a particular document. It requires the document GUID that can be obtained with Get a List of Documents REST API",
-                    "isHidden":false
+                    "name": "getDocumentDetails",
+                    "description": "This request allows to retrieve the contents of a particular document. It requires the document GUID that can be obtained with Get a List of Documents REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getAvailability",
-                    "description":"Availabilty represents the periods an employee is available to be scheduled for work. This request allows you to retrieve a single employee's daily availability between two dates. In order to use it, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
-                    "isHidden":false
+                    "name": "getAvailability",
+                    "description": "Availabilty represents the periods an employee is available to be scheduled for work. This request allows you to retrieve a single employee's daily availability between two dates. In order to use it, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getSchedules",
-                    "description":"Retrieve the configured schedules for a single employee for every day within a defined period. In order to use this request, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
-                    "isHidden":false
+                    "name": "getSchedules",
+                    "description": "Retrieve the configured schedules for a single employee for every day within a defined period. In order to use this request, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getTimeAwayFromWork",
-                    "description":"Retrieve the scheduled time away from work (TAFW) periods of a single employee. In order to use this request, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
-                    "isHidden":false
+                    "name": "getTimeAwayFromWork",
+                    "description": "Retrieve the scheduled time away from work (TAFW) periods of a single employee. In order to use this request, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeePunches",
-                    "description":"Extract the worked shift data for several employees at a time. Required parameters for the call include FilterTransactionStartTimeUTC and FilterTransactionEndTimeUTC. The system will search for all employee punch records that were modified between these two dates. The two dates must be 7 days apart or less. REST API",
-                    "isHidden":false
+                    "name": "getEmployeePunches",
+                    "description": "Extract the worked shift data for several employees at a time. Required parameters for the call include FilterTransactionStartTimeUTC and FilterTransactionEndTimeUTC. The system will search for all employee punch records that were modified between these two dates. The two dates must be 7 days apart or less. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeRawPunches",
-                    "description":"Retrieve raw punches as they are entered at the clock REST API",
-                    "isHidden":false
+                    "name": "getEmployeeRawPunches",
+                    "description": "Retrieve raw punches as they are entered at the clock REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeRawPunches",
-                    "description":"Insert a raw punch. This raw punch record will be treated as a punch coming from the clock and be validated against configured punch policies REST API",
-                    "isHidden":false
+                    "name": "postEmployeeRawPunches",
+                    "description": "Insert a raw punch. This raw punch record will be treated as a punch coming from the clock and be validated against configured punch policies REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getJobPostings",
-                    "description":"Availabilty represents the periods an employee is available to be scheduled for work. This request allows you to retrieve a single employee's daily availability between two dates. In order to use it, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
-                    "isHidden":false
+                    "name": "getJobPostings",
+                    "description": "Availabilty represents the periods an employee is available to be scheduled for work. This request allows you to retrieve a single employee's daily availability between two dates. In order to use it, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchI9Order",
-                    "description":"Update I-9 employment eligibility verification order status REST API",
-                    "isHidden":false
+                    "name": "patchI9Order",
+                    "description": "Update I-9 employment eligibility verification order status REST API",
+                    "isHidden": false
                 }
             ],
             "connections": [],
@@ -487,454 +488,454 @@
             ],
             "operations": [
                 {
-                    "name":"init",
-                    "description":"Init operation",
-                    "isHidden":false
+                    "name": "init",
+                    "description": "Init operation",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeDetails",
-                    "description":"Get employee details REST API",
-                    "isHidden":false
+                    "name": "getEmployeeDetails",
+                    "description": "Get employee details REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployees",
-                    "description":"Get employees REST API",
-                    "isHidden":false
+                    "name": "getEmployees",
+                    "description": "Get employees REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployee",
-                    "description":"POST employees REST API",
-                    "isHidden":false
+                    "name": "postEmployee",
+                    "description": "POST employees REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployee",
-                    "description":"PATCH employees REST API",
-                    "isHidden":false
+                    "name": "patchEmployee",
+                    "description": "PATCH employees REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getOrgUnits",
-                    "description":"Get Organization Units REST API",
-                    "isHidden":false
+                    "name": "getOrgUnits",
+                    "description": "Get Organization Units REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postOrgUnits",
-                    "description":"Post Organization Units REST API",
-                    "isHidden":false
+                    "name": "postOrgUnits",
+                    "description": "Post Organization Units REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchOrgUnits",
-                    "description":"Patch Organization Units REST API",
-                    "isHidden":false
+                    "name": "patchOrgUnits",
+                    "description": "Patch Organization Units REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getOrgUnitDetails",
-                    "description":"Get Organization Units Details REST API",
-                    "isHidden":false
+                    "name": "getOrgUnitDetails",
+                    "description": "Get Organization Units Details REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getReportMetadata",
-                    "description":"Get Organization Units REST API",
-                    "isHidden":false
+                    "name": "getReportMetadata",
+                    "description": "Get Organization Units REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getReportMetadataDetails",
-                    "description":"Get Organization Units REST API",
-                    "isHidden":false
+                    "name": "getReportMetadataDetails",
+                    "description": "Get Organization Units REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getReports",
-                    "description":"Get Organization Units REST API",
-                    "isHidden":false
+                    "name": "getReports",
+                    "description": "Get Organization Units REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeManagers",
-                    "description":"Get employee Managers REST API",
-                    "isHidden":false
+                    "name": "getEmployeeManagers",
+                    "description": "Get employee Managers REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeWorkAssignmentManagers",
-                    "description":"Get employee Managers REST API",
-                    "isHidden":false
+                    "name": "getEmployeeWorkAssignmentManagers",
+                    "description": "Get employee Managers REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeWorkAssignmentManagers",
-                    "description":"Post employee Managers REST API",
-                    "isHidden":false
+                    "name": "postEmployeeWorkAssignmentManagers",
+                    "description": "Post employee Managers REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeWorkAssignmentManagers",
-                    "description":"Patch employee Managers REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeWorkAssignmentManagers",
+                    "description": "Patch employee Managers REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getDocumentManagementSecurityGroups",
-                    "description":"Retrieve Document Management Security Groups assigned to an employee that control access to documents REST API",
-                    "isHidden":false
+                    "name": "getDocumentManagementSecurityGroups",
+                    "description": "Retrieve Document Management Security Groups assigned to an employee that control access to documents REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeLocations",
-                    "description":"Retrieve locations, and their respective authority types, that an employee manages REST API",
-                    "isHidden":false
+                    "name": "getEmployeeLocations",
+                    "description": "Retrieve locations, and their respective authority types, that an employee manages REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeLocations",
-                    "description":"Assign locations and authority types for an employee to manage REST API",
-                    "isHidden":false
+                    "name": "postEmployeeLocations",
+                    "description": "Assign locations and authority types for an employee to manage REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeLocations",
-                    "description":"Update assigned locations and authority types for an employee to manage REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeLocations",
+                    "description": "Update assigned locations and authority types for an employee to manage REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeRoles",
-                    "description":"Retrieve user roles assigned to an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeRoles",
+                    "description": "Retrieve user roles assigned to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeRoles",
-                    "description":"Assign roles to an employee REST API",
-                    "isHidden":false
+                    "name": "postEmployeeRoles",
+                    "description": "Assign roles to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeRoles",
-                    "description":"Update the assigned roles to an employee REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeRoles",
+                    "description": "Update the assigned roles to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeSSOAccounts",
-                    "description":"Retrieve Single Sign-On (SSO) accounts of an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeSSOAccounts",
+                    "description": "Retrieve Single Sign-On (SSO) accounts of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeSSOAccounts",
-                    "description":"Create Single Sign-On (SSO) accounts of an employee REST API",
-                    "isHidden":false
+                    "name": "postEmployeeSSOAccounts",
+                    "description": "Create Single Sign-On (SSO) accounts of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeSSOAccounts",
-                    "description":"Update Single Sign-On (SSO) accounts of an employee REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeSSOAccounts",
+                    "description": "Update Single Sign-On (SSO) accounts of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getUserPayAdjustCodeGroups",
-                    "description":"Retrieve User Pay Adjustment Groups assigned to an employee. These control which pay adjustment codes the employee can assign to timesheets REST API",
-                    "isHidden":false
+                    "name": "getUserPayAdjustCodeGroups",
+                    "description": "Retrieve User Pay Adjustment Groups assigned to an employee. These control which pay adjustment codes the employee can assign to timesheets REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeOrgInfo",
-                    "description":"Get employee Organization Info REST API",
-                    "isHidden":false
+                    "name": "getEmployeeOrgInfo",
+                    "description": "Get employee Organization Info REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeWorkAssignments",
-                    "description":"Get employee work assignments REST API",
-                    "isHidden":false
+                    "name": "getEmployeeWorkAssignments",
+                    "description": "Get employee work assignments REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeWorkAssignments",
-                    "description":"Post employee work assignments REST API",
-                    "isHidden":false
+                    "name": "postEmployeeWorkAssignments",
+                    "description": "Post employee work assignments REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeWorkAssignments",
-                    "description":"Patch employee work assignments REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeWorkAssignments",
+                    "description": "Patch employee work assignments REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeEmploymentStatuses",
-                    "description":"Retrieve an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API",
-                    "isHidden":false
+                    "name": "getEmployeeEmploymentStatuses",
+                    "description": "Retrieve an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeEmploymentStatuses",
-                    "description":"Create an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API",
-                    "isHidden":false
+                    "name": "postEmployeeEmploymentStatuses",
+                    "description": "Create an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeEmploymentStatuses",
-                    "description":"Update an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeEmploymentStatuses",
+                    "description": "Update an employee's employment statuses that control how employee's pay, time-off, statutory holidays, etc. are calculated. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeClockDeviceGroups",
-                    "description":"Retrieve an employee's clock device groups that control access to the clocks the employee can punch on. REST API",
-                    "isHidden":false
+                    "name": "getEmployeeClockDeviceGroups",
+                    "description": "Retrieve an employee's clock device groups that control access to the clocks the employee can punch on. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeCompensationSummary",
-                    "description":"Retrieve an employee's condensed status information based on compensation changes. REST API",
-                    "isHidden":false
+                    "name": "getEmployeeCompensationSummary",
+                    "description": "Retrieve an employee's condensed status information based on compensation changes. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeCourses",
-                    "description":"Retrieve courses associated to an employee. REST API",
-                    "isHidden":false
+                    "name": "getEmployeeCourses",
+                    "description": "Retrieve courses associated to an employee. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeEmploymentAgreements",
-                    "description":"Retrieve the employment agreement information of an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeEmploymentAgreements",
+                    "description": "Retrieve the employment agreement information of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeEmploymentAgreements",
-                    "description":"Retrieve the employment agreement information of an employee REST API",
-                    "isHidden":false
+                    "name": "postEmployeeEmploymentAgreements",
+                    "description": "Retrieve the employment agreement information of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeEmploymentAgreements",
-                    "description":"Retrieve the employment agreement information of an employee REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeEmploymentAgreements",
+                    "description": "Retrieve the employment agreement information of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeEmploymentTypes",
-                    "description":"Retrieve employee employment types (i.e: contractor, pensioner, etc.) REST API",
-                    "isHidden":false
+                    "name": "getEmployeeEmploymentTypes",
+                    "description": "Retrieve employee employment types (i.e: contractor, pensioner, etc.) REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeHighlyCompensatedEmployees",
-                    "description":"Retrieve highly compensated employee indicators REST API",
-                    "isHidden":false
+                    "name": "getEmployeeHighlyCompensatedEmployees",
+                    "description": "Retrieve highly compensated employee indicators REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeHRIncidents",
-                    "description":"Retrieve HR incidents attached to an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeHRIncidents",
+                    "description": "Retrieve HR incidents attached to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeLabourDefaults",
-                    "description":"Retrieve employee labor defaults. Labor defaults specify an employee default postion, project, docket or other timesheet information. REST API",
-                    "isHidden":false
+                    "name": "getEmployeeLabourDefaults",
+                    "description": "Retrieve employee labor defaults. Labor defaults specify an employee default postion, project, docket or other timesheet information. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeOnboardingPolicies",
-                    "description":"Retrieve onboarding policies assigned to an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeOnboardingPolicies",
+                    "description": "Retrieve onboarding policies assigned to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeOnboardingPolicies",
-                    "description":"Assign onboarding policies to an employee REST API",
-                    "isHidden":false
+                    "name": "postEmployeeOnboardingPolicies",
+                    "description": "Assign onboarding policies to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeOnboardingPolicies",
-                    "description":"Update the onboarding policies assigned to an employee REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeOnboardingPolicies",
+                    "description": "Update the onboarding policies assigned to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeePayAdjustmentGroups",
-                    "description":"Retrieve employee pay adjustment groups that control which pay codes can be used in an employee's timesheet REST API",
-                    "isHidden":false
+                    "name": "getEmployeePayAdjustmentGroups",
+                    "description": "Retrieve employee pay adjustment groups that control which pay codes can be used in an employee's timesheet REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeePayGradeRates",
-                    "description":"Retrieve employee pay grade rates related to their position rate policies REST API",
-                    "isHidden":false
+                    "name": "getEmployeePayGradeRates",
+                    "description": "Retrieve employee pay grade rates related to their position rate policies REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeePerformanceRatings",
-                    "description":"Retrieve details on employee performance reviews REST API",
-                    "isHidden":false
+                    "name": "getEmployeePerformanceRatings",
+                    "description": "Retrieve details on employee performance reviews REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeProperties",
-                    "description":"Retrieve employee properties that represent custom defined information REST API",
-                    "isHidden":false
+                    "name": "getEmployeeProperties",
+                    "description": "Retrieve employee properties that represent custom defined information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeProperties",
-                    "description":"Create employee properties that represent custom defined information REST API",
-                    "isHidden":false
+                    "name": "postEmployeeProperties",
+                    "description": "Create employee properties that represent custom defined information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeProperties",
-                    "description":"Update employee properties that represent custom defined information REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeProperties",
+                    "description": "Update employee properties that represent custom defined information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeSkills",
-                    "description":"Retrieve skills attached to an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeSkills",
+                    "description": "Retrieve skills attached to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeTrainingPrograms",
-                    "description":"Retrieve training programs attached to an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeTrainingPrograms",
+                    "description": "Retrieve training programs attached to an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeUnionMemberships",
-                    "description":"Retrieve employee union membership information REST API",
-                    "isHidden":false
+                    "name": "getEmployeeUnionMemberships",
+                    "description": "Retrieve employee union membership information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeWorkContracts",
-                    "description":"Retrieve work contracts used in UK to represent the employee contracted work duration REST API",
-                    "isHidden":false
+                    "name": "getEmployeeWorkContracts",
+                    "description": "Retrieve work contracts used in UK to represent the employee contracted work duration REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeWorkContracts",
-                    "description":"Create work contracts used in UK to represent the employee contracted work duration REST API",
-                    "isHidden":false
+                    "name": "postEmployeeWorkContracts",
+                    "description": "Create work contracts used in UK to represent the employee contracted work duration REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeWorkContracts",
-                    "description":"Update work contracts used in UK to represent the employee contracted work duration REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeWorkContracts",
+                    "description": "Update work contracts used in UK to represent the employee contracted work duration REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeAddresses",
-                    "description":"Retrieve addresses of an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeAddresses",
+                    "description": "Retrieve addresses of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeAddresses",
-                    "description":"Create addresses of an employee REST API",
-                    "isHidden":false
+                    "name": "postEmployeeAddresses",
+                    "description": "Create addresses of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeAddresses",
-                    "description":"Update addresses of an employee REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeAddresses",
+                    "description": "Update addresses of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeCANFederalTaxes",
-                    "description":"Retrieve a Canadian employee's total federal claim amount, resident status and authorized tax credits REST API",
-                    "isHidden":false
+                    "name": "getEmployeeCANFederalTaxes",
+                    "description": "Retrieve a Canadian employee's total federal claim amount, resident status and authorized tax credits REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeCANStateTaxes",
-                    "description":"Retrieve a Canadian employee's total provincial claim amount, prescribed deductions and authorized tax credits REST API",
-                    "isHidden":false
+                    "name": "getEmployeeCANStateTaxes",
+                    "description": "Retrieve a Canadian employee's total provincial claim amount, prescribed deductions and authorized tax credits REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeCANTaxStatuses",
-                    "description":"Retrieve a Canadian employee's provincial tax filing status (e.g. single, married) REST API",
-                    "isHidden":false
+                    "name": "getEmployeeCANTaxStatuses",
+                    "description": "Retrieve a Canadian employee's provincial tax filing status (e.g. single, married) REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeContacts",
-                    "description":"Retrieve contacts of an employee REST API",
-                    "isHidden":false
+                    "name": "getEmployeeContacts",
+                    "description": "Retrieve contacts of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeContacts",
-                    "description":"Create contacts of an employee REST API",
-                    "isHidden":false
+                    "name": "postEmployeeContacts",
+                    "description": "Create contacts of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeContacts",
-                    "description":"Update contacts of an employee REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeContacts",
+                    "description": "Update contacts of an employee REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeDirectDeposits",
-                    "description":"Retrieve an employee's direct deposit information REST API",
-                    "isHidden":false
+                    "name": "getEmployeeDirectDeposits",
+                    "description": "Retrieve an employee's direct deposit information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeEmergencyContacts",
-                    "description":"Retrieve an employee's emergency contacts REST API",
-                    "isHidden":false
+                    "name": "getEmployeeEmergencyContacts",
+                    "description": "Retrieve an employee's emergency contacts REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeEmergencyContacts",
-                    "description":"Create an employee's emergency contacts REST API",
-                    "isHidden":false
+                    "name": "postEmployeeEmergencyContacts",
+                    "description": "Create an employee's emergency contacts REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeEmergencyContacts",
-                    "description":"Update an employee's emergency contacts REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeEmergencyContacts",
+                    "description": "Update an employee's emergency contacts REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeEthnicities",
-                    "description":"Retrieve an employee's ethnicity information REST API",
-                    "isHidden":false
+                    "name": "getEmployeeEthnicities",
+                    "description": "Retrieve an employee's ethnicity information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeHealthAndWellness",
-                    "description":"Retrieve an employee's tobacco use status REST API",
-                    "isHidden":false
+                    "name": "getEmployeeHealthAndWellness",
+                    "description": "Retrieve an employee's tobacco use status REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeMaritalStatuses",
-                    "description":"Retrieve an employee's marital status information REST API",
-                    "isHidden":false
+                    "name": "getEmployeeMaritalStatuses",
+                    "description": "Retrieve an employee's marital status information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeMaritalStatuses",
-                    "description":"Create an employee's marital status information REST API",
-                    "isHidden":false
+                    "name": "postEmployeeMaritalStatuses",
+                    "description": "Create an employee's marital status information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchEmployeeMaritalStatuses",
-                    "description":"Update an employee's marital status information REST API",
-                    "isHidden":false
+                    "name": "patchEmployeeMaritalStatuses",
+                    "description": "Update an employee's marital status information REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeUSFederalTaxes",
-                    "description":"Retrieve a US employee's total federal claim amount, resident status and authorized tax credits REST API",
-                    "isHidden":false
+                    "name": "getEmployeeUSFederalTaxes",
+                    "description": "Retrieve a US employee's total federal claim amount, resident status and authorized tax credits REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeUSStateTaxes",
-                    "description":"Retrieve a US employee's total state claim amount, prescribed deductions and authorized tax credits REST API",
-                    "isHidden":false
+                    "name": "getEmployeeUSStateTaxes",
+                    "description": "Retrieve a US employee's total state claim amount, prescribed deductions and authorized tax credits REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeUSTaxStatuses",
-                    "description":"Retrieve a US employee's state tax filing status (e.g. single, married) REST API",
-                    "isHidden":false
+                    "name": "getEmployeeUSTaxStatuses",
+                    "description": "Retrieve a US employee's state tax filing status (e.g. single, married) REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getAListOfDocuments",
-                    "description":"This request allows to retrieve the list of documents attached to an employee. The response includes the document GUID used to retrieve contents with Get Document Details REST API",
-                    "isHidden":false
+                    "name": "getAListOfDocuments",
+                    "description": "This request allows to retrieve the list of documents attached to an employee. The response includes the document GUID used to retrieve contents with Get Document Details REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getDocumentDetails",
-                    "description":"This request allows to retrieve the contents of a particular document. It requires the document GUID that can be obtained with Get a List of Documents REST API",
-                    "isHidden":false
+                    "name": "getDocumentDetails",
+                    "description": "This request allows to retrieve the contents of a particular document. It requires the document GUID that can be obtained with Get a List of Documents REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getAvailability",
-                    "description":"Availabilty represents the periods an employee is available to be scheduled for work. This request allows you to retrieve a single employee's daily availability between two dates. In order to use it, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
-                    "isHidden":false
+                    "name": "getAvailability",
+                    "description": "Availabilty represents the periods an employee is available to be scheduled for work. This request allows you to retrieve a single employee's daily availability between two dates. In order to use it, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getSchedules",
-                    "description":"Retrieve the configured schedules for a single employee for every day within a defined period. In order to use this request, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
-                    "isHidden":false
+                    "name": "getSchedules",
+                    "description": "Retrieve the configured schedules for a single employee for every day within a defined period. In order to use this request, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getTimeAwayFromWork",
-                    "description":"Retrieve the scheduled time away from work (TAFW) periods of a single employee. In order to use this request, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
-                    "isHidden":false
+                    "name": "getTimeAwayFromWork",
+                    "description": "Retrieve the scheduled time away from work (TAFW) periods of a single employee. In order to use this request, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeePunches",
-                    "description":"Extract the worked shift data for several employees at a time. Required parameters for the call include FilterTransactionStartTimeUTC and FilterTransactionEndTimeUTC. The system will search for all employee punch records that were modified between these two dates. The two dates must be 7 days apart or less. REST API",
-                    "isHidden":false
+                    "name": "getEmployeePunches",
+                    "description": "Extract the worked shift data for several employees at a time. Required parameters for the call include FilterTransactionStartTimeUTC and FilterTransactionEndTimeUTC. The system will search for all employee punch records that were modified between these two dates. The two dates must be 7 days apart or less. REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getEmployeeRawPunches",
-                    "description":"Retrieve raw punches as they are entered at the clock REST API",
-                    "isHidden":false
+                    "name": "getEmployeeRawPunches",
+                    "description": "Retrieve raw punches as they are entered at the clock REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"postEmployeeRawPunches",
-                    "description":"Insert a raw punch. This raw punch record will be treated as a punch coming from the clock and be validated against configured punch policies REST API",
-                    "isHidden":false
+                    "name": "postEmployeeRawPunches",
+                    "description": "Insert a raw punch. This raw punch record will be treated as a punch coming from the clock and be validated against configured punch policies REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"getJobPostings",
-                    "description":"Availabilty represents the periods an employee is available to be scheduled for work. This request allows you to retrieve a single employee's daily availability between two dates. In order to use it, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
-                    "isHidden":false
+                    "name": "getJobPostings",
+                    "description": "Availabilty represents the periods an employee is available to be scheduled for work. This request allows you to retrieve a single employee's daily availability between two dates. In order to use it, an employee XRefCodes is needed. Employee XRefCodes can be retrieved with GET Employees REST API",
+                    "isHidden": false
                 },
                 {
-                    "name":"patchI9Order",
-                    "description":"Update I-9 employment eligibility verification order status REST API",
-                    "isHidden":false
+                    "name": "patchI9Order",
+                    "description": "Update I-9 employment eligibility verification order status REST API",
+                    "isHidden": false
                 }
             ],
             "connections": [],
