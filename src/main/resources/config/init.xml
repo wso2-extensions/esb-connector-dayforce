@@ -66,6 +66,11 @@
                 <property name="uri.var.uriPath" value="connectors/Dayforce/"/>
             </else>
         </filter>
+        <filter source="$ctx:uri.var.uriPath" regex=".*[^/]">
+            <then>
+                <property name="uri.var.uriPath" expression="fn:concat($ctx:uri.var.uriPath, '/')"/>
+            </then>
+        </filter>
         <property expression="base64Encode(fn:concat($func:username,':',$func:password))"
                   name="ceridianDayForceAuthHeader"/>
         <property name="uri.var.clientNamespace" expression="$func:clientNamespace"/>

@@ -29,6 +29,9 @@ public class CeridianDayforceMediator extends AbstractMediator {
     public boolean mediate(MessageContext synCtx) {
         try {
             String uriPath = synCtx.getProperty("uri.var.uriPath").toString();
+            if (!uriPath.endsWith("/")) {
+                uriPath = uriPath + "/";
+            }
             String clientNameSpaceKey = synCtx.getProperty("uri.var.clientNamespace").toString();
             uriPath = uriPath + clientNameSpaceKey;
             String serviceUri = synCtx.getProperty("SERVICE_URI").toString() +
