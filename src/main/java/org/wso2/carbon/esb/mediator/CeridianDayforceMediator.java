@@ -24,17 +24,17 @@ import org.apache.synapse.mediators.AbstractMediator;
  * Method implementation.
  */
 public class CeridianDayforceMediator extends AbstractMediator {
-    private String uriPath;
-    private String clientNameSpaceKey;
-    private String serviceUri;
 
     @Override
     public boolean mediate(MessageContext synCtx) {
         try {
-            uriPath = synCtx.getProperty("uri.var.uriPath").toString();
-            clientNameSpaceKey = synCtx.getProperty("uri.var.clientNamespace").toString();
+            String uriPath = synCtx.getProperty("uri.var.uriPath").toString();
+            if (!uriPath.endsWith("/")) {
+                uriPath = uriPath + "/";
+            }
+            String clientNameSpaceKey = synCtx.getProperty("uri.var.clientNamespace").toString();
             uriPath = uriPath + clientNameSpaceKey;
-            serviceUri = synCtx.getProperty("SERVICE_URI").toString() +
+            String serviceUri = synCtx.getProperty("SERVICE_URI").toString() +
                     clientNameSpaceKey.substring(clientNameSpaceKey.lastIndexOf("/"));
             if (serviceUri.startsWith("http://")) {
                 serviceUri = serviceUri.substring(7);

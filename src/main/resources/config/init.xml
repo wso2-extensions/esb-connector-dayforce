@@ -66,9 +66,15 @@
                 <property name="uri.var.uriPath" value="connectors/Dayforce/"/>
             </else>
         </filter>
+        <filter source="$ctx:uri.var.uriPath" regex=".*[^/]">
+            <then>
+                <property name="uri.var.uriPath" expression="fn:concat($ctx:uri.var.uriPath, '/')"/>
+            </then>
+        </filter>
         <property expression="base64Encode(fn:concat($func:username,':',$func:password))"
                   name="ceridianDayForceAuthHeader"/>
         <property name="uri.var.clientNamespace" expression="$func:clientNamespace"/>
+        <class name="org.wso2.carbon.esb.mediator.ClientNamespaceValidator"/>
         <property name="uri.var.serviceUri.reg" expression="get-property('registry', fn:concat($ctx:uri.var.uriPath,$ctx:uri.var.clientNamespace))"/>
 
         <filter source="$ctx:uri.var.serviceUri.reg=''" regex="true">
